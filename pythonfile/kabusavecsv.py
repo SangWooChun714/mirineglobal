@@ -81,7 +81,7 @@ def searchkabuka(code, days):
             break
 
     f.close()
-    #drawfin.drawline(filename)
+    drawfin.drawline(filename)
 
 if __name__ == "__main__":
     args = sys.argv
