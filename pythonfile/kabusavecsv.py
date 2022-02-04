@@ -7,8 +7,7 @@ from openpyxl import load_workbook
 kabunames = ""
 code = 0
 def searchkabuka(code, days):
-    print(type(days))
-    
+ 
     total = []
     breaker = True
 
@@ -60,19 +59,16 @@ def searchkabuka(code, days):
 
             if datetims == day:
                 continue
-            print(day,"day",type(day))
-            print(days,"days")
             if day == days:
-                print("들어옴")
                 breaker = False
                 break
 
             total = [jongmok, day, price, qunt]
             writer.writerow(total)
 
-        print()
-        if i == 2:
-            break
+        # print()
+        # if i == 2:
+        #     break
 
         if breaker == True:
             continue
@@ -85,7 +81,6 @@ def searchkabuka(code, days):
 
 if __name__ == "__main__":
     args = sys.argv
-    print(args)
     if args[1] == int :
         print("검색하는 회사의 이름을 정확하게 입력해주세요.")
     else:
