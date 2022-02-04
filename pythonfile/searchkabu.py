@@ -29,10 +29,7 @@ def searchkabu(kabu):
     for i in diff:
       sub = i.get_text()
       sub = sub.split() # 하락, 상승, 차액, 화살표 그림이 들어가도록 코드가 짜여있어 띄어쓰기가 나오므로 빈공간을 잡아서 문자열로 반환
-      if sub[0] == "상승":
-         upper = "상승"
-      elif sub[0] == "하락":
-         upper = "하락"
+      upper = sub[0]
       differ = sub[1]
 
     searchquant = jongmok.find("span", attrs={"id":"_quant"}) # 거래량을 가져오는 코드
