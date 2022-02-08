@@ -1,0 +1,28 @@
+2022-02-08 14:59:25,883- searchkabuka - 45 - root - INFO - items1 : https://finance.naver.com/item/sise_day.naver?code=005930, tablenum : 644
+2022-02-08 14:59:25,885- searchkabuka - 51 - root - INFO - create csv file
+2022-02-08 14:59:25,886- searchkabuka - 58 - root - INFO - present table : https://finance.naver.com/item/sise_day.naver?code=005930&page=1
+2022-02-08 14:59:25,937- searchkabuka - 58 - root - INFO - present table : https://finance.naver.com/item/sise_day.naver?code=005930&page=2
+2022-02-08 14:59:25,986- searchkabuka - 58 - root - INFO - present table : https://finance.naver.com/item/sise_day.naver?code=005930&page=3
+2022-02-08 14:59:26,035- searchkabuka - 90 - root - INFO - over csv saved
+2022-02-08 14:59:26,035- searchkabuka - 97 - root - INFO - draw graph
+2022-02-08 14:59:26,036- drawline - 17 - asyncio - INFO - open csv file
+2022-02-08 14:59:26,036- drawline - 32 - asyncio - INFO - over file work start draw
+2022-02-08 14:59:26,235- update - 234 - matplotlib.category - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2022-02-08 14:59:26,238- update - 234 - matplotlib.category - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2022-02-08 14:59:26,265- update - 234 - matplotlib.category - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2022-02-08 14:59:26,267- update - 234 - matplotlib.category - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2022-02-08 14:59:26,284- drawline - 46 - asyncio - INFO - draw over show
+2022-02-08 15:59:06,774- searchkabuka - 45 - root - INFO - items1 : https://finance.naver.com/item/sise_day.naver?code=005930, tablenum : 644
+2022-02-08 15:59:06,775- searchkabuka - 51 - root - INFO - create csv file
+2022-02-08 15:59:06,775- searchkabuka - 58 - root - INFO - present table : https://finance.naver.com/item/sise_day.naver?code=005930&page=1
+2022-02-08 15:59:06,827- searchkabuka - 58 - root - INFO - present table : https://finance.naver.com/item/sise_day.naver?code=005930&page=2
+2022-02-08 15:59:06,876- searchkabuka - 58 - root - INFO - present table : https://finance.naver.com/item/sise_day.naver?code=005930&page=3
+2022-02-08 15:59:06,925- searchkabuka - 90 - root - INFO - over csv saved
+2022-02-08 15:59:06,925- searchkabuka - 97 - root - INFO - draw graph
+2022-02-08 15:59:06,926- drawline - 17 - asyncio - INFO - open csv file
+2022-02-08 15:59:06,927- drawline - 32 - asyncio - INFO - over file work start draw
+2022-02-08 15:59:07,138- update - 234 - matplotlib.category - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2022-02-08 15:59:07,140- update - 234 - matplotlib.category - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2022-02-08 15:59:07,167- update - 234 - matplotlib.category - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2022-02-08 15:59:07,170- update - 234 - matplotlib.category - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2022-02-08 15:59:07,186- drawline - 46 - asyncio - INFO - draw over show
