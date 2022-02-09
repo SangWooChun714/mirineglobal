@@ -1,4 +1,3 @@
-from msilib.schema import Error
 from bs4 import BeautifulSoup
 from datetime import date
 import drawfin, sys, csv, requests, datetime, logging
@@ -40,13 +39,15 @@ def searchkabuka(kabunames, code, days):
         # 헤더값을 지정하여 사용자가 접속한것으로 확인
         res1 = requests.get(items1, headers=headers) #자료값을 가져오기 위해 새로운 주소를 불러옴
         searchday = BeautifulSoup(res1.text, "lxml") #새로운 주소의 내용을 담음
-        searchtablenum = searchday.find("table", attrs={"class":"Nnavi"}).find("td", class_="pgRR") # 네비게이션 페이지의 끝을 확인
-        tablenum = searchtablenum.a.get("href").rsplit("&")[1].split("=")[1] #페이지의 끝번호만을 축출
+        searchtablenum = searchday.find("td", attrs={"class":"pgRR"}) # 네비게이션 페이지의 끝을 확인
+        tablenum = searchtablenum.a.get("href").rsplit("=")[2] #페이지의 끝번호만을 축출
+        print(tablenum)
         logger.info("items1 : "+items1+", tablenum : "+tablenum)
     except Exception as e:
         print(e)
 
     try:
+        #with open(filename, "w", encoding="utf-8-sig", newline="") as f:
         f = open(filename, "w", encoding="utf-8-sig", newline="") # 자료를 저장할 csv파일을 생성, 열기
         logger.info("create csv file")
         writer = csv.writer(f)
@@ -101,17 +102,22 @@ if __name__ == "__main__":
 
     args = sys.argv
     print(args)
-    kabunames = args[1] #입력 받은 파라미터값은 리스트로 들어옴, 리스트의 두번째가 회사 이름
-    inputdays = args[2].split(".") # 세번째 인자는 날짜 2022.02.07로 들어오기에 각각의 숫자를 나눔
-    if len(kabunames) <= 0 or len(kabunames) >= 15 or any(x in kabunames for x in "!@#$%^&*()[];,./'") == True: # 들어온 회사이름이 오류가 없는지 확인
+    try:
+        kabunames = args[1] #입력 받은 파라미터값은 리스트로 들어옴, 리스트의 두번째가 회사 이름
+        inputdays = args[2].split(".") # 세번째 인자는 날짜 2022.02.07로 들어오기에 각각의 숫자를 나눔
+    except Exception as e:
+        print("회사명과 날짜를 정확하게 입력해주세요.")
+        logger.info("invalid parameter")
+        sys.exit()
+    if 15 <= len(kabunames) <= 0 or any(x in kabunames for x in "!@#$%^&*()[];,./'") == True: # 들어온 회사이름이 오류가 없는지 확인
         print("정확한 회사명을 입력해 주세요.")
         logger.info("companyname error")
-        raise Error
-    elif len(inputdays[0]) >= 5 or len(inputdays[0]) <= 0 or len(inputdays[1]) >= 3 or len(inputdays[1]) <= 0 or len(inputdays[2]) >= 3 or len(inputdays[2]) <=0: 
+        sys.exit()
+    elif 0 >= len(inputdays[0]) >= 5 or 0 >= len(inputdays[1]) >= 3 or 0 >= len(inputdays[2]) >= 3 : 
         # 들어온 날짜가 정확한지 확인
         print("날짜를 정확하게 입력해 주세요 line111")
         logger.info("day error")
-        raise Error
+        sys.exit()
     else :
         try: # 날짜를 마지막으로 확인
             years = int(inputdays[0])
@@ -120,11 +126,12 @@ if __name__ == "__main__":
         except Exception as e:
             logger.info("day error")
             print("날짜를 정확하게 입력해 주세요 line119")
+            sys.exit()
 
         if years >= 2100 or years <= 1900 or months >= 13 or months <= 0 or days >= 32 or days <= 0:
             print("날짜를 정확하게 입력해 주세요 line122")
             logger.info("day error")
-            raise Error
+            sys.exit()
 
         strmonday = inputdays[1]+inputdays[2] # 지정된 날짜가 휴일인지 확인을 위해 저장하는 변수
         weekendday = datetime.date(years, months, days).weekday()
