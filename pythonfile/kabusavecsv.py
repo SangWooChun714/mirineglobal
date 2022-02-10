@@ -1,3 +1,5 @@
+from gettext import find
+from time import strftime, strptime
 from bs4 import BeautifulSoup
 from datetime import date
 import drawfin, sys, csv, requests, datetime, logging
@@ -14,18 +16,16 @@ logger.addHandler(file_handler)
 kabunames = "" #검색할 회사 이름을 저장할 변수
 code = "" #회사 코드를 저장할 변수
 holyday_list = ["0101", "0301", "0505", "0606", "0815", "1003", "1009", "1225"] #휴일은 주식시장이 안열려 자료가 없기 때문에 휴일을 제외하기 위한 공휴일 리스트
-finedays = ["", ""]
+fined_days = ["", ""]
 
-def searchkabuka(kabunames, code, days):
-
+def SearchKabuKa(kabunames, code, days):
     total = [] # 회사이름, 날짜, 주가, 거래량을 저장할 리스트 변수
     breaker = True # 특정 날짜가 되면 무한문을 멈출 변수
     jongmok = kabunames+"("+code+")" # csv파일에 저장형식에 맞춘 회사이름 변수
     filename = "주식이력.csv" # csv파일 이름
     tablenum = "" #주식차트를 가져올 때 마지막 게시판 번호를 저장하는 변수
 
-    datetims = date.today() # 오늘 날짜를 저장하는 변수
-    datetims = str(datetims.strftime("%Y.%m.%d")) # 오늘날짜를 문자열로 저장
+    datetims = str(date.today().strftime("%Y.%m.%d")) # 오늘 날짜를 저장하는 변수
     
     url = "https://finance.naver.com/item/sise.naver?code="+code # 회사의 주가를 가져올 사이트
     url2 = "https://finance.naver.com"
@@ -40,8 +40,11 @@ def searchkabuka(kabunames, code, days):
         res1 = requests.get(items1, headers=headers) #자료값을 가져오기 위해 새로운 주소를 불러옴
         searchday = BeautifulSoup(res1.text, "lxml") #새로운 주소의 내용을 담음
         searchtablenum = searchday.find("td", attrs={"class":"pgRR"}) # 네비게이션 페이지의 끝을 확인
-        tablenum = searchtablenum.a.get("href").rsplit("=")[2] #페이지의 끝번호만을 축출
-        print(tablenum)
+        if not searchtablenum:
+            searchtablenum = searchday.find("table", attrs={"class":"Nnavi"}).find("td",{"class":"on"})
+            tablenum = searchtablenum.a.get("href").rsplit("=")[2]
+        else :
+            tablenum = searchtablenum.a.get("href").rsplit("=")[2] #페이지의 끝번호만을 축출
         logger.info("items1 : "+items1+", tablenum : "+tablenum)
     except Exception as e:
         print(e)
@@ -72,18 +75,15 @@ def searchkabuka(kabunames, code, days):
                 day = data[0] # 날짜를 저장
                 price = data[1] # 종가를 저장
                 qunt = data[6] # 거래량을 저장
-
                 if datetims == day: #오늘 날짜의 종가는 나오지 않았기에 오늘날짜를 제외시킴
                     continue
-                if day == days[0] or day == days[1]: # 찾고자 하는 날짜까지 저장후 종료
+                if day == days[0] or day == days[1]: #  찾고자 하는 날짜까지 저장후 종료
                     breaker = False
                     total = [jongmok, day, price, qunt]
                     writer.writerow(total)
                     break
-
                 total = [jongmok, day, price, qunt] # 원하는 자료만을 저장
                 writer.writerow(total) # csv파일에 한 행씩 작성
-
             if breaker == True:
                 continue
             else : 
@@ -95,6 +95,7 @@ def searchkabuka(kabunames, code, days):
 
     except Exception as e:
         print(e)
+
     logger.info("draw graph")
     drawfin.drawline(filename) # 자료를 활용하여 그래프 그리기 함수
 
@@ -113,10 +114,10 @@ if __name__ == "__main__":
         print("정확한 회사명을 입력해 주세요.")
         logger.info("companyname error")
         sys.exit()
-    elif 0 >= len(inputdays[0]) >= 5 or 0 >= len(inputdays[1]) >= 3 or 0 >= len(inputdays[2]) >= 3 : 
+    elif 3 >= len(inputdays[0]) >= 5 or 0 >= len(inputdays[1]) >= 3 or 0 >= len(inputdays[2]) >= 3 : 
         # 들어온 날짜가 정확한지 확인
-        print("날짜를 정확하게 입력해 주세요 line111")
-        logger.info("day error")
+        print("날짜를 정확하게 입력해 주세요")
+        logger.info("day error1")
         sys.exit()
     else :
         try: # 날짜를 마지막으로 확인
@@ -124,8 +125,8 @@ if __name__ == "__main__":
             months = int(inputdays[1])
             days = int(inputdays[2])
         except Exception as e:
-            logger.info("day error")
-            print("날짜를 정확하게 입력해 주세요 line119")
+            logger.info("day error2")
+            print("날짜를 정확하게 입력해 주세요")
             sys.exit()
 
         if years >= 2100 or years <= 1900 or months >= 13 or months <= 0 or days >= 32 or days <= 0:
@@ -133,18 +134,18 @@ if __name__ == "__main__":
             logger.info("day error")
             sys.exit()
 
-        strmonday = inputdays[1]+inputdays[2] # 지정된 날짜가 휴일인지 확인을 위해 저장하는 변수
+        str_monday = inputdays[1]+inputdays[2] # 지정된 날짜가 휴일인지 확인을 위해 저장하는 변수
         weekendday = datetime.date(years, months, days).weekday()
         temp_date = datetime.date(years, months, days)
 
-        if weekendday >= 5 or strmonday in holyday_list: # 공휴일이거나 주말이라면 바로 앞의 날짜가 나오도록 하는 함수 ex) 공휴일이 금요일일 경우 목요일 출력, 주말일 경우 금요일 출력
+        if weekendday >= 5 or str_monday in holyday_list: # 공휴일이거나 주말이라면 바로 앞의 날짜가 나오도록 하는 함수 ex) 공휴일이 금요일일 경우 목요일 출력, 주말일 경우 금요일 출력
             temp_date1 = str(temp_date - datetime.timedelta(max(1, (weekendday+6)%7-3))).split("-")
             temp_date2 = str(temp_date - datetime.timedelta(max(2, (weekendday+6)%7-2))).split("-")
-            finedays[0] = temp_date1[0]+"."+temp_date1[1]+"."+temp_date1[2]
-            finedays[1] = temp_date2[0]+"."+temp_date2[1]+"."+temp_date2[2]
+            fined_days[0] = temp_date1[0]+"."+temp_date1[1]+"."+temp_date1[2]
+            fined_days[1] = temp_date2[0]+"."+temp_date2[1]+"."+temp_date2[2]
         else : 
             temp_date = str(temp_date).split("-")
-            finedays[0] = (temp_date[0]+"."+temp_date[1]+"."+temp_date[2]) #마지막 결과값을 
+            fined_days[0] = (temp_date[0]+"."+temp_date[1]+"."+temp_date[2]) #마지막 결과값을
     
         wb = load_workbook("상장법인목록.xlsx") #회사코드를 알기 위해 엑셀파일을 불러옴
         ws = wb.active
@@ -152,7 +153,7 @@ if __name__ == "__main__":
             if row[0].value == kabunames:
                 code = row[1].value
                 wb.close()
-                searchkabuka(kabunames, code, finedays)
+                SearchKabuKa(kabunames, code, fined_days)
                 break
 
     

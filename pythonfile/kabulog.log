@@ -1,15 +1,89 @@
-
-2022-02-09 16:20:51,200- searchkabuka - 47 - root - INFO - items1 : https://finance.naver.com/item/sise_day.naver?code=005930, tablenum : 644
-2022-02-09 16:20:51,202- searchkabuka - 54 - root - INFO - create csv file
-2022-02-09 16:20:51,202- searchkabuka - 61 - root - INFO - present table : https://finance.naver.com/item/sise_day.naver?code=005930&page=1
-2022-02-09 16:20:51,259- searchkabuka - 61 - root - INFO - present table : https://finance.naver.com/item/sise_day.naver?code=005930&page=2
-2022-02-09 16:20:51,307- searchkabuka - 61 - root - INFO - present table : https://finance.naver.com/item/sise_day.naver?code=005930&page=3
-2022-02-09 16:20:51,355- searchkabuka - 93 - root - INFO - over csv saved
-2022-02-09 16:20:51,356- searchkabuka - 100 - root - INFO - draw graph
-2022-02-09 16:20:51,357- drawline - 17 - asyncio - INFO - open csv file
-2022-02-09 16:20:51,357- drawline - 32 - asyncio - INFO - over file work start draw
-2022-02-09 16:20:51,576- update - 234 - matplotlib.category - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
-2022-02-09 16:20:51,579- update - 234 - matplotlib.category - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
-2022-02-09 16:20:51,606- update - 234 - matplotlib.category - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
-2022-02-09 16:20:51,609- update - 234 - matplotlib.category - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
-2022-02-09 16:20:51,625- drawline - 46 - asyncio - INFO - draw over show
+2022-02-10 17:56:30,032- SearchKabuKa - 48 - root - INFO - items1 : https://finance.naver.com/item/sise_day.naver?code=293490, tablenum : 35
+2022-02-10 17:56:30,047- SearchKabuKa - 55 - root - INFO - create csv file
+2022-02-10 17:56:30,047- SearchKabuKa - 62 - root - INFO - present table : https://finance.naver.com/item/sise_day.naver?code=293490&page=1
+2022-02-10 17:56:30,102- SearchKabuKa - 62 - root - INFO - present table : https://finance.naver.com/item/sise_day.naver?code=293490&page=2
+2022-02-10 17:56:30,136- SearchKabuKa - 62 - root - INFO - present table : https://finance.naver.com/item/sise_day.naver?code=293490&page=3
+2022-02-10 17:56:30,189- SearchKabuKa - 62 - root - INFO - present table : https://finance.naver.com/item/sise_day.naver?code=293490&page=4
+2022-02-10 17:56:30,235- SearchKabuKa - 91 - root - INFO - over csv saved
+2022-02-10 17:56:30,235- SearchKabuKa - 99 - root - INFO - draw graph
+2022-02-10 17:56:30,244- drawline - 17 - asyncio - INFO - open csv file
+2022-02-10 17:56:30,244- drawline - 32 - asyncio - INFO - over file work start draw
+2022-02-10 17:56:30,689- update - 234 - matplotlib.category - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2022-02-10 17:56:30,692- update - 234 - matplotlib.category - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2022-02-10 17:56:30,725- update - 234 - matplotlib.category - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2022-02-10 17:56:30,727- update - 234 - matplotlib.category - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2022-02-10 17:56:30,729- update - 234 - matplotlib.category - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2022-02-10 17:56:30,730- update - 234 - matplotlib.category - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2022-02-10 17:56:30,751- drawline - 43 - asyncio - INFO - draw over show
+2022-02-10 18:05:39,747- SearchKabuKa - 48 - root - INFO - items1 : https://finance.naver.com/item/sise_day.naver?code=293490, tablenum : 35
+2022-02-10 18:05:39,747- SearchKabuKa - 55 - root - INFO - create csv file
+2022-02-10 18:05:39,747- SearchKabuKa - 62 - root - INFO - present table : https://finance.naver.com/item/sise_day.naver?code=293490&page=1
+2022-02-10 18:05:39,793- SearchKabuKa - 91 - root - INFO - over csv saved
+2022-02-10 18:05:39,793- SearchKabuKa - 99 - root - INFO - draw graph
+2022-02-10 18:05:39,801- drawline - 17 - asyncio - INFO - open csv file
+2022-02-10 18:05:39,801- drawline - 32 - asyncio - INFO - over file work start draw
+2022-02-10 18:05:39,972- update - 234 - matplotlib.category - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2022-02-10 18:05:39,972- update - 234 - matplotlib.category - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2022-02-10 18:05:40,005- update - 234 - matplotlib.category - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2022-02-10 18:05:40,006- update - 234 - matplotlib.category - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2022-02-10 18:05:40,007- update - 234 - matplotlib.category - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2022-02-10 18:05:40,007- update - 234 - matplotlib.category - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2022-02-10 18:05:40,007- drawline - 43 - asyncio - INFO - draw over show
+2022-02-10 18:05:56,132- SearchKabuKa - 48 - root - INFO - items1 : https://finance.naver.com/item/sise_day.naver?code=293490, tablenum : 35
+2022-02-10 18:05:56,134- SearchKabuKa - 55 - root - INFO - create csv file
+2022-02-10 18:05:56,134- SearchKabuKa - 62 - root - INFO - present table : https://finance.naver.com/item/sise_day.naver?code=293490&page=1
+2022-02-10 18:05:56,181- SearchKabuKa - 62 - root - INFO - present table : https://finance.naver.com/item/sise_day.naver?code=293490&page=2
+2022-02-10 18:05:56,226- SearchKabuKa - 62 - root - INFO - present table : https://finance.naver.com/item/sise_day.naver?code=293490&page=3
+2022-02-10 18:05:56,267- SearchKabuKa - 91 - root - INFO - over csv saved
+2022-02-10 18:05:56,268- SearchKabuKa - 99 - root - INFO - draw graph
+2022-02-10 18:05:56,273- drawline - 17 - asyncio - INFO - open csv file
+2022-02-10 18:05:56,273- drawline - 32 - asyncio - INFO - over file work start draw
+2022-02-10 18:05:56,458- update - 234 - matplotlib.category - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2022-02-10 18:05:56,461- update - 234 - matplotlib.category - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2022-02-10 18:05:56,489- update - 234 - matplotlib.category - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2022-02-10 18:05:56,491- update - 234 - matplotlib.category - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2022-02-10 18:05:56,493- update - 234 - matplotlib.category - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2022-02-10 18:05:56,494- update - 234 - matplotlib.category - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2022-02-10 18:05:56,512- drawline - 43 - asyncio - INFO - draw over show
+2022-02-10 18:06:58,067- SearchKabuKa - 48 - root - INFO - items1 : https://finance.naver.com/item/sise_day.naver?code=293490, tablenum : 35
+2022-02-10 18:06:58,067- SearchKabuKa - 55 - root - INFO - create csv file
+2022-02-10 18:06:58,067- SearchKabuKa - 62 - root - INFO - present table : https://finance.naver.com/item/sise_day.naver?code=293490&page=1
+2022-02-10 18:06:58,120- SearchKabuKa - 62 - root - INFO - present table : https://finance.naver.com/item/sise_day.naver?code=293490&page=2
+2022-02-10 18:06:58,167- SearchKabuKa - 62 - root - INFO - present table : https://finance.naver.com/item/sise_day.naver?code=293490&page=3
+2022-02-10 18:06:58,209- SearchKabuKa - 62 - root - INFO - present table : https://finance.naver.com/item/sise_day.naver?code=293490&page=4
+2022-02-10 18:06:58,241- SearchKabuKa - 62 - root - INFO - present table : https://finance.naver.com/item/sise_day.naver?code=293490&page=5
+2022-02-10 18:06:58,288- SearchKabuKa - 62 - root - INFO - present table : https://finance.naver.com/item/sise_day.naver?code=293490&page=6
+2022-02-10 18:06:58,334- SearchKabuKa - 62 - root - INFO - present table : https://finance.naver.com/item/sise_day.naver?code=293490&page=7
+2022-02-10 18:06:58,381- SearchKabuKa - 62 - root - INFO - present table : https://finance.naver.com/item/sise_day.naver?code=293490&page=8
+2022-02-10 18:06:58,412- SearchKabuKa - 62 - root - INFO - present table : https://finance.naver.com/item/sise_day.naver?code=293490&page=9
+2022-02-10 18:06:58,459- SearchKabuKa - 62 - root - INFO - present table : https://finance.naver.com/item/sise_day.naver?code=293490&page=10
+2022-02-10 18:06:58,506- SearchKabuKa - 62 - root - INFO - present table : https://finance.naver.com/item/sise_day.naver?code=293490&page=11
+2022-02-10 18:06:58,571- SearchKabuKa - 62 - root - INFO - present table : https://finance.naver.com/item/sise_day.naver?code=293490&page=12
+2022-02-10 18:06:58,615- SearchKabuKa - 62 - root - INFO - present table : https://finance.naver.com/item/sise_day.naver?code=293490&page=13
+2022-02-10 18:06:58,664- SearchKabuKa - 62 - root - INFO - present table : https://finance.naver.com/item/sise_day.naver?code=293490&page=14
+2022-02-10 18:06:58,709- SearchKabuKa - 62 - root - INFO - present table : https://finance.naver.com/item/sise_day.naver?code=293490&page=15
+2022-02-10 18:06:58,755- SearchKabuKa - 62 - root - INFO - present table : https://finance.naver.com/item/sise_day.naver?code=293490&page=16
+2022-02-10 18:06:58,800- SearchKabuKa - 62 - root - INFO - present table : https://finance.naver.com/item/sise_day.naver?code=293490&page=17
+2022-02-10 18:06:58,877- SearchKabuKa - 62 - root - INFO - present table : https://finance.naver.com/item/sise_day.naver?code=293490&page=18
+2022-02-10 18:06:58,921- SearchKabuKa - 62 - root - INFO - present table : https://finance.naver.com/item/sise_day.naver?code=293490&page=19
+2022-02-10 18:06:58,949- SearchKabuKa - 62 - root - INFO - present table : https://finance.naver.com/item/sise_day.naver?code=293490&page=20
+2022-02-10 18:06:58,997- SearchKabuKa - 62 - root - INFO - present table : https://finance.naver.com/item/sise_day.naver?code=293490&page=21
+2022-02-10 18:06:59,044- SearchKabuKa - 62 - root - INFO - present table : https://finance.naver.com/item/sise_day.naver?code=293490&page=22
+2022-02-10 18:06:59,121- SearchKabuKa - 62 - root - INFO - present table : https://finance.naver.com/item/sise_day.naver?code=293490&page=23
+2022-02-10 18:06:59,171- SearchKabuKa - 62 - root - INFO - present table : https://finance.naver.com/item/sise_day.naver?code=293490&page=24
+2022-02-10 18:06:59,219- SearchKabuKa - 62 - root - INFO - present table : https://finance.naver.com/item/sise_day.naver?code=293490&page=25
+2022-02-10 18:06:59,262- SearchKabuKa - 62 - root - INFO - present table : https://finance.naver.com/item/sise_day.naver?code=293490&page=26
+2022-02-10 18:06:59,308- SearchKabuKa - 62 - root - INFO - present table : https://finance.naver.com/item/sise_day.naver?code=293490&page=27
+2022-02-10 18:06:59,352- SearchKabuKa - 62 - root - INFO - present table : https://finance.naver.com/item/sise_day.naver?code=293490&page=28
+2022-02-10 18:06:59,399- SearchKabuKa - 62 - root - INFO - present table : https://finance.naver.com/item/sise_day.naver?code=293490&page=29
+2022-02-10 18:06:59,444- SearchKabuKa - 62 - root - INFO - present table : https://finance.naver.com/item/sise_day.naver?code=293490&page=30
+2022-02-10 18:06:59,487- SearchKabuKa - 62 - root - INFO - present table : https://finance.naver.com/item/sise_day.naver?code=293490&page=31
+2022-02-10 18:06:59,531- SearchKabuKa - 62 - root - INFO - present table : https://finance.naver.com/item/sise_day.naver?code=293490&page=32
+2022-02-10 18:06:59,575- SearchKabuKa - 62 - root - INFO - present table : https://finance.naver.com/item/sise_day.naver?code=293490&page=33
+2022-02-10 18:06:59,617- SearchKabuKa - 62 - root - INFO - present table : https://finance.naver.com/item/sise_day.naver?code=293490&page=34
+2022-02-10 18:06:59,658- SearchKabuKa - 62 - root - INFO - present table : https://finance.naver.com/item/sise_day.naver?code=293490&page=35
+2022-02-10 18:06:59,701- SearchKabuKa - 91 - root - INFO - over csv saved
+2022-02-10 18:06:59,701- SearchKabuKa - 99 - root - INFO - draw graph
+2022-02-10 18:06:59,709- drawline - 17 - asyncio - INFO - open csv file
+2022-02-10 18:06:59,710- drawline - 32 - asyncio - INFO - over file work start draw
+2022-02-10 18:07:00,413- drawline - 43 - asyncio - INFO - draw over show
