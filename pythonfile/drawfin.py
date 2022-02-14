@@ -30,10 +30,11 @@ def drawline(filename):
             elif j == 3:
                 qunt.append(kabulist[i][j])
     logger.info("over file work start draw")
+    
     fg = plt.figure(figsize=(12,9)) #그래프를 그릴 종이를 설정
     plt.title(name) #그래프의 이름 설정
     fg.add_subplot(1, 2, 1) # 그래프를 2개 그리며, 그중 첫번째 그래프
-    plt.plot(days, price, color = "green", marker="o", label="주가") # 그래프에 그려질 내용, 종가를 표시
+    plt.plot(days, price, color = "green", marker="o", label="종가") # 그래프에 그려질 내용, 종가를 표시
     plt.legend() # 그래프의 주석
     plt.xticks(range(len(days)), label=days ,rotation=45) #x축의 설정
     fg.add_subplot(1, 2, 2) # 두 번째 그래프로 거래량을 표시
