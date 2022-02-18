@@ -11,7 +11,6 @@ holyday_list = ["0101", "0301", "0505", "0606", "0815", "1003", "1009", "1225"] 
 fine_days = ["", ""]
 todays = str(date.today().strftime("%Y.%m.%d")) # 오늘 날짜를 저장하는 변수
 total = [] # 회사이름, 날짜, 주가, 거래량을 저장할 리스트 변수
-filename = "주식이력.csv" # csv파일 이름
 tablenum = "" #주식차트를 가져올 때 마지막 게시판 번호를 저장하는 변수
 headers = {"user-Agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36"}
 
@@ -35,7 +34,6 @@ def SearchKabuKa(kabunames, code, days):
 
     breaker = True # 특정 날짜가 되면 무한문을 멈출 변수
     url = "https://finance.naver.com/item/sise_day.naver?code="+code # 회사의 주가를 가져올 사이트
-    jongmok = kabunames+"("+code+")" # csv파일에 저장형식에 맞춘 회사이름 변수
 
     logger.info("start kabusearch")
     tablenum = table_number(url)
@@ -44,7 +42,7 @@ def SearchKabuKa(kabunames, code, days):
         f = open(filename, "w", encoding="utf-8-sig", newline="") # 자료를 저장할 csv파일을 생성, 열기
         logger.info("create csv file")
         writer = csv.writer(f)
-        tittle = ["종목명", "날짜", "종합가격", "거래량"] #첫줄을 인덱스구문으로 삽입
+        tittle = ["종목명","종목코드", "날짜", "종합가격", "거래량"] #첫줄을 인덱스구문으로 삽입
         writer.writerow(tittle)
 
         for i in range(1, int(tablenum)+1): # 첫 페이지부터 ~ 끝페이지까지를 읽기위해 무한문사용
@@ -67,11 +65,11 @@ def SearchKabuKa(kabunames, code, days):
                     continue
                 if day == days[0] or day == days[1]: #  찾고자 하는 날짜까지 저장후 종료
                     breaker = False
-                    total = [jongmok, day, price, qunt]
+                    total = [kabunames, code, day, price, qunt]
                     writer.writerow(total)
                     break
 
-                total = [jongmok, day, price, qunt] # 원하는 자료만을 저장
+                total = [kabunames, code, day, price, qunt] # 원하는 자료만을 저장
                 writer.writerow(total) # csv파일에 한 행씩 작성
                 
             if breaker == True:
@@ -91,19 +89,20 @@ def SearchKabuKa(kabunames, code, days):
 
 def checking(kabunames, days):
     logger.info("start checking")
-    name_compiler = re.compile(r"\S[^a-zA-Z0-9]")
-    check_name = name_compiler.match(kabunames)
+    name_compiler = any(specialtext in kabunames for specialtext in "!@#$%^&*()[]-=+_~`;'/?.<>, \t \n")
+    print(name_compiler)
 
-    if not check_name == None :
-        logger.info("companyname error.")
-        print("주식이름 이상")
+    if name_compiler == True :
+        logger.warning("companyname error. input kabu : "+kabunames)
+        print("주식이름 이상, 입력받은 주식이름 : "+kabunames)
         sys.exit()
     
     date_compiler = re.compile(r"([12]\d{3}).(0\d|1[0-2]).([0-2]\d|3[01])$")
     date_check = date_compiler.match(days)
+    print(date_check)
     if not date_check:
-        logger.info("date error")
-        print("날짜를 정확히 입력해주세요.")
+        logger.warning("date error. input dayte : "+days)
+        print("날짜를 정확히 입력해주세요. 입력받은 날짜 : "+days)
         sys.exit()
     logger.info("end checking")
 
@@ -137,6 +136,8 @@ if __name__ == "__main__":
     inputdays = args[2] # 세번째 인자는 날짜 2022.02.07로 들어오기에 각각의 숫자를 나눔
 
     checking(kabunames, inputdays)
+
+    filename = kabunames + ".csv" # csv파일 이름
 
     search_date = FindDays(inputdays)
     

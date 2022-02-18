@@ -22,12 +22,12 @@ def drawline(filename):
 
     for i in range(len(kabulist)-1, 0, -1): # 그래프는 과거~현재로 나와야 하고, csv파일은 현재~과거 순으로 저장되어 있어 역순으로 출력
     # for i in range(1, len(kabulist)):
-        for j in range(1, 4):
-            if j == 1 :
+        for j in range(2, 5):
+            if j == 2 :
                 days.append(kabulist[i][j]) 
-            elif j == 2:
-                price.append(kabulist[i][j])
             elif j == 3:
+                price.append(kabulist[i][j])
+            elif j == 4:
                 qunt.append(kabulist[i][j])
     logger.info("over file work start draw")
     
