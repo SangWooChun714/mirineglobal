@@ -4,8 +4,8 @@ services:
     restart: always
     build: .
     container_name: 'python3'
-    working_dir : 'C:\Users\csw\Desktop\mirineglobal\pythonfile'
+    working_dir : '/pythonfile'
     tty : true
     
 
-# docker run -d /pythonfile
+# docker run -d pythonfile

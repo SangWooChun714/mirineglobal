@@ -1,6 +1,8 @@
 FROM python:3
-USER mg
-RUN pip install --upgrade pip
-RUN pip install --upgrade setuptools
+WORKDIR /pythonfile
 
-CMD [ "python", "kabucsvsave.py '카카오게임즈' '2022.01.01'" ]
+RUN pip install --no-cache-dir --upgrade pip
+
+COPY . .
+
+CMD ["python", "kabusavecsv.py 삼성전자 2022.01.01"]
