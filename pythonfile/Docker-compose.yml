@@ -6,6 +6,7 @@ services:
     container_name: 'python3'
     working_dir : '/pythonfile'
     tty : true
-    
+    volumes:
+      -./pythonfile:/pythonfile/
 
 # docker run -d pythonfile

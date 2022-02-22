@@ -1,8 +1,7 @@
 FROM python:3
 WORKDIR /pythonfile
-
-RUN pip install --no-cache-dir --upgrade pip
-
 COPY . .
+RUN pip install --upgrade pip
+RUN pip install --upgrade setuptools
+CMD [ "python", "kabusavecsv.py 삼성전자 2022.01.01" ]
 
-CMD ["python", "kabusavecsv.py 삼성전자 2022.01.01"]
