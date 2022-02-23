@@ -21,3 +21,4 @@
     주식이력.csv
 
 * ogはkabulog.logで貯蔵します。
+
