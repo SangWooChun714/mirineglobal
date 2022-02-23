@@ -1,3 +1,4 @@
+from ast import arg
 from bs4 import BeautifulSoup
 from datetime import date
 import drawfin, sys, csv, requests, datetime, re
@@ -132,8 +133,11 @@ def FindDays(days) :
 
 if __name__ == "__main__":
     args = sys.argv
+    logger.info(args)
+    print(args)
     kabunames = args[1] #입력 받은 파라미터값은 리스트로 들어옴, 리스트의 두번째가 회사 이름
     inputdays = args[2] # 세번째 인자는 날짜 2022.02.07로 들어오기에 각각의 숫자를 나눔
+    
 
     checking(kabunames, inputdays)
 
