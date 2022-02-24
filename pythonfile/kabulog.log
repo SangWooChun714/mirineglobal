@@ -714,3 +714,22 @@
 2022-02-22 15:40:34,869- update - 234 - matplotlib.category - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
 2022-02-22 15:40:34,892- drawline - 44 - asyncio - INFO - draw over show
 2022-02-23 09:42:47,981- checking - 91 - root - INFO - start checking
+2022-02-23 17:07:11,661- <module> - 136 - root - INFO - ['kabusavecsv.py', '카카오게임즈', '2022.01.15']
+2022-02-23 17:07:11,662- checking - 92 - root - INFO - start checking
+2022-02-23 17:07:11,663- checking - 108 - root - INFO - end checking
+2022-02-23 17:07:11,664- FindDays - 112 - root - INFO - start finddays
+2022-02-23 17:07:11,664- FindDays - 130 - root - INFO - end finddays
+2022-02-23 17:07:12,142- SearchKabuKa - 39 - root - INFO - start kabusearch
+2022-02-23 17:07:12,394- table_number - 28 - root - INFO - url : https://finance.naver.com/item/sise_day.naver?code=293490, tablenum : 36
+2022-02-23 17:07:12,406- SearchKabuKa - 44 - root - INFO - create csv file
+2022-02-23 17:07:12,551- SearchKabuKa - 80 - root - INFO - over csv saved
+2022-02-23 17:07:12,551- SearchKabuKa - 88 - root - INFO - draw graph
+2022-02-23 17:07:12,560- drawline - 17 - asyncio - INFO - open csv file
+2022-02-23 17:07:12,560- drawline - 32 - asyncio - INFO - over file work start draw
+2022-02-23 17:07:13,935- update - 234 - matplotlib.category - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2022-02-23 17:07:13,940- update - 234 - matplotlib.category - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2022-02-23 17:07:13,969- update - 234 - matplotlib.category - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2022-02-23 17:07:13,971- update - 234 - matplotlib.category - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2022-02-23 17:07:13,972- update - 234 - matplotlib.category - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2022-02-23 17:07:13,974- update - 234 - matplotlib.category - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2022-02-23 17:07:13,990- drawline - 44 - asyncio - INFO - draw over show
