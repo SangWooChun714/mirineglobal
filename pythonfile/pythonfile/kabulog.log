@@ -1,18 +1,20 @@
-2022-02-24 08:24:41,867- <module> - 136 - root - INFO - ['kabusavecsv.py', '삼성전자', '2022.01.20']
-2022-02-24 08:24:41,867- checking - 92 - root - INFO - start checking
-2022-02-24 08:24:41,867- checking - 108 - root - INFO - end checking
-2022-02-24 08:24:41,867- FindDays - 112 - root - INFO - start finddays
-2022-02-24 08:24:41,867- FindDays - 130 - root - INFO - end finddays
-2022-02-24 08:24:42,199- SearchKabuKa - 39 - root - INFO - start kabusearch
-2022-02-24 08:24:42,261- table_number - 28 - root - INFO - url : https://finance.naver.com/item/sise_day.naver?code=005930, tablenum : 645
-2022-02-24 08:24:42,263- SearchKabuKa - 44 - root - INFO - create csv file
-2022-02-24 08:24:42,401- SearchKabuKa - 80 - root - INFO - over csv saved
-2022-02-24 08:24:42,401- SearchKabuKa - 88 - root - INFO - draw graph
-2022-02-24 08:24:42,401- drawline - 17 - asyncio - INFO - open csv file
-2022-02-24 08:24:42,401- drawline - 32 - asyncio - INFO - over file work start draw
-2022-02-24 08:24:42,420- update - 234 - matplotlib.category - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
-2022-02-24 08:24:42,422- update - 234 - matplotlib.category - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
-2022-02-24 08:24:42,452- update - 234 - matplotlib.category - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
-2022-02-24 08:24:42,454- update - 234 - matplotlib.category - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
-2022-02-24 08:24:42,468- drawline - 43 - asyncio - INFO - draw over show
-2022-02-24 08:24:42,473- _findfont_cached - 1350 - matplotlib.font_manager - WARNING - findfont: Font family ['Malgun Gothic'] not found. Falling back to DejaVu Sans.
+2022-02-25 00:42:55,695- <module> - 136 - root - INFO - ['kabusavecsv.py', '카카오게임즈', '2022.01.15']
+2022-02-25 00:42:55,695- checking - 92 - root - INFO - start checking
+2022-02-25 00:42:55,695- checking - 108 - root - INFO - end checking
+2022-02-25 00:42:55,695- FindDays - 112 - root - INFO - start finddays
+2022-02-25 00:42:55,695- FindDays - 130 - root - INFO - end finddays
+2022-02-25 00:42:56,025- SearchKabuKa - 39 - root - INFO - start kabusearch
+2022-02-25 00:42:56,185- table_number - 28 - root - INFO - url : https://finance.naver.com/item/sise_day.naver?code=293490, tablenum : 36
+2022-02-25 00:42:56,196- SearchKabuKa - 44 - root - INFO - create csv file
+2022-02-25 00:42:56,337- SearchKabuKa - 80 - root - INFO - over csv saved
+2022-02-25 00:42:56,337- SearchKabuKa - 88 - root - INFO - draw graph
+2022-02-25 00:42:56,338- drawline - 17 - asyncio - INFO - open csv file
+2022-02-25 00:42:56,338- drawline - 32 - asyncio - INFO - over file work start draw
+2022-02-25 00:42:56,370- update - 234 - matplotlib.category - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2022-02-25 00:42:56,373- update - 234 - matplotlib.category - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2022-02-25 00:42:56,406- update - 234 - matplotlib.category - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2022-02-25 00:42:56,407- update - 234 - matplotlib.category - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2022-02-25 00:42:56,409- update - 234 - matplotlib.category - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2022-02-25 00:42:56,410- update - 234 - matplotlib.category - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2022-02-25 00:42:56,427- drawline - 43 - asyncio - INFO - draw over show
+2022-02-25 00:42:56,433- _findfont_cached - 1350 - matplotlib.font_manager - WARNING - findfont: Font family ['Malgun Gothic'] not found. Falling back to DejaVu Sans.

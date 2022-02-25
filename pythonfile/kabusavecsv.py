@@ -6,15 +6,11 @@ from openpyxl import load_workbook
 from kabuconfig import logger
 
 
-kabunames = "" #검색할 회사 이름을 저장할 변수
-code = "" #회사 코드를 저장할 변수
-holyday_list = ["0101", "0301", "0505", "0606", "0815", "1003", "1009", "1225"] #휴일은 주식시장이 안열려 자료가 없기 때문에 휴일을 제외하기 위한 공휴일 리스트
-fine_days = ["", ""]
-todays = str(date.today().strftime("%Y.%m.%d")) # 오늘 날짜를 저장하는 변수
-total = [] # 회사이름, 날짜, 주가, 거래량을 저장할 리스트 변수
-tablenum = "" #주식차트를 가져올 때 마지막 게시판 번호를 저장하는 변수
-headers = {"user-Agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36"}
+holyday_list = ["0101", "0301", "0505", "0606", "0815", "1003", "1009", "1225"] #公休日のlist
+todays = str(date.today().strftime("%Y.%m.%d")) # 今日の日付を保存
+headers = {"user-Agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36"}#heaaderを指定
 
+#探すtableを確認する関数
 def table_number(url) :
     try:
         res1 = requests.get(url, headers=headers) #자료값을 가져오기 위해 새로운 주소를 불러옴
@@ -30,48 +26,50 @@ def table_number(url) :
         print(e)
     return tablenum
 
-
+#株価をcrawlingする関数
+#totalで架空した資料を保存
+#tablenumで持ってくるpageを決定
+#dayは今処理しているひ、daysは入力された日
 def SearchKabuKa(kabunames, code, days):
-
-    breaker = True # 특정 날짜가 되면 무한문을 멈출 변수
-    url = "https://finance.naver.com/item/sise_day.naver?code="+code # 회사의 주가를 가져올 사이트
+    total = [] # 会社の名前, 日付, 株価, 取引量を保存するlist
+    breaker = True # 無限文を止める変数
+    url = "https://finance.naver.com/item/sise_day.naver?code="+code # 株価を持ってくる住所
 
     logger.info("start kabusearch")
     tablenum = table_number(url)
     try:
-        #with open(filename, "w", encoding="utf-8-sig", newline="") as f:
-        f = open(filename, "w", encoding="utf-8-sig", newline="") # 자료를 저장할 csv파일을 생성, 열기
+        f = open(filename, "w", encoding="utf-8-sig", newline="") # csvファイルの作成
         logger.info("create csv file")
         writer = csv.writer(f)
-        tittle = ["종목명","종목코드", "날짜", "종합가격", "거래량"] #첫줄을 인덱스구문으로 삽입
+        tittle = ["종목명","종목코드", "날짜", "종합가격", "거래량"] #　一行をインデックスで作成
         writer.writerow(tittle)
 
-        for i in range(1, int(tablenum)+1): # 첫 페이지부터 ~ 끝페이지까지를 읽기위해 무한문사용
-            items2 = url+"&page="+str(i) # 주소값 + 페이지 번호로 해당 페이지 접속
+        for i in range(1, int(tablenum)+1): # 最初から最終まで読む
+            items2 = url+"&page="+str(i) # 住所とpage番号で接続
             res1 = requests.get(items2, headers=headers)
             searchday = BeautifulSoup(res1.text, "lxml")
-            table_rows = searchday.find("table", attrs={"class":"type2"}).find_all("tr") # 자료의 값이 들어있는 테이블의 행을 모두 가져옴
+            table_rows = searchday.find("table", attrs={"class":"type2"}).find_all("tr") # tableから資料を持ってくる
 
             for row in table_rows:
-                colums = row.find_all("td") # 행에서 각각의 열 값만을 빼내와 저장
+                colums = row.find_all("td")
 
                 if len(colums) <= 1:
                     continue
 
-                data = [column.get_text().strip() for column in colums] # 행에서 필요한 값많을 축출
-                day = data[0] # 날짜를 저장
-                price = data[1] # 종가를 저장
-                qunt = data[6] # 거래량을 저장
-                if todays == day: #오늘 날짜의 종가는 나오지 않았기에 오늘날짜를 제외시킴
+                data = [column.get_text().strip() for column in colums] # 必要の数値を持ってくる
+                day = data[0] # 日付
+                price = data[1] # 株価
+                qunt = data[6] # 取引量
+                if todays == day: #　今日の資料を除く
                     continue
-                if day == days[0] or day == days[1]: #  찾고자 하는 날짜까지 저장후 종료
+                if day == days[0] or day == days[1]: # 指定した日まで保存
                     breaker = False
                     total = [kabunames, code, day, price, qunt]
                     writer.writerow(total)
                     break
 
-                total = [kabunames, code, day, price, qunt] # 원하는 자료만을 저장
-                writer.writerow(total) # csv파일에 한 행씩 작성
+                total = [kabunames, code, day, price, qunt]
+                writer.writerow(total) # csvファイルに一行づつ作成
                 
             if breaker == True:
                 continue
@@ -80,14 +78,16 @@ def SearchKabuKa(kabunames, code, days):
                 logger.info("over csv saved")
                 break
 
-        f.close() # 작업 완료 후 csv파일을 닫고 저장
+        f.close()
 
     except Exception as e:
         print(e)
 
     logger.info("draw graph")
     
-
+#名前と日付が正常入力したかを確認する関数
+#name_compilerで会社の名前の文字を確認する
+#date_compilerで日の確認する
 def checking(kabunames, days):
     logger.info("start checking")
     name_compiler = any(specialtext in kabunames for specialtext in "!@#$%^&*()[]-=+_~`;'/?.<>, \t \n")
@@ -107,53 +107,61 @@ def checking(kabunames, days):
         sys.exit()
     logger.info("end checking")
 
-
+#入力された日が平日か休日かを確認する関数
+#yearsは年、monthsは月、daysは日を保存
+#weekenddayは入力した日の曜日を数字で保存
+#temp_dateは確認する日を仮に保存
+#fine_daysは確定した日を保存
 def FindDays(days) :
+    fine_days = ["", ""]
     logger.info("start finddays")
     list_date = days.split(".")
     years = int(list_date[0])
     months = int(list_date[1])
     days = int(list_date[2])
 
-    str_monday = list_date[1]+list_date[2] # 지정된 날짜가 휴일인지 확인을 위해 저장하는 변수
+    str_monday = list_date[1]+list_date[2] # 公休日を確認するための変数
     weekendday = datetime.date(years, months, days).weekday()
     temp_date = datetime.date(years, months, days)
 
-    if weekendday >= 5 or str_monday in holyday_list: # 공휴일이거나 주말이라면 바로 앞의 날짜가 나오도록 하는 함수 ex) 공휴일이 금요일일 경우 목요일 출력, 주말일 경우 금요일 출력
+    if weekendday >= 5 or str_monday in holyday_list: # 休日ならその前の日を指定するためのif ex) 休日が金曜日の場合は木曜日を指定, 週末の場合金曜日を指定
         temp_date1 = str(temp_date - datetime.timedelta(max(1, (weekendday+6)%7-3))).split("-")
         temp_date2 = str(temp_date - datetime.timedelta(max(2, (weekendday+6)%7-2))).split("-")
         fine_days[0] = temp_date1[0]+"."+temp_date1[1]+"."+temp_date1[2]
         fine_days[1] = temp_date2[0]+"."+temp_date2[1]+"."+temp_date2[2]
     else : 
         temp_date = str(temp_date).split("-")
-        fine_days[0] = (temp_date[0]+"."+temp_date[1]+"."+temp_date[2]) #마지막 결과값 저장
+        fine_days[0] = (temp_date[0]+"."+temp_date[1]+"."+temp_date[2]) #　最終指定日を指定
     logger.info("end finddays")
     return fine_days
 
-
+# main 関数
+#argｖで　会社の名前と日付をもらう
+#会社の名前は　kabuname　で保存
+#日付は　inputdayｓ　で保存
 if __name__ == "__main__":
     args = sys.argv
     logger.info(args)
     print(args)
-    kabunames = args[1] #입력 받은 파라미터값은 리스트로 들어옴, 리스트의 두번째가 회사 이름
-    inputdays = args[2] # 세번째 인자는 날짜 2022.02.07로 들어오기에 각각의 숫자를 나눔
+    kabunames = args[1] #　入力した会社の名前を保存
+    inputdays = args[2] # 入力した日付を保存
     
 
-    checking(kabunames, inputdays)
+    checking(kabunames, inputdays)#名前と日付の正規検索
 
-    filename = kabunames + ".csv" # csv파일 이름
+    filename = kabunames + ".csv" # csvファイルの名前設定
 
-    search_date = FindDays(inputdays)
+    search_date = FindDays(inputdays)#休日と平日の確認
     
-    wb = load_workbook("상장법인목록.xlsx") #회사코드를 알기 위해 엑셀파일을 불러옴
+    wb = load_workbook("상장법인목록.xlsx") #会社のコードを確認のためファイルを読む
     ws = wb.active
-    for row in ws.iter_rows(min_row=2): #엑셀파일에서 회사코드 확인 후 자료찾기 함수에 값을 넣어줌
+    for row in ws.iter_rows(min_row=2): #　ファイルを読んで会社のコードと名前と日付をcrawling関数に入れる
         if row[0].value == kabunames:
             code = row[1].value
             wb.close()
-            SearchKabuKa(kabunames, code, search_date)
+            SearchKabuKa(kabunames, code, search_date)#crawling関数
             break
     
-    drawfin.drawline(filename) # 자료를 활용하여 그래프 그리기 함수
+    drawfin.drawline(filename) # 資料をもとにgraphを書く
 
 

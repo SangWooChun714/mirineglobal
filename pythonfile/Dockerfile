@@ -1,4 +1,4 @@
-FROM python:3
+FROM python:3.7-slim-stretch
 
 RUN mkdir /pythonfile
 
@@ -17,5 +17,5 @@ RUN pip install openpyxl
 RUN pip install matplotlib
 RUN pip install requests
 
-CMD [ "python", "kabusavecsv.py", "카카오게임즈", "2022.01.15" ]
+
 

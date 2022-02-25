@@ -4,23 +4,21 @@ import matplotlib
 import matplotlib.pyplot as plt
 
 
-matplotlib.rc("font", family="Malgun Gothic")
+matplotlib.rc("font", family="Malgun Gothic")#韓国語を表示するコード
 
-kabulist = [] # csv에서 나온 파일을 저장할 변수
-days = [] # 날짜를 저장할 변수
-price = [] # 종가를 저장할 변수
-qunt = [] #거래량을 저장할 변수
-name = "" #회사이름을 저장할 변수
-
+#graphを描く関数
 def drawline(filename):
-    with open(filename, "r", encoding="utf-8-sig") as f: #csv파일을 불러옴
+    kabulist = [] # csvの資料を保存
+    days = [] # 日を保存
+    price = [] # 株価を保存
+    qunt = [] #　取引量を保存
+    with open(filename, "r", encoding="utf-8-sig") as f: #csvファイルを読む
         logger.info("open csv file")
         reader = csv.reader(f)
         kabulist = list(reader)
         f.close()
-    name = kabulist[1][0].split("(")[0] #회사 이름이 회사이름(코드) 형식으로 저장되어있어 이름만을 잘라내어 저장
 
-    for i in range(len(kabulist)-1, 0, -1): # 그래프는 과거~현재로 나와야 하고, csv파일은 현재~과거 순으로 저장되어 있어 역순으로 출력
+    for i in range(len(kabulist)-1, 0, -1): # graphを日付順に作成するための逆に読む
     # for i in range(1, len(kabulist)):
         for j in range(2, 5):
             if j == 2 :
@@ -31,16 +29,16 @@ def drawline(filename):
                 qunt.append(kabulist[i][j])
     logger.info("over file work start draw")
     
-    fg = plt.figure(figsize=(12,9)) #그래프를 그릴 종이를 설정
-    fg.add_subplot(1, 2, 1) # 그래프를 2개 그리며, 그중 첫번째 그래프
-    plt.plot(days, price, color = "green", marker="o", label="kabuka") # 그래프에 그려질 내용, 종가를 표시
-    plt.legend() # 그래프의 주석
+    fg = plt.figure(figsize=(12,9)) #graphの紙を設定
+    fg.add_subplot(1, 2, 1) # graphを二つ描いてその最初のgraphを設定
+    plt.plot(days, price, color = "green", marker="o", label="kabuka") # 株価を表示
+    plt.legend() #
     plt.xticks(range(len(days)), label=days ,rotation=45) #x축의 설정
-    fg.add_subplot(1, 2, 2) # 두 번째 그래프로 거래량을 표시
+    fg.add_subplot(1, 2, 2) # 二番graph取引量を表示
     plt.plot(days, qunt, color="red", marker="o", label="volume")
     plt.legend()
-    plt.xticks(range(len(days)), label=days ,rotation=45) #x축의 설정
+    plt.xticks(range(len(days)), label=days ,rotation=45) #x軸日付で設定
     logger.info("draw over show")
-    plt.show() # 그래프를 표시
-    plt.savefig("kabu.jpg")
+    plt.show() # graphの表示
+    plt.savefig("kabu.jpg")#graphの保存
     print("painting over")

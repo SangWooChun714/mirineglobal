@@ -1,4 +1,4 @@
-version: '3'
+version: '3.7'
 services:
   python3:
     restart: always
@@ -7,6 +7,6 @@ services:
     working_dir : '/pythonfile'
     tty : true
     volumes:
-      -/pythonfile:/pythonfile/
+      - ./pythonfile:/pythonfile/
 
 # docker run -d pythonfile
