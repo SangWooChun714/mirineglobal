@@ -1,7 +1,8 @@
 from ast import arg
 from bs4 import BeautifulSoup
 from datetime import date
-import drawfin, sys, csv, requests, datetime, re
+from drawfin import draw
+import sys, csv, requests, datetime, re
 from openpyxl import load_workbook
 from kabuconfig import logger
 
@@ -30,18 +31,17 @@ def table_number(url) :
 #totalで架空した資料を保存
 #tablenumで持ってくるpageを決定
 #dayは今処理しているひ、daysは入力された日
-def SearchKabuKa(kabunames, code, days):
+def SearchKabuKa(kabunames, code, days, filename):
     total = [] # 会社の名前, 日付, 株価, 取引量を保存するlist
     breaker = True # 無限文を止める変数
     url = "https://finance.naver.com/item/sise_day.naver?code="+code # 株価を持ってくる住所
-
     logger.info("start kabusearch")
     tablenum = table_number(url)
     try:
         f = open(filename, "w", encoding="utf-8-sig", newline="") # csvファイルの作成
         logger.info("create csv file")
         writer = csv.writer(f)
-        tittle = ["종목명","종목코드", "날짜", "종합가격", "거래량"] #　一行をインデックスで作成
+        tittle = ["name","code", "day", "price", "qunt"] #　一行をインデックスで作成
         writer.writerow(tittle)
 
         for i in range(1, int(tablenum)+1): # 最初から最終まで読む
@@ -159,9 +159,10 @@ if __name__ == "__main__":
         if row[0].value == kabunames:
             code = row[1].value
             wb.close()
-            SearchKabuKa(kabunames, code, search_date)#crawling関数
+            SearchKabuKa(kabunames, code, search_date, filename)#crawling関数
             break
-    
-    drawfin.drawline(filename) # 資料をもとにgraphを書く
+    draws = draw()
+    draws.drawline(filename)
+    #drawfin.drawline(filename) # 資料をもとにgraphを書く
 
 
