@@ -22,6 +22,16 @@ class draw:
         fig.update_layout(title_text=df['name'][0], title_font_size=50)
         logger.info("over file work start draw")
         fig.show()
+
+        fg = plt.figure(figsize=(15,10))
+        plt.title("삼성전자")
+        ax1 = fg.add_subplot(1, 2, 1)
+        plt.plot(df["day"],df["price"], color = "green", marker="o", label="주가")
+        ax2 = fg.add_subplot(1, 2, 2)
+        plt.plot(df["day"],df["qunt"], color="red", marker="o", label="거래량")
+        plt.legend()
+        plt.show()
+        plt.savefig(df["name"][0]+"jpg")
         print("painting over")
 
     # kabulist = [] # csvの資料を保存

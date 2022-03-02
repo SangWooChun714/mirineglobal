@@ -1,9 +1,5 @@
 FROM python:3.7-slim-stretch
 
-RUN mkdir /pythonfile
-
-WORKDIR /pythonfile
-
 COPY kabusavecsv.py /pythonfile/
 COPY drawfin.py /pythonfile/
 COPY kabuconfig.py /pythonfile/
