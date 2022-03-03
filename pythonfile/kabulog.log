@@ -1049,3 +1049,65 @@
 2022-02-28 16:10:42,931- SearchKabuKa - 86 - root - INFO - draw graph
 2022-02-28 16:10:42,932- drawline - 15 - asyncio - INFO - open csv file from drawline
 2022-02-28 16:10:43,084- drawline - 23 - asyncio - INFO - over file work start draw
+2022-03-03 12:59:04,365- <module> - 144 - root - INFO - ['kabusavecsv.py', '삼성전자', '2021.01.01']
+2022-03-03 12:59:04,380- checking - 92 - root - INFO - start checking
+2022-03-03 12:59:04,381- checking - 108 - root - INFO - end checking
+2022-03-03 12:59:04,382- FindDays - 117 - root - INFO - start finddays
+2022-03-03 12:59:04,382- FindDays - 135 - root - INFO - end finddays
+2022-03-03 12:59:04,880- SearchKabuKa - 38 - root - INFO - start kabusearch
+2022-03-03 12:59:05,019- table_number - 25 - root - INFO - url : https://finance.naver.com/item/sise_day.naver?code=005930, tablenum : 645
+2022-03-03 12:59:05,034- SearchKabuKa - 42 - root - INFO - create csv file
+2022-03-03 12:59:06,847- SearchKabuKa - 78 - root - INFO - over csv saved
+2022-03-03 12:59:06,847- SearchKabuKa - 86 - root - INFO - draw graph
+2022-03-03 12:59:06,848- drawline - 14 - asyncio - INFO - open csv file from drawline
+2022-03-03 12:59:08,082- drawline - 24 - asyncio - INFO - over file work start draw
+2022-03-03 13:00:11,950- <module> - 144 - root - INFO - ['kabusavecsv.py', '삼성전자', '2021.01.01']
+2022-03-03 13:00:11,951- checking - 92 - root - INFO - start checking
+2022-03-03 13:00:11,951- checking - 108 - root - INFO - end checking
+2022-03-03 13:00:11,952- FindDays - 117 - root - INFO - start finddays
+2022-03-03 13:00:11,952- FindDays - 135 - root - INFO - end finddays
+2022-03-03 13:00:12,383- SearchKabuKa - 38 - root - INFO - start kabusearch
+2022-03-03 13:00:12,445- table_number - 25 - root - INFO - url : https://finance.naver.com/item/sise_day.naver?code=005930, tablenum : 645
+2022-03-03 13:00:12,446- SearchKabuKa - 42 - root - INFO - create csv file
+2022-03-03 13:00:14,196- SearchKabuKa - 78 - root - INFO - over csv saved
+2022-03-03 13:00:14,197- SearchKabuKa - 86 - root - INFO - draw graph
+2022-03-03 13:00:14,197- drawline - 15 - asyncio - INFO - open csv file from drawline
+2022-03-03 13:00:14,346- drawline - 25 - asyncio - INFO - over file work start draw
+2022-03-03 13:01:28,889- <module> - 144 - root - INFO - ['kabusavecsv.py', '삼성전자', '2021.01.01']
+2022-03-03 13:01:28,890- checking - 92 - root - INFO - start checking
+2022-03-03 13:01:28,890- checking - 108 - root - INFO - end checking
+2022-03-03 13:01:28,890- FindDays - 117 - root - INFO - start finddays
+2022-03-03 13:01:28,891- FindDays - 135 - root - INFO - end finddays
+2022-03-03 13:01:29,322- SearchKabuKa - 38 - root - INFO - start kabusearch
+2022-03-03 13:01:29,384- table_number - 25 - root - INFO - url : https://finance.naver.com/item/sise_day.naver?code=005930, tablenum : 645
+2022-03-03 13:01:29,385- SearchKabuKa - 42 - root - INFO - create csv file
+2022-03-03 13:01:30,808- SearchKabuKa - 78 - root - INFO - over csv saved
+2022-03-03 13:01:30,809- SearchKabuKa - 86 - root - INFO - draw graph
+2022-03-03 13:01:30,809- drawline - 15 - asyncio - INFO - open csv file from drawline
+2022-03-03 13:01:30,956- drawline - 25 - asyncio - INFO - over file work start draw
+2022-03-03 13:02:35,181- <module> - 144 - root - INFO - ['kabusavecsv.py', '삼성전자', '2021.01.01']
+2022-03-03 13:02:35,181- checking - 92 - root - INFO - start checking
+2022-03-03 13:02:35,181- checking - 108 - root - INFO - end checking
+2022-03-03 13:02:35,182- FindDays - 117 - root - INFO - start finddays
+2022-03-03 13:02:35,182- FindDays - 135 - root - INFO - end finddays
+2022-03-03 13:02:35,623- SearchKabuKa - 38 - root - INFO - start kabusearch
+2022-03-03 13:02:35,680- table_number - 25 - root - INFO - url : https://finance.naver.com/item/sise_day.naver?code=005930, tablenum : 645
+2022-03-03 13:02:35,681- SearchKabuKa - 42 - root - INFO - create csv file
+2022-03-03 13:02:37,129- SearchKabuKa - 78 - root - INFO - over csv saved
+2022-03-03 13:02:37,129- SearchKabuKa - 86 - root - INFO - draw graph
+2022-03-03 13:02:37,129- drawline - 15 - asyncio - INFO - open csv file from drawline
+2022-03-03 13:02:37,295- drawline - 25 - asyncio - INFO - over file work start draw
+2022-03-03 04:57:19,534- <module> - 144 - root - INFO - ['kabusavecsv.py', '카카오게임즈', '2021.05.05']
+2022-03-03 04:57:19,535- checking - 92 - root - INFO - start checking
+2022-03-03 04:57:19,536- checking - 108 - root - INFO - end checking
+2022-03-03 04:57:19,537- FindDays - 117 - root - INFO - start finddays
+2022-03-03 04:57:19,537- FindDays - 135 - root - INFO - end finddays
+2022-03-03 04:57:20,070- SearchKabuKa - 38 - root - INFO - start kabusearch
+2022-03-03 04:57:20,194- table_number - 25 - root - INFO - url : https://finance.naver.com/item/sise_day.naver?code=293490, tablenum : 37
+2022-03-03 04:57:20,225- SearchKabuKa - 42 - root - INFO - create csv file
+2022-03-03 04:57:21,396- SearchKabuKa - 78 - root - INFO - over csv saved
+2022-03-03 04:57:21,398- SearchKabuKa - 86 - root - INFO - draw graph
+2022-03-03 04:57:21,398- drawline - 15 - asyncio - INFO - open csv file from drawline
+2022-03-03 04:57:21,489- drawline - 25 - asyncio - INFO - over file work start draw
+2022-03-03 04:57:21,742- _findfont_cached - 1352 - matplotlib.font_manager - WARNING - findfont: Font family ['Malgun Gothic'] not found. Falling back to DejaVu Sans.
+2022-03-03 04:57:21,753- _findfont_cached - 1352 - matplotlib.font_manager - WARNING - findfont: Font family ['Malgun Gothic'] not found. Falling back to DejaVu Sans.

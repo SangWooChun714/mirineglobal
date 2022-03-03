@@ -7,7 +7,7 @@ from plotly.subplots import make_subplots
 
 
 
-#matplotlib.rc("font", family="Malgun Gothic")#韓国語を表示するコード
+matplotlib.rc("font", family="Malgun Gothic")#韓国語を表示するコード
 
 #graphを描く関数
 class draw:
@@ -16,6 +16,8 @@ class draw:
         df = pd.read_csv(filename)
         df["day"] = pd.to_datetime(df['day'], format='%Y-%m-%d')
         df = df.sort_values(by=['day'], ascending=True)
+        df["price"] = df["price"].str.replace(",","").astype(int)
+        df["qunt"] = df["qunt"].str.replace(",","").astype(int)
         fig = make_subplots(rows=1, cols=2)
         fig.add_trace(px.Scatter(x=df['day'], y=df["price"], mode='lines+markers', name='price'), row=1, col=1)
         fig.add_trace(px.Scatter(x=df['day'], y=df["qunt"], mode='lines+markers', name='qunt'), row=1, col=2)
@@ -24,14 +26,15 @@ class draw:
         fig.show()
 
         fg = plt.figure(figsize=(15,10))
-        plt.title("삼성전자")
+        plt.title(df["name"][0]+"chart")
         ax1 = fg.add_subplot(1, 2, 1)
         plt.plot(df["day"],df["price"], color = "green", marker="o", label="주가")
+        plt.legend()
         ax2 = fg.add_subplot(1, 2, 2)
         plt.plot(df["day"],df["qunt"], color="red", marker="o", label="거래량")
         plt.legend()
         plt.show()
-        plt.savefig(df["name"][0]+"jpg")
+        plt.savefig(df["name"][0]+".jpg")
         print("painting over")
 
     # kabulist = [] # csvの資料を保存
