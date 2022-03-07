@@ -34,8 +34,8 @@ class draw:
         fg.add_subplot(1, 2, 2)#二つめのgraph
         plt.plot(df["day"],df["qunt"], color="red", marker="o", label="거래량")#取引量のgraphを描く
         plt.legend()#labelの表示
-        plt.show()#graphを表示
         plt.savefig(df["name"][0]+".jpg")#graphを保存
+        plt.show()#graphを表示
         logger.info("end draw")
         print("painting over")
 

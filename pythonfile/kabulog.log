@@ -1135,3 +1135,29 @@
 2022-03-07 11:39:47,616- SearchKabuKa - 86 - root - INFO - draw graph
 2022-03-07 11:39:47,616- drawline - 15 - asyncio - INFO - open csv file from drawline
 2022-03-07 11:39:47,759- drawline - 25 - asyncio - INFO - over file work start draw
+2022-03-07 13:23:11,494- <module> - 146 - root - INFO - ['kabusavecsv.py', '카카오게임즈', '2022.01.05']
+2022-03-07 13:23:11,495- checking - 94 - root - INFO - start checking
+2022-03-07 13:23:11,495- checking - 110 - root - INFO - end checking
+2022-03-07 13:23:11,495- FindDays - 119 - root - INFO - start finddays
+2022-03-07 13:23:11,496- FindDays - 137 - root - INFO - end finddays
+2022-03-07 13:23:11,939- SearchKabuKa - 41 - root - INFO - start kabusearch
+2022-03-07 13:23:11,939- table_number - 16 - root - INFO - start tablenumber check
+2022-03-07 13:23:12,028- table_number - 26 - root - INFO - url : https://finance.naver.com/item/sise_day.naver?code=293490, tablenum : 37
+2022-03-07 13:23:12,028- table_number - 30 - root - INFO - end tablenumber check, tablenum = 37
+2022-03-07 13:23:12,034- SearchKabuKa - 45 - root - INFO - create csv file
+2022-03-07 13:23:12,228- SearchKabuKa - 81 - root - INFO - end csv saved
+2022-03-07 13:23:12,228- drawline - 12 - asyncio - INFO - start draw
+2022-03-07 13:23:16,273- drawline - 39 - asyncio - INFO - end draw
+2022-03-07 13:23:59,379- <module> - 146 - root - INFO - ['kabusavecsv.py', '카카오게임즈', '2022.01.05']
+2022-03-07 13:23:59,379- checking - 94 - root - INFO - start checking
+2022-03-07 13:23:59,380- checking - 110 - root - INFO - end checking
+2022-03-07 13:23:59,380- FindDays - 119 - root - INFO - start finddays
+2022-03-07 13:23:59,380- FindDays - 137 - root - INFO - end finddays
+2022-03-07 13:23:59,804- SearchKabuKa - 41 - root - INFO - start kabusearch
+2022-03-07 13:23:59,804- table_number - 16 - root - INFO - start tablenumber check
+2022-03-07 13:23:59,860- table_number - 26 - root - INFO - url : https://finance.naver.com/item/sise_day.naver?code=293490, tablenum : 37
+2022-03-07 13:23:59,860- table_number - 30 - root - INFO - end tablenumber check, tablenum = 37
+2022-03-07 13:23:59,862- SearchKabuKa - 45 - root - INFO - create csv file
+2022-03-07 13:24:00,075- SearchKabuKa - 81 - root - INFO - end csv saved
+2022-03-07 13:24:00,075- drawline - 12 - asyncio - INFO - start draw
+2022-03-07 13:24:02,127- drawline - 39 - asyncio - INFO - end draw
