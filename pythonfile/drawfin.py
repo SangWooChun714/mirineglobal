@@ -6,35 +6,37 @@ import plotly.graph_objects as px
 from plotly.subplots import make_subplots
 
 
-
-matplotlib.rc("font", family="Malgun Gothic")#韓国語を表示するコード
-
 #graphを描く関数
 class draw:
     def drawline(self, filename):
-        logger.info("open csv file from drawline")
-        df = pd.read_csv(filename)
-        df["day"] = pd.to_datetime(df['day'], format='%Y-%m-%d')
-        df = df.sort_values(by=['day'], ascending=True)
-        df["price"] = df["price"].str.replace(",","").astype(int)
-        df["qunt"] = df["qunt"].str.replace(",","").astype(int)
-        fig = make_subplots(rows=1, cols=2)
-        fig.add_trace(px.Scatter(x=df['day'], y=df["price"], mode='lines+markers', name='price'), row=1, col=1)
-        fig.add_trace(px.Scatter(x=df['day'], y=df["qunt"], mode='lines+markers', name='qunt'), row=1, col=2)
-        fig.update_layout(title_text=df['name'][0], title_font_size=50)
-        logger.info("over file work start draw")
-        fig.show()
+        logger.info("start draw")
 
-        fg = plt.figure(figsize=(15,10))
-        plt.title(df["name"][0]+"chart")
-        ax1 = fg.add_subplot(1, 2, 1)
-        plt.plot(df["day"],df["price"], color = "green", marker="o", label="주가")
-        plt.legend()
-        ax2 = fg.add_subplot(1, 2, 2)
-        plt.plot(df["day"],df["qunt"], color="red", marker="o", label="거래량")
-        plt.legend()
-        plt.show()
-        plt.savefig(df["name"][0]+".jpg")
+        matplotlib.rc("font", family="Malgun Gothic")#韓国語を表示するコード
+
+        df = pd.read_csv(filename) #pandasでcsvファイルを開く
+        df["day"] = pd.to_datetime(df['day'], format='%Y-%m-%d')#dayをdate形式に変換する
+        df = df.sort_values(by=['day'], ascending=True)#dayが今から過去の順に保存されているため逆順に整列
+        df["price"] = df["price"].str.replace(",","").astype(int)#株価を文字から数字に変換
+        df["qunt"] = df["qunt"].str.replace(",","").astype(int)#取引量を文字から数字に変換
+
+        # fig = make_subplots(rows=1, cols=2)
+        # fig.add_trace(px.Scatter(x=df['day'], y=df["price"], mode='lines+markers', name='price'), row=1, col=1)
+        # fig.add_trace(px.Scatter(x=df['day'], y=df["qunt"], mode='lines+markers', name='qunt'), row=1, col=2)
+        # fig.update_layout(title_text=df['name'][0], title_font_size=50)
+        # logger.info("over file work start draw")
+        # fig.show()
+
+        fg = plt.figure(figsize=(15,10))#graphを描くsizeを設定
+        plt.title(df["name"][0]+"chart")#タイトルを設定
+        fg.add_subplot(1, 2, 1)#graphを二つに分ける
+        plt.plot(df["day"],df["price"], color = "green", marker="o", label="주가")#株価のgraphを描く
+        plt.legend()#labelの表示
+        fg.add_subplot(1, 2, 2)#二つめのgraph
+        plt.plot(df["day"],df["qunt"], color="red", marker="o", label="거래량")#取引量のgraphを描く
+        plt.legend()#labelの表示
+        plt.show()#graphを表示
+        plt.savefig(df["name"][0]+".jpg")#graphを保存
+        logger.info("end draw")
         print("painting over")
 
     # kabulist = [] # csvの資料を保存

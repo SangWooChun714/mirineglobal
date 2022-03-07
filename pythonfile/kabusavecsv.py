@@ -7,24 +7,27 @@ from openpyxl import load_workbook
 from kabuconfig import logger
 
 
-holyday_list = ["0101", "0301", "0505", "0606", "0815", "1003", "1009", "1225"] #公休日のlist
+holyday_list = ["0101", "0301", "0505", "0606", "0815", "1003", "1009", "1225"] #公休日list
 todays = str(date.today().strftime("%Y.%m.%d")) # 今日の日付を保存
-headers = {"user-Agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36"}#heaaderを指定
+__headers = {"user-Agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36"}#heaaderを指定
 
 #探すtableを確認する関数
 def table_number(url) :
+    logger.info("start tablenumber check")
     try:
-        res1 = requests.get(url, headers=headers) #자료값을 가져오기 위해 새로운 주소를 불러옴
-        searchday = BeautifulSoup(res1.text, "lxml") #새로운 주소의 내용을 담음
-        searchtablenum = searchday.find("td", attrs={"class":"pgRR"}) # 네비게이션 페이지의 끝을 확인
+        res1 = requests.get(url, headers=__headers) #資料を持ってくる注所を設定
+        searchday = BeautifulSoup(res1.text, "lxml") 
+        searchtablenum = searchday.find("td", attrs={"class":"pgRR"}) # 探すpageの終わりを確認
         if not searchtablenum:
             searchtablenum = searchday.find("table", attrs={"class":"Nnavi"}).find("td",{"class":"on"})
             tablenum = searchtablenum.a.get("href").rsplit("=")[2]
         else :
-            tablenum = searchtablenum.a.get("href").rsplit("=")[2] #페이지의 끝번호만을 축출
+            tablenum = searchtablenum.a.get("href").rsplit("=")[2]
         logger.info("url : "+url+", tablenum : "+tablenum)
     except Exception as e:
         print(e)
+        logger.warning(e)
+    logger.info("end tablenumber check, tablenum = "+tablenum)
     return tablenum
 
 #株価をcrawlingする関数
@@ -46,7 +49,7 @@ def SearchKabuKa(kabunames, code, days, filename):
 
         for i in range(1, int(tablenum)+1): # 最初から最終まで読む
             items2 = url+"&page="+str(i) # 住所とpage番号で接続
-            res1 = requests.get(items2, headers=headers)
+            res1 = requests.get(items2, headers=__headers)
             searchday = BeautifulSoup(res1.text, "lxml")
             table_rows = searchday.find("table", attrs={"class":"type2"}).find_all("tr") # tableから資料を持ってくる
 
@@ -75,15 +78,14 @@ def SearchKabuKa(kabunames, code, days, filename):
                 continue
             else : 
                 print("작업종료")
-                logger.info("over csv saved")
+                logger.info("end csv saved")
                 break
 
         f.close()
 
     except Exception as e:
         print(e)
-
-    logger.info("draw graph")
+        logger.warning(e)
     
 #名前と日付が正常入力したかを確認する関数
 #name_compilerで会社の名前の文字を確認する

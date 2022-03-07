@@ -1111,3 +1111,27 @@
 2022-03-03 04:57:21,489- drawline - 25 - asyncio - INFO - over file work start draw
 2022-03-03 04:57:21,742- _findfont_cached - 1352 - matplotlib.font_manager - WARNING - findfont: Font family ['Malgun Gothic'] not found. Falling back to DejaVu Sans.
 2022-03-03 04:57:21,753- _findfont_cached - 1352 - matplotlib.font_manager - WARNING - findfont: Font family ['Malgun Gothic'] not found. Falling back to DejaVu Sans.
+2022-03-07 11:39:13,692- <module> - 144 - root - INFO - ['.\\kabusavecsv.py', '카카오게임즈', '2022.01.05']
+2022-03-07 11:39:13,701- checking - 92 - root - INFO - start checking
+2022-03-07 11:39:13,701- checking - 108 - root - INFO - end checking
+2022-03-07 11:39:13,702- FindDays - 117 - root - INFO - start finddays
+2022-03-07 11:39:13,702- FindDays - 135 - root - INFO - end finddays
+2022-03-07 11:39:14,197- SearchKabuKa - 38 - root - INFO - start kabusearch
+2022-03-07 11:39:14,440- table_number - 25 - root - INFO - url : https://finance.naver.com/item/sise_day.naver?code=293490, tablenum : 37
+2022-03-07 11:39:14,454- SearchKabuKa - 42 - root - INFO - create csv file
+2022-03-07 11:39:14,648- SearchKabuKa - 78 - root - INFO - over csv saved
+2022-03-07 11:39:14,648- SearchKabuKa - 86 - root - INFO - draw graph
+2022-03-07 11:39:14,649- drawline - 15 - asyncio - INFO - open csv file from drawline
+2022-03-07 11:39:15,659- drawline - 25 - asyncio - INFO - over file work start draw
+2022-03-07 11:39:46,155- <module> - 144 - root - INFO - ['.\\kabusavecsv.py', '카카오게임즈', '2022.01.05']
+2022-03-07 11:39:46,155- checking - 92 - root - INFO - start checking
+2022-03-07 11:39:46,156- checking - 108 - root - INFO - end checking
+2022-03-07 11:39:46,156- FindDays - 117 - root - INFO - start finddays
+2022-03-07 11:39:46,156- FindDays - 135 - root - INFO - end finddays
+2022-03-07 11:39:46,577- SearchKabuKa - 38 - root - INFO - start kabusearch
+2022-03-07 11:39:47,420- table_number - 25 - root - INFO - url : https://finance.naver.com/item/sise_day.naver?code=293490, tablenum : 37
+2022-03-07 11:39:47,421- SearchKabuKa - 42 - root - INFO - create csv file
+2022-03-07 11:39:47,616- SearchKabuKa - 78 - root - INFO - over csv saved
+2022-03-07 11:39:47,616- SearchKabuKa - 86 - root - INFO - draw graph
+2022-03-07 11:39:47,616- drawline - 15 - asyncio - INFO - open csv file from drawline
+2022-03-07 11:39:47,759- drawline - 25 - asyncio - INFO - over file work start draw
