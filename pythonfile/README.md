@@ -26,4 +26,4 @@ screenshot
 
 ![csv](https://github.com/SangWooChun714/mirineglobal/blob/master/pythonfile/csvfile.JPG)
 
-![graph](https://github.com/SangWooChun714/mirineglobal/blob/master/pythonfile/%EA%B1%B0%EB%9E%98%EB%9F%89EX.JPG)
+![graph](https://github.com/SangWooChun714/mirineglobal/blob/master/pythonfile/%EA%B1%B0%EB%9E%98%EB%9F%89EX.jpg)
