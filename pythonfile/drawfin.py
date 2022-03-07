@@ -2,8 +2,8 @@ from asyncio.log import logger
 import matplotlib
 import matplotlib.pyplot as plt
 import pandas as pd
-import plotly.graph_objects as px
-from plotly.subplots import make_subplots
+#import plotly.graph_objects as px
+#from plotly.subplots import make_subplots
 
 
 #graphを描く関数

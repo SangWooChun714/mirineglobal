@@ -14,13 +14,13 @@
     kabusavecsv.py '카카오게임즈' '2022.1.1'
 
 ## 出力結果
-* csvファイルは'주식이력.csv'で貯蔵します。
+* csvファイルは'会社の名前.csv'で貯蔵します。
 
 例
 
     주식이력.csv
 
-* ogはkabulog.logで貯蔵します。
+* logはkabulog.logで貯蔵します。
 
 screenshot
 

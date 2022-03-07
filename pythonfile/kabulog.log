@@ -1174,3 +1174,61 @@
 2022-03-07 13:26:07,434- SearchKabuKa - 81 - root - INFO - end csv saved
 2022-03-07 13:26:07,434- drawline - 12 - asyncio - INFO - start draw
 2022-03-07 13:26:11,430- drawline - 39 - asyncio - INFO - end draw
+2022-03-07 14:51:00,696- <module> - 146 - root - INFO - program start
+2022-03-07 14:52:03,638- <module> - 146 - root - INFO - program start
+2022-03-07 14:52:03,638- <module> - 148 - root - INFO - kabuname : 카카오게임즈 day : 2022.01.05
+2022-03-07 14:52:03,639- checking - 93 - root - INFO - start checking
+2022-03-07 14:52:37,484- <module> - 146 - root - INFO - program start
+2022-03-07 14:52:37,485- <module> - 148 - root - INFO - kabuname : 카카오게임즈 day : 2022.01.05
+2022-03-07 14:52:37,485- checking - 93 - root - INFO - start checking
+2022-03-07 14:52:37,486- checking - 109 - root - INFO - end checking
+2022-03-07 14:52:37,486- FindDays - 119 - root - INFO - start finddays
+2022-03-07 14:52:37,486- FindDays - 127 - root - INFO - weekday : tuesday
+2022-03-07 14:53:14,814- <module> - 146 - root - INFO - program start
+2022-03-07 14:53:14,814- <module> - 148 - root - INFO - kabuname : 카카오게임즈 day : 2022.01.05
+2022-03-07 14:53:14,815- checking - 93 - root - INFO - start checking
+2022-03-07 14:53:14,815- checking - 109 - root - INFO - end checking
+2022-03-07 14:53:14,815- FindDays - 119 - root - INFO - start finddays
+2022-03-07 14:53:14,815- FindDays - 127 - root - INFO - weekday : tuesday
+2022-03-07 14:53:14,816- FindDays - 138 - root - INFO - end finddays
+2022-03-07 14:53:15,230- SearchKabuKa - 40 - root - INFO - start kabusearch
+2022-03-07 14:53:15,230- table_number - 15 - root - INFO - start tablenumber check
+2022-03-07 14:53:15,301- table_number - 25 - root - INFO - url : https://finance.naver.com/item/sise_day.naver?code=293490, tablenum : 37
+2022-03-07 14:53:15,301- table_number - 29 - root - INFO - end tablenumber check, tablenum = 37
+2022-03-07 14:53:15,302- SearchKabuKa - 44 - root - INFO - create csv file
+2022-03-07 14:53:15,499- SearchKabuKa - 80 - root - INFO - end csv saved
+2022-03-07 14:53:15,499- drawline - 12 - asyncio - INFO - start draw
+2022-03-07 14:53:17,903- drawline - 39 - asyncio - INFO - end draw
+2022-03-07 14:53:17,904- <module> - 169 - root - INFO - program end
+2022-03-07 14:56:29,779- <module> - 146 - root - INFO - program start
+2022-03-07 14:56:29,779- <module> - 148 - root - INFO - kabuname : 카카오게임즈 day : 2022.01.05
+2022-03-07 14:56:29,780- checking - 93 - root - INFO - start checking
+2022-03-07 14:56:29,780- checking - 109 - root - INFO - end checking
+2022-03-07 14:56:29,780- FindDays - 119 - root - INFO - start finddays
+2022-03-07 14:56:29,780- FindDays - 127 - root - INFO - weekday : tuesday
+2022-03-07 14:56:29,780- FindDays - 138 - root - INFO - end finddays : 2022.01.05, 
+2022-03-07 14:56:30,197- SearchKabuKa - 40 - root - INFO - start kabusearch
+2022-03-07 14:56:30,197- table_number - 15 - root - INFO - start tablenumber check
+2022-03-07 14:56:30,267- table_number - 25 - root - INFO - url : https://finance.naver.com/item/sise_day.naver?code=293490, tablenum : 37
+2022-03-07 14:56:30,267- table_number - 29 - root - INFO - end tablenumber check, tablenum = 37
+2022-03-07 14:56:30,269- SearchKabuKa - 44 - root - INFO - create csv file
+2022-03-07 14:56:30,455- SearchKabuKa - 80 - root - INFO - end csv saved
+2022-03-07 14:56:30,456- drawline - 12 - asyncio - INFO - start draw
+2022-03-07 14:56:32,589- drawline - 39 - asyncio - INFO - end draw
+2022-03-07 14:56:32,590- <module> - 169 - root - INFO - program end
+2022-03-07 14:57:00,007- <module> - 146 - root - INFO - program start
+2022-03-07 14:57:00,007- <module> - 148 - root - INFO - kabuname : 카카오게임즈 day : 2022.01.01
+2022-03-07 14:57:00,007- checking - 93 - root - INFO - start checking
+2022-03-07 14:57:00,008- checking - 109 - root - INFO - end checking
+2022-03-07 14:57:00,008- FindDays - 119 - root - INFO - start finddays
+2022-03-07 14:57:00,008- FindDays - 127 - root - INFO - weekday : friday
+2022-03-07 14:57:00,008- FindDays - 138 - root - INFO - end finddays : 2021.12.31, 2021.12.30
+2022-03-07 14:57:00,425- SearchKabuKa - 40 - root - INFO - start kabusearch
+2022-03-07 14:57:00,425- table_number - 15 - root - INFO - start tablenumber check
+2022-03-07 14:57:00,479- table_number - 25 - root - INFO - url : https://finance.naver.com/item/sise_day.naver?code=293490, tablenum : 37
+2022-03-07 14:57:00,479- table_number - 29 - root - INFO - end tablenumber check, tablenum = 37
+2022-03-07 14:57:00,480- SearchKabuKa - 44 - root - INFO - create csv file
+2022-03-07 14:57:00,704- SearchKabuKa - 80 - root - INFO - end csv saved
+2022-03-07 14:57:00,704- drawline - 12 - asyncio - INFO - start draw
+2022-03-07 14:57:02,499- drawline - 39 - asyncio - INFO - end draw
+2022-03-07 14:57:02,500- <module> - 169 - root - INFO - program end

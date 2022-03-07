@@ -1,4 +1,3 @@
-from ast import arg
 from bs4 import BeautifulSoup
 from datetime import date
 from drawfin import draw
@@ -27,7 +26,7 @@ def table_number(url) :
     except Exception as e:
         print(e)
         logger.warning(e)
-    logger.info("end tablenumber check, tablenum = "+tablenum)
+    logger.info("end tablenumber check")
     return tablenum
 
 #株価をcrawlingする関数
@@ -115,6 +114,7 @@ def checking(kabunames, days):
 #temp_dateは確認する日を仮に保存
 #fine_daysは確定した日を保存
 def FindDays(days) :
+    weekday_list ={1:"monday", 2:"tuesday", 3:"wednesday", 4:"thursday", 5:"friday", 6:"saturday", 7:"sunday"} 
     fine_days = ["", ""]
     logger.info("start finddays")
     list_date = days.split(".")
@@ -124,6 +124,7 @@ def FindDays(days) :
 
     str_monday = list_date[1]+list_date[2] # 公休日を確認するための変数
     weekendday = datetime.date(years, months, days).weekday()
+    logger.info("weekday : "+weekday_list[weekendday])
     temp_date = datetime.date(years, months, days)
 
     if weekendday >= 5 or str_monday in holyday_list: # 休日ならその前の日を指定するためのif ex) 休日が金曜日の場合は木曜日を指定, 週末の場合金曜日を指定
@@ -134,7 +135,7 @@ def FindDays(days) :
     else : 
         temp_date = str(temp_date).split("-")
         fine_days[0] = (temp_date[0]+"."+temp_date[1]+"."+temp_date[2]) #　最終指定日を指定
-    logger.info("end finddays")
+    logger.info("end finddays : "+fine_days[0]+", "+fine_days[1])
     return fine_days
 
 # main 関数
@@ -142,12 +143,12 @@ def FindDays(days) :
 #会社の名前は　kabuname　で保存
 #日付は　inputdayｓ　で保存
 if __name__ == "__main__":
+    logger.info("program start")
     args = sys.argv
-    logger.info(args)
+    logger.info("kabuname : "+args[1]+" day : "+args[2])
     print(args)
     kabunames = args[1] #　入力した会社の名前を保存
     inputdays = args[2] # 入力した日付を保存
-    
 
     checking(kabunames, inputdays)#名前と日付の正規検索
 
@@ -164,7 +165,8 @@ if __name__ == "__main__":
             SearchKabuKa(kabunames, code, search_date, filename)#crawling関数
             break
     draws = draw()
-    draws.drawline(filename)
-    #drawfin.drawline(filename) # 資料をもとにgraphを書く
+    draws.drawline(filename)# 資料をもとにgraphを書く
+    logger.info("program end")
+    #drawfin.drawline(filename) 
 
 
