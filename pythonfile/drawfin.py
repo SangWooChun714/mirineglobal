@@ -19,13 +19,6 @@ class draw:
         df["price"] = df["price"].str.replace(",","").astype(int)#株価を文字から数字に変換
         df["qunt"] = df["qunt"].str.replace(",","").astype(int)#取引量を文字から数字に変換
 
-        # fig = make_subplots(rows=1, cols=2)
-        # fig.add_trace(px.Scatter(x=df['day'], y=df["price"], mode='lines+markers', name='price'), row=1, col=1)
-        # fig.add_trace(px.Scatter(x=df['day'], y=df["qunt"], mode='lines+markers', name='qunt'), row=1, col=2)
-        # fig.update_layout(title_text=df['name'][0], title_font_size=50)
-        # logger.info("over file work start draw")
-        # fig.show()
-
         fg = plt.figure(figsize=(15,10))#graphを描くsizeを設定
         plt.title(df["name"][0]+"chart")#タイトルを設定
         fg.add_subplot(1, 2, 1)#graphを二つに分ける
@@ -38,6 +31,13 @@ class draw:
         plt.show()#graphを表示
         logger.info("end draw")
         print("painting over")
+
+        # fig = make_subplots(rows=1, cols=2)
+        # fig.add_trace(px.Scatter(x=df['day'], y=df["price"], mode='lines+markers', name='price'), row=1, col=1)
+        # fig.add_trace(px.Scatter(x=df['day'], y=df["qunt"], mode='lines+markers', name='qunt'), row=1, col=2)
+        # fig.update_layout(title_text=df['name'][0], title_font_size=50)
+        # logger.info("over file work start draw")
+        # fig.show()
 
     # kabulist = [] # csvの資料を保存
     # days = [] # 日を保存

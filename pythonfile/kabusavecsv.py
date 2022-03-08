@@ -114,19 +114,15 @@ def checking(kabunames, days):
 #temp_dateは確認する日を仮に保存
 #fine_daysは確定した日を保存
 def FindDays(days) :
-    weekday_list ={1:"monday", 2:"tuesday", 3:"wednesday", 4:"thursday", 5:"friday", 6:"saturday", 7:"sunday"} 
     fine_days = ["", ""]
     logger.info("start finddays")
     list_date = days.split(".")
-    years = int(list_date[0])
-    months = int(list_date[1])
-    days = int(list_date[2])
-
     str_monday = list_date[1]+list_date[2] # 公休日を確認するための変数
-    weekendday = datetime.date(years, months, days).weekday()
-    logger.info("weekday : "+weekday_list[weekendday])
-    temp_date = datetime.date(years, months, days)
+    list_date = [int(list_date[0]), int(list_date[1]), int(list_date[2])]
 
+    temp_date = datetime.date(list_date[0], list_date[1], list_date[2])
+    weekendday = temp_date.weekday()
+    
     if weekendday >= 5 or str_monday in holyday_list: # 休日ならその前の日を指定するためのif ex) 休日が金曜日の場合は木曜日を指定, 週末の場合金曜日を指定
         temp_date1 = str(temp_date - datetime.timedelta(max(1, (weekendday+6)%7-3))).split("-")
         temp_date2 = str(temp_date - datetime.timedelta(max(2, (weekendday+6)%7-2))).split("-")
