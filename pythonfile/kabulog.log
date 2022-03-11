@@ -1232,3 +1232,20 @@
 2022-03-07 14:57:00,704- drawline - 12 - asyncio - INFO - start draw
 2022-03-07 14:57:02,499- drawline - 39 - asyncio - INFO - end draw
 2022-03-07 14:57:02,500- <module> - 169 - root - INFO - program end
+2022-03-11 02:08:55,925- <module> - 142 - root - INFO - program start
+2022-03-11 02:08:55,926- <module> - 144 - root - INFO - kabuname : 카카오게임즈 day : 2021.01.01
+2022-03-11 02:08:55,927- checking - 93 - root - INFO - start checking
+2022-03-11 02:08:55,928- checking - 109 - root - INFO - end checking
+2022-03-11 02:08:55,929- FindDays - 118 - root - INFO - start finddays
+2022-03-11 02:08:55,929- FindDays - 134 - root - INFO - end finddays : 2020.12.31, 2020.12.30
+2022-03-11 02:08:56,522- SearchKabuKa - 40 - root - INFO - start kabusearch
+2022-03-11 02:08:56,523- table_number - 15 - root - INFO - start tablenumber check
+2022-03-11 02:08:56,642- table_number - 25 - root - INFO - url : https://finance.naver.com/item/sise_day.naver?code=293490, tablenum : 37
+2022-03-11 02:08:56,644- table_number - 29 - root - INFO - end tablenumber check
+2022-03-11 02:08:56,650- SearchKabuKa - 44 - root - INFO - create csv file
+2022-03-11 02:08:58,431- SearchKabuKa - 80 - root - INFO - end csv saved
+2022-03-11 02:08:58,433- drawline - 12 - asyncio - INFO - start draw
+2022-03-11 02:08:58,528- _findfont_cached - 1352 - matplotlib.font_manager - WARNING - findfont: Font family ['Malgun Gothic'] not found. Falling back to DejaVu Sans.
+2022-03-11 02:08:58,543- _findfont_cached - 1352 - matplotlib.font_manager - WARNING - findfont: Font family ['Malgun Gothic'] not found. Falling back to DejaVu Sans.
+2022-03-11 02:08:58,813- drawline - 32 - asyncio - INFO - end draw
+2022-03-11 02:08:58,814- <module> - 165 - root - INFO - program end
