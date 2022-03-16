@@ -1,9 +1,11 @@
 from bs4 import BeautifulSoup
 from datetime import date
 from drawfin import draw
-import sys, csv, requests, datetime, re
+import sys, csv, requests, datetime, re, ssl
 from openpyxl import load_workbook
 from kabuconfig import logger
+from elasticsearch import Elasticsearch
+import pandas as pd
 
 
 holyday_list = ["0101", "0301", "0505", "0606", "0815", "1003", "1009", "1225"] #公休日list
@@ -37,6 +39,13 @@ def SearchKabuKa(kabunames, code, days, filename):
     total = [] # 会社の名前, 日付, 株価, 取引量を保存するlist
     breaker = True # 無限文を止める変数
     url = "https://finance.naver.com/item/sise_day.naver?code="+code # 株価を持ってくる住所
+
+    ctx = ssl.create_default_context()
+    ctx.load_verify_locations("C:/Users/cjstk/Desktop/mirineglobal/elasticsearch-8.1.0/config/certs/http_ca.crt")
+    es = Elasticsearch("https://elastic:sw1594311@localhost:9200", ssl_context=ctx)
+    index = "kabusearch"
+    n = 1
+    
     logger.info("start kabusearch")
     tablenum = table_number(url)
     try:
@@ -67,10 +76,27 @@ def SearchKabuKa(kabunames, code, days, filename):
                 if day == days[0] or day == days[1]: # 指定した日まで保存
                     breaker = False
                     total = [kabunames, code, day, price, qunt]
+                    body = {
+                        "kabuNm" : kabunames,
+                        "code" : code,
+                        "date" : day,
+                        "kabuka" : price,
+                        "volume" : qunt
+                    }
+                    es.index(index=index, id=n, document=body)
                     writer.writerow(total)
                     break
-
+                
                 total = [kabunames, code, day, price, qunt]
+                body = {
+                        "kabuNm" : kabunames,
+                        "code" : code,
+                        "date" : day,
+                        "kabuka" : price,
+                        "volume" : qunt
+                }
+                es.index(index=index, id=n, document=body)
+                n += 1
                 writer.writerow(total) # csvファイルに一行づつ作成
                 
             if breaker == True:
@@ -78,6 +104,7 @@ def SearchKabuKa(kabunames, code, days, filename):
             else : 
                 print("작업종료")
                 logger.info("end csv saved")
+
                 break
 
         f.close()
