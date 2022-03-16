@@ -41,7 +41,7 @@ def SearchKabuKa(kabunames, code, days, filename):
     url = "https://finance.naver.com/item/sise_day.naver?code="+code # 株価を持ってくる住所
 
     ctx = ssl.create_default_context()
-    ctx.load_verify_locations("C:/Users/cjstk/Desktop/mirineglobal/elasticsearch-8.1.0/config/certs/http_ca.crt")
+    ctx.load_verify_locations("C:/Users/cjstk/Desktop/python/elasticsearch-8.1.0/config/certs/http_ca.crt")
     es = Elasticsearch("https://elastic:sw1594311@localhost:9200", ssl_context=ctx)
     index = "kabusearch"
     n = 1
