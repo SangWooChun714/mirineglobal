@@ -41,8 +41,10 @@ def SearchKabuKa(kabunames, code, days, filename):
     url = "https://finance.naver.com/item/sise_day.naver?code="+code # 株価を持ってくる住所
 
     ctx = ssl.create_default_context()
-    ctx.load_verify_locations("C:/Users/cjstk/Desktop/python/elasticsearch-8.1.0/config/certs/http_ca.crt")
-    es = Elasticsearch("https://elastic:sw1594311@localhost:9200", ssl_context=ctx)
+    #ctx.load_verify_locations("C:/Users/cjstk/Desktop/python/elasticsearch-8.1.0/config/certs/http_ca.crt")
+    ctx.load_verify_locations("C:/Users/cjstk/Desktop/elasticsearch-8.1.0/cert1/http_ca.crt")
+    es = Elasticsearch("https://localhost:9200", basic_auth=("elastic","sw1594311") ,ssl_context=ctx)
+    #es = Elasticsearch("http://localhost:9200/")
     index = "kabusearch"
     n = 1
     
@@ -75,7 +77,9 @@ def SearchKabuKa(kabunames, code, days, filename):
                     continue
                 if day == days[0] or day == days[1]: # 指定した日まで保存
                     breaker = False
+
                     total = [kabunames, code, day, price, qunt]
+
                     body = {
                         "kabuNm" : kabunames,
                         "code" : code,
@@ -84,6 +88,7 @@ def SearchKabuKa(kabunames, code, days, filename):
                         "volume" : qunt
                     }
                     es.index(index=index, id=n, document=body)
+
                     writer.writerow(total)
                     break
                 
@@ -97,6 +102,7 @@ def SearchKabuKa(kabunames, code, days, filename):
                 }
                 es.index(index=index, id=n, document=body)
                 n += 1
+
                 writer.writerow(total) # csvファイルに一行づつ作成
                 
             if breaker == True:

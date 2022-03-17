@@ -1396,3 +1396,203 @@
 2022-03-16 13:57:00,081- drawline - 12 - asyncio - INFO - start draw
 2022-03-16 13:57:02,294- drawline - 32 - asyncio - INFO - end draw
 2022-03-16 13:57:02,294- <module> - 192 - root - INFO - program end
+2022-03-17 12:06:56,030- <module> - 169 - root - INFO - program start
+2022-03-17 12:06:56,030- <module> - 171 - root - INFO - kabuname : 삼성전자 day : 2022.02.18
+2022-03-17 12:06:56,030- checking - 120 - root - INFO - start checking
+2022-03-17 12:06:56,030- checking - 136 - root - INFO - end checking
+2022-03-17 12:06:56,030- FindDays - 145 - root - INFO - start finddays
+2022-03-17 12:06:56,030- FindDays - 161 - root - INFO - end finddays : 2022.02.18, 
+2022-03-17 12:06:56,726- SearchKabuKa - 49 - root - INFO - start kabusearch
+2022-03-17 12:06:56,726- table_number - 17 - root - INFO - start tablenumber check
+2022-03-17 12:06:56,877- table_number - 27 - root - INFO - url : https://finance.naver.com/item/sise_day.naver?code=005930, tablenum : 646
+2022-03-17 12:06:56,877- table_number - 31 - root - INFO - end tablenumber check
+2022-03-17 12:06:56,893- SearchKabuKa - 53 - root - INFO - create csv file
+2022-03-17 12:06:56,960- perform_request - 359 - elastic_transport.transport - INFO - PUT https://localhost:9200/kabusearch/_doc/1 [status:N/A duration:0.016s]
+2022-03-17 12:06:56,960- mark_dead - 246 - elastic_transport.node_pool - WARNING - Node <Urllib3HttpNode(https://localhost:9200)> has failed for 1 times in a row, putting on 1 second timeout
+2022-03-17 12:06:56,960- perform_request - 396 - elastic_transport.transport - WARNING - Retrying request after failure (attempt 0 of 3)
+Traceback (most recent call last):
+  File "C:\Users\cjstk\AppData\Local\Programs\Python\Python310\lib\site-packages\elastic_transport\_transport.py", line 329, in perform_request
+    meta, raw_data = node.perform_request(
+  File "C:\Users\cjstk\AppData\Local\Programs\Python\Python310\lib\site-packages\elastic_transport\_node\_http_urllib3.py", line 199, in perform_request
+    raise err from None
+elastic_transport.TlsError: TLS error caused by: SSLError([SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:997))
+2022-03-17 12:06:56,975- perform_request - 359 - elastic_transport.transport - INFO - PUT https://localhost:9200/kabusearch/_doc/1 [status:N/A duration:0.016s]
+2022-03-17 12:06:56,975- mark_dead - 246 - elastic_transport.node_pool - WARNING - Node <Urllib3HttpNode(https://localhost:9200)> has failed for 2 times in a row, putting on 2 second timeout
+2022-03-17 12:06:56,975- perform_request - 396 - elastic_transport.transport - WARNING - Retrying request after failure (attempt 1 of 3)
+Traceback (most recent call last):
+  File "C:\Users\cjstk\AppData\Local\Programs\Python\Python310\lib\site-packages\elastic_transport\_transport.py", line 329, in perform_request
+    meta, raw_data = node.perform_request(
+  File "C:\Users\cjstk\AppData\Local\Programs\Python\Python310\lib\site-packages\elastic_transport\_node\_http_urllib3.py", line 199, in perform_request
+    raise err from None
+elastic_transport.TlsError: TLS error caused by: SSLError([SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:997))
+2022-03-17 12:06:56,991- perform_request - 359 - elastic_transport.transport - INFO - PUT https://localhost:9200/kabusearch/_doc/1 [status:N/A duration:0.016s]
+2022-03-17 12:06:56,991- mark_dead - 246 - elastic_transport.node_pool - WARNING - Node <Urllib3HttpNode(https://localhost:9200)> has failed for 3 times in a row, putting on 4 second timeout
+2022-03-17 12:06:56,991- perform_request - 396 - elastic_transport.transport - WARNING - Retrying request after failure (attempt 2 of 3)
+Traceback (most recent call last):
+  File "C:\Users\cjstk\AppData\Local\Programs\Python\Python310\lib\site-packages\elastic_transport\_transport.py", line 329, in perform_request
+    meta, raw_data = node.perform_request(
+  File "C:\Users\cjstk\AppData\Local\Programs\Python\Python310\lib\site-packages\elastic_transport\_node\_http_urllib3.py", line 199, in perform_request
+    raise err from None
+elastic_transport.TlsError: TLS error caused by: SSLError([SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:997))
+2022-03-17 12:06:57,007- perform_request - 359 - elastic_transport.transport - INFO - PUT https://localhost:9200/kabusearch/_doc/1 [status:N/A duration:0.016s]
+2022-03-17 12:06:57,007- mark_dead - 246 - elastic_transport.node_pool - WARNING - Node <Urllib3HttpNode(https://localhost:9200)> has failed for 4 times in a row, putting on 8 second timeout
+2022-03-17 12:06:57,007- SearchKabuKa - 114 - root - WARNING - TLS error caused by: TlsError(TLS error caused by: SSLError([SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:997)))
+2022-03-17 12:06:57,007- drawline - 12 - asyncio - INFO - start draw
+2022-03-17 12:07:31,977- <module> - 170 - root - INFO - program start
+2022-03-17 12:07:31,977- <module> - 172 - root - INFO - kabuname : 삼성전자 day : 2022.02.18
+2022-03-17 12:07:31,977- checking - 121 - root - INFO - start checking
+2022-03-17 12:07:31,977- checking - 137 - root - INFO - end checking
+2022-03-17 12:07:31,977- FindDays - 146 - root - INFO - start finddays
+2022-03-17 12:07:31,977- FindDays - 162 - root - INFO - end finddays : 2022.02.18, 
+2022-03-17 12:07:32,389- SearchKabuKa - 50 - root - INFO - start kabusearch
+2022-03-17 12:07:32,389- table_number - 17 - root - INFO - start tablenumber check
+2022-03-17 12:07:32,461- table_number - 27 - root - INFO - url : https://finance.naver.com/item/sise_day.naver?code=005930, tablenum : 646
+2022-03-17 12:07:32,461- table_number - 31 - root - INFO - end tablenumber check
+2022-03-17 12:07:32,463- SearchKabuKa - 54 - root - INFO - create csv file
+2022-03-17 12:07:32,520- perform_request - 359 - elastic_transport.transport - INFO - PUT https://localhost:9200/kabusearch/_doc/1 [status:N/A duration:0.010s]
+2022-03-17 12:07:32,520- mark_dead - 246 - elastic_transport.node_pool - WARNING - Node <Urllib3HttpNode(https://localhost:9200)> has failed for 1 times in a row, putting on 1 second timeout
+2022-03-17 12:07:32,520- perform_request - 396 - elastic_transport.transport - WARNING - Retrying request after failure (attempt 0 of 3)
+Traceback (most recent call last):
+  File "C:\Users\cjstk\AppData\Local\Programs\Python\Python310\lib\site-packages\elastic_transport\_transport.py", line 329, in perform_request
+    meta, raw_data = node.perform_request(
+  File "C:\Users\cjstk\AppData\Local\Programs\Python\Python310\lib\site-packages\elastic_transport\_node\_http_urllib3.py", line 199, in perform_request
+    raise err from None
+elastic_transport.TlsError: TLS error caused by: SSLError([SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:997))
+2022-03-17 12:07:32,539- perform_request - 359 - elastic_transport.transport - INFO - PUT https://localhost:9200/kabusearch/_doc/1 [status:N/A duration:0.018s]
+2022-03-17 12:07:32,539- mark_dead - 246 - elastic_transport.node_pool - WARNING - Node <Urllib3HttpNode(https://localhost:9200)> has failed for 2 times in a row, putting on 2 second timeout
+2022-03-17 12:07:32,539- perform_request - 396 - elastic_transport.transport - WARNING - Retrying request after failure (attempt 1 of 3)
+Traceback (most recent call last):
+  File "C:\Users\cjstk\AppData\Local\Programs\Python\Python310\lib\site-packages\elastic_transport\_transport.py", line 329, in perform_request
+    meta, raw_data = node.perform_request(
+  File "C:\Users\cjstk\AppData\Local\Programs\Python\Python310\lib\site-packages\elastic_transport\_node\_http_urllib3.py", line 199, in perform_request
+    raise err from None
+elastic_transport.TlsError: TLS error caused by: SSLError([SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:997))
+2022-03-17 12:07:32,554- perform_request - 359 - elastic_transport.transport - INFO - PUT https://localhost:9200/kabusearch/_doc/1 [status:N/A duration:0.016s]
+2022-03-17 12:07:32,554- mark_dead - 246 - elastic_transport.node_pool - WARNING - Node <Urllib3HttpNode(https://localhost:9200)> has failed for 3 times in a row, putting on 4 second timeout
+2022-03-17 12:07:32,554- perform_request - 396 - elastic_transport.transport - WARNING - Retrying request after failure (attempt 2 of 3)
+Traceback (most recent call last):
+  File "C:\Users\cjstk\AppData\Local\Programs\Python\Python310\lib\site-packages\elastic_transport\_transport.py", line 329, in perform_request
+    meta, raw_data = node.perform_request(
+  File "C:\Users\cjstk\AppData\Local\Programs\Python\Python310\lib\site-packages\elastic_transport\_node\_http_urllib3.py", line 199, in perform_request
+    raise err from None
+elastic_transport.TlsError: TLS error caused by: SSLError([SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:997))
+2022-03-17 12:07:32,570- perform_request - 359 - elastic_transport.transport - INFO - PUT https://localhost:9200/kabusearch/_doc/1 [status:N/A duration:0.016s]
+2022-03-17 12:07:32,570- mark_dead - 246 - elastic_transport.node_pool - WARNING - Node <Urllib3HttpNode(https://localhost:9200)> has failed for 4 times in a row, putting on 8 second timeout
+2022-03-17 12:07:32,570- SearchKabuKa - 115 - root - WARNING - TLS error caused by: TlsError(TLS error caused by: SSLError([SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:997)))
+2022-03-17 12:07:32,570- drawline - 12 - asyncio - INFO - start draw
+2022-03-17 12:08:10,568- <module> - 170 - root - INFO - program start
+2022-03-17 12:08:10,568- <module> - 172 - root - INFO - kabuname : 삼성전자 day : 2022.02.18
+2022-03-17 12:08:10,568- checking - 121 - root - INFO - start checking
+2022-03-17 12:08:10,569- checking - 137 - root - INFO - end checking
+2022-03-17 12:08:10,569- FindDays - 146 - root - INFO - start finddays
+2022-03-17 12:08:10,569- FindDays - 162 - root - INFO - end finddays : 2022.02.18, 
+2022-03-17 12:08:10,987- SearchKabuKa - 50 - root - INFO - start kabusearch
+2022-03-17 12:08:10,987- table_number - 17 - root - INFO - start tablenumber check
+2022-03-17 12:08:11,049- table_number - 27 - root - INFO - url : https://finance.naver.com/item/sise_day.naver?code=005930, tablenum : 646
+2022-03-17 12:08:11,049- table_number - 31 - root - INFO - end tablenumber check
+2022-03-17 12:08:11,050- SearchKabuKa - 54 - root - INFO - create csv file
+2022-03-17 12:08:11,112- perform_request - 359 - elastic_transport.transport - INFO - PUT https://localhost:9200/kabusearch/_doc/1 [status:N/A duration:0.018s]
+2022-03-17 12:08:11,112- mark_dead - 246 - elastic_transport.node_pool - WARNING - Node <Urllib3HttpNode(https://localhost:9200)> has failed for 1 times in a row, putting on 1 second timeout
+2022-03-17 12:08:11,112- perform_request - 396 - elastic_transport.transport - WARNING - Retrying request after failure (attempt 0 of 3)
+Traceback (most recent call last):
+  File "C:\Users\cjstk\AppData\Local\Programs\Python\Python310\lib\site-packages\elastic_transport\_transport.py", line 329, in perform_request
+    meta, raw_data = node.perform_request(
+  File "C:\Users\cjstk\AppData\Local\Programs\Python\Python310\lib\site-packages\elastic_transport\_node\_http_urllib3.py", line 199, in perform_request
+    raise err from None
+elastic_transport.TlsError: TLS error caused by: SSLError([SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:997))
+2022-03-17 12:08:11,128- perform_request - 359 - elastic_transport.transport - INFO - PUT https://localhost:9200/kabusearch/_doc/1 [status:N/A duration:0.016s]
+2022-03-17 12:08:11,128- mark_dead - 246 - elastic_transport.node_pool - WARNING - Node <Urllib3HttpNode(https://localhost:9200)> has failed for 2 times in a row, putting on 2 second timeout
+2022-03-17 12:08:11,128- perform_request - 396 - elastic_transport.transport - WARNING - Retrying request after failure (attempt 1 of 3)
+Traceback (most recent call last):
+  File "C:\Users\cjstk\AppData\Local\Programs\Python\Python310\lib\site-packages\elastic_transport\_transport.py", line 329, in perform_request
+    meta, raw_data = node.perform_request(
+  File "C:\Users\cjstk\AppData\Local\Programs\Python\Python310\lib\site-packages\elastic_transport\_node\_http_urllib3.py", line 199, in perform_request
+    raise err from None
+elastic_transport.TlsError: TLS error caused by: SSLError([SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:997))
+2022-03-17 12:08:11,159- perform_request - 359 - elastic_transport.transport - INFO - PUT https://localhost:9200/kabusearch/_doc/1 [status:N/A duration:0.031s]
+2022-03-17 12:08:11,159- mark_dead - 246 - elastic_transport.node_pool - WARNING - Node <Urllib3HttpNode(https://localhost:9200)> has failed for 3 times in a row, putting on 4 second timeout
+2022-03-17 12:08:11,159- perform_request - 396 - elastic_transport.transport - WARNING - Retrying request after failure (attempt 2 of 3)
+Traceback (most recent call last):
+  File "C:\Users\cjstk\AppData\Local\Programs\Python\Python310\lib\site-packages\elastic_transport\_transport.py", line 329, in perform_request
+    meta, raw_data = node.perform_request(
+  File "C:\Users\cjstk\AppData\Local\Programs\Python\Python310\lib\site-packages\elastic_transport\_node\_http_urllib3.py", line 199, in perform_request
+    raise err from None
+elastic_transport.TlsError: TLS error caused by: SSLError([SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:997))
+2022-03-17 12:08:11,175- perform_request - 359 - elastic_transport.transport - INFO - PUT https://localhost:9200/kabusearch/_doc/1 [status:N/A duration:0.016s]
+2022-03-17 12:08:11,175- mark_dead - 246 - elastic_transport.node_pool - WARNING - Node <Urllib3HttpNode(https://localhost:9200)> has failed for 4 times in a row, putting on 8 second timeout
+2022-03-17 12:08:11,175- SearchKabuKa - 115 - root - WARNING - TLS error caused by: TlsError(TLS error caused by: SSLError([SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:997)))
+2022-03-17 12:08:11,175- drawline - 12 - asyncio - INFO - start draw
+2022-03-17 12:41:49,236- <module> - 170 - root - INFO - program start
+2022-03-17 12:41:49,236- <module> - 172 - root - INFO - kabuname : 삼성전자 day : 2022.02.18
+2022-03-17 12:41:49,236- checking - 121 - root - INFO - start checking
+2022-03-17 12:41:49,236- checking - 137 - root - INFO - end checking
+2022-03-17 12:41:49,236- FindDays - 146 - root - INFO - start finddays
+2022-03-17 12:41:49,236- FindDays - 162 - root - INFO - end finddays : 2022.02.18, 
+2022-03-17 12:41:49,657- SearchKabuKa - 50 - root - INFO - start kabusearch
+2022-03-17 12:41:49,657- table_number - 17 - root - INFO - start tablenumber check
+2022-03-17 12:41:49,708- table_number - 27 - root - INFO - url : https://finance.naver.com/item/sise_day.naver?code=005930, tablenum : 646
+2022-03-17 12:41:49,708- table_number - 31 - root - INFO - end tablenumber check
+2022-03-17 12:41:49,718- SearchKabuKa - 54 - root - INFO - create csv file
+2022-03-17 12:41:49,781- perform_request - 359 - elastic_transport.transport - INFO - PUT https://localhost:9200/kabusearch/_doc/1 [status:N/A duration:0.013s]
+2022-03-17 12:41:49,781- mark_dead - 246 - elastic_transport.node_pool - WARNING - Node <Urllib3HttpNode(https://localhost:9200)> has failed for 1 times in a row, putting on 1 second timeout
+2022-03-17 12:41:49,781- perform_request - 396 - elastic_transport.transport - WARNING - Retrying request after failure (attempt 0 of 3)
+Traceback (most recent call last):
+  File "C:\Users\cjstk\AppData\Local\Programs\Python\Python310\lib\site-packages\elastic_transport\_transport.py", line 329, in perform_request
+    meta, raw_data = node.perform_request(
+  File "C:\Users\cjstk\AppData\Local\Programs\Python\Python310\lib\site-packages\elastic_transport\_node\_http_urllib3.py", line 199, in perform_request
+    raise err from None
+elastic_transport.TlsError: TLS error caused by: SSLError([SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:997))
+2022-03-17 12:41:49,798- perform_request - 359 - elastic_transport.transport - INFO - PUT https://localhost:9200/kabusearch/_doc/1 [status:N/A duration:0.018s]
+2022-03-17 12:41:49,798- mark_dead - 246 - elastic_transport.node_pool - WARNING - Node <Urllib3HttpNode(https://localhost:9200)> has failed for 2 times in a row, putting on 2 second timeout
+2022-03-17 12:41:49,798- perform_request - 396 - elastic_transport.transport - WARNING - Retrying request after failure (attempt 1 of 3)
+Traceback (most recent call last):
+  File "C:\Users\cjstk\AppData\Local\Programs\Python\Python310\lib\site-packages\elastic_transport\_transport.py", line 329, in perform_request
+    meta, raw_data = node.perform_request(
+  File "C:\Users\cjstk\AppData\Local\Programs\Python\Python310\lib\site-packages\elastic_transport\_node\_http_urllib3.py", line 199, in perform_request
+    raise err from None
+elastic_transport.TlsError: TLS error caused by: SSLError([SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:997))
+2022-03-17 12:41:49,819- perform_request - 359 - elastic_transport.transport - INFO - PUT https://localhost:9200/kabusearch/_doc/1 [status:N/A duration:0.020s]
+2022-03-17 12:41:49,819- mark_dead - 246 - elastic_transport.node_pool - WARNING - Node <Urllib3HttpNode(https://localhost:9200)> has failed for 3 times in a row, putting on 4 second timeout
+2022-03-17 12:41:49,819- perform_request - 396 - elastic_transport.transport - WARNING - Retrying request after failure (attempt 2 of 3)
+Traceback (most recent call last):
+  File "C:\Users\cjstk\AppData\Local\Programs\Python\Python310\lib\site-packages\elastic_transport\_transport.py", line 329, in perform_request
+    meta, raw_data = node.perform_request(
+  File "C:\Users\cjstk\AppData\Local\Programs\Python\Python310\lib\site-packages\elastic_transport\_node\_http_urllib3.py", line 199, in perform_request
+    raise err from None
+elastic_transport.TlsError: TLS error caused by: SSLError([SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:997))
+2022-03-17 12:41:49,831- perform_request - 359 - elastic_transport.transport - INFO - PUT https://localhost:9200/kabusearch/_doc/1 [status:N/A duration:0.012s]
+2022-03-17 12:41:49,831- mark_dead - 246 - elastic_transport.node_pool - WARNING - Node <Urllib3HttpNode(https://localhost:9200)> has failed for 4 times in a row, putting on 8 second timeout
+2022-03-17 12:41:49,831- SearchKabuKa - 115 - root - WARNING - TLS error caused by: TlsError(TLS error caused by: SSLError([SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:997)))
+2022-03-17 12:41:49,831- drawline - 12 - asyncio - INFO - start draw
+2022-03-17 13:41:19,922- <module> - 170 - root - INFO - program start
+2022-03-17 13:41:19,922- <module> - 172 - root - INFO - kabuname : 삼성전자 day : 2022.02.18
+2022-03-17 13:41:19,922- checking - 121 - root - INFO - start checking
+2022-03-17 13:41:19,922- checking - 137 - root - INFO - end checking
+2022-03-17 13:41:19,922- FindDays - 146 - root - INFO - start finddays
+2022-03-17 13:41:19,922- FindDays - 162 - root - INFO - end finddays : 2022.02.18, 
+2022-03-17 13:41:20,347- SearchKabuKa - 50 - root - INFO - start kabusearch
+2022-03-17 13:41:20,347- table_number - 17 - root - INFO - start tablenumber check
+2022-03-17 13:41:20,394- table_number - 27 - root - INFO - url : https://finance.naver.com/item/sise_day.naver?code=005930, tablenum : 646
+2022-03-17 13:41:20,394- table_number - 31 - root - INFO - end tablenumber check
+2022-03-17 13:41:20,394- SearchKabuKa - 54 - root - INFO - create csv file
+2022-03-17 13:41:20,617- perform_request - 336 - elastic_transport.transport - INFO - PUT https://localhost:9200/kabusearch/_doc/1 [status:201 duration:0.160s]
+2022-03-17 13:41:20,815- perform_request - 336 - elastic_transport.transport - INFO - PUT https://localhost:9200/kabusearch/_doc/2 [status:201 duration:0.198s]
+2022-03-17 13:41:21,014- perform_request - 336 - elastic_transport.transport - INFO - PUT https://localhost:9200/kabusearch/_doc/3 [status:201 duration:0.199s]
+2022-03-17 13:41:21,124- perform_request - 336 - elastic_transport.transport - INFO - PUT https://localhost:9200/kabusearch/_doc/4 [status:201 duration:0.109s]
+2022-03-17 13:41:21,234- perform_request - 336 - elastic_transport.transport - INFO - PUT https://localhost:9200/kabusearch/_doc/5 [status:201 duration:0.110s]
+2022-03-17 13:41:21,343- perform_request - 336 - elastic_transport.transport - INFO - PUT https://localhost:9200/kabusearch/_doc/6 [status:201 duration:0.109s]
+2022-03-17 13:41:21,453- perform_request - 336 - elastic_transport.transport - INFO - PUT https://localhost:9200/kabusearch/_doc/7 [status:201 duration:0.110s]
+2022-03-17 13:41:21,563- perform_request - 336 - elastic_transport.transport - INFO - PUT https://localhost:9200/kabusearch/_doc/8 [status:201 duration:0.110s]
+2022-03-17 13:41:21,670- perform_request - 336 - elastic_transport.transport - INFO - PUT https://localhost:9200/kabusearch/_doc/9 [status:201 duration:0.106s]
+2022-03-17 13:41:21,861- perform_request - 336 - elastic_transport.transport - INFO - PUT https://localhost:9200/kabusearch/_doc/10 [status:201 duration:0.156s]
+2022-03-17 13:41:21,953- perform_request - 336 - elastic_transport.transport - INFO - PUT https://localhost:9200/kabusearch/_doc/11 [status:201 duration:0.092s]
+2022-03-17 13:41:22,052- perform_request - 336 - elastic_transport.transport - INFO - PUT https://localhost:9200/kabusearch/_doc/12 [status:201 duration:0.099s]
+2022-03-17 13:41:22,145- perform_request - 336 - elastic_transport.transport - INFO - PUT https://localhost:9200/kabusearch/_doc/13 [status:201 duration:0.093s]
+2022-03-17 13:41:22,227- perform_request - 336 - elastic_transport.transport - INFO - PUT https://localhost:9200/kabusearch/_doc/14 [status:201 duration:0.082s]
+2022-03-17 13:41:22,344- perform_request - 336 - elastic_transport.transport - INFO - PUT https://localhost:9200/kabusearch/_doc/15 [status:201 duration:0.117s]
+2022-03-17 13:41:22,496- perform_request - 336 - elastic_transport.transport - INFO - PUT https://localhost:9200/kabusearch/_doc/16 [status:201 duration:0.152s]
+2022-03-17 13:41:22,588- perform_request - 336 - elastic_transport.transport - INFO - PUT https://localhost:9200/kabusearch/_doc/17 [status:201 duration:0.091s]
+2022-03-17 13:41:22,588- SearchKabuKa - 107 - root - INFO - end csv saved
+2022-03-17 13:41:22,589- drawline - 12 - asyncio - INFO - start draw
+2022-03-17 13:41:25,400- drawline - 32 - asyncio - INFO - end draw
+2022-03-17 13:41:25,401- <module> - 193 - root - INFO - program end
