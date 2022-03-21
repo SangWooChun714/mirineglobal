@@ -28,19 +28,31 @@ screen shot
 
 
 ## dockerの実行
-* cmdでdocker-composeファイルがあるフォルダに入って　'docker-compose up --build' を入力してcontainerを作って起動させる。
+* cmdでdocker-composeファイルがあるフォルダに入って　
+
+        docker-compose up --build 
+
+を入力してcontainerを作って起動させる。
 
 screen shot
 
 ![docker-compose up](https://github.com/SangWooChun714/mirineglobal/blob/master/docker.JPG)
 
-* dockerのcontainerが起動したらcmdで　'docker exec -it python3 /bin/bash'　を入力してcontainerの中に入る。
+* dockerのcontainerが起動したらcmdで　
+
+        docker exec -it python3 /bin/bash　
+
+を入力してcontainerの中に入る。
 
 screen shot
 
 ![docker bash](https://github.com/SangWooChun714/mirineglobal/blob/master/dockerbash.JPG)
 
-* container入ったら　'python kabusavecsv.py 会社の名前　日付' で株価を見たい会社と日を入力する。
+* container入ったら　
+
+        python kabusavecsv.py 会社の名前　日付
+
+で株価を見たい会社と日を入力する。
 
 screen shot
 
@@ -56,27 +68,27 @@ screen shot
 ## elasticsearchの使い方
 cmdで
 
-docker pull docker.elastic.co/elasticsearch/elasticsearch:8.1.0
+    docker pull docker.elastic.co/elasticsearch/elasticsearch:8.1.0
 
-docker pull docker.elastic.co/kibana/kibana:8.1.0を
+    docker pull docker.elastic.co/kibana/kibana:8.1.0
 
-入力してimageを持ってくる。
+を入力してimageを持ってくる。
 
 また
 
 docker network create elastic　でcontainerで使うnetworkを作る。
 
-docker run --name es01 --net elastic -p 9200:9200 -p 9300:9300 -it docker.elastic.co/elasticsearch/elasticsearch:8.1.0
+     docker run --name es01 --net elastic -p 9200:9200 -p 9300:9300 -it docker.elastic.co/elasticsearch/elasticsearch:8.1.0
 
-docker run --name ki01 --net elastic -p 5601:5601 -it docker.elastic.co/kibana/kibana:8.1.0　
+     docker run --name ki01 --net elastic -p 5601:5601 -it docker.elastic.co/kibana/kibana:8.1.0　
 
 でcontainerを作って起動する。
 
-docker cp es01:/usr/share/elasticsearch/config/certs/http_ca.crt . 
+     docker cp es01:/usr/share/elasticsearch/config/certs/http_ca.crt . 
 
 で認証書を持ってくる。
 
-web browserでlocalhost:5601に接続したらkibanaのlogin　pageが出ます。
+web browserで 'localhost:5601' に接続したらkibanaのlogin　pageが出ます。
 
 idは 'elastic' pwはcontainerのlogに記録されているのでそれをコピーしてloginする。
 
