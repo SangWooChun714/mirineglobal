@@ -1,0 +1,20 @@
+2022-03-21 15:16:57,864- SearchKabuKa - 20 - root - INFO - start kabusearch
+2022-03-21 15:17:18,442- SearchKabuKa - 20 - root - INFO - start kabusearch
+2022-03-21 15:17:18,616- perform_request - 336 - elastic_transport.transport - INFO - PUT https://localhost:9200/dailykabu/_doc/21 [status:201 duration:0.108s]
+2022-03-21 15:17:18,617- SearchKabuKa - 63 - root - INFO - end work
+2022-03-21 15:18:03,982- SearchKabuKa - 20 - root - INFO - start kabusearch
+2022-03-21 15:18:04,181- perform_request - 336 - elastic_transport.transport - INFO - PUT https://localhost:9200/dailykabu/_doc/21 [status:200 duration:0.114s]
+2022-03-21 15:18:04,203- SearchKabuKa - 64 - root - INFO - end work
+2022-03-21 15:18:27,238- SearchKabuKa - 20 - root - INFO - start kabusearch
+2022-03-21 15:18:27,521- perform_request - 336 - elastic_transport.transport - INFO - PUT https://localhost:9200/dailykabu/_doc/21 [status:200 duration:0.175s]
+2022-03-21 15:18:27,522- SearchKabuKa - 64 - root - INFO - end work
+2022-03-21 15:19:09,200- SearchKabuKa - 20 - root - INFO - start kabusearch
+2022-03-21 15:19:09,210- SearchKabuKa - 35 - root - INFO - id = 21
+2022-03-21 15:19:09,393- perform_request - 336 - elastic_transport.transport - INFO - PUT https://localhost:9200/dailykabu/_doc/21 [status:200 duration:0.119s]
+2022-03-21 15:19:09,393- SearchKabuKa - 64 - root - INFO - end work
+2022-03-21 15:26:47,628- <module> - 74 - root - INFO - start work
+2022-03-21 15:27:30,848- SearchKabuKa - 22 - root - INFO - start kabusearch
+2022-03-21 15:27:30,861- SearchKabuKa - 37 - root - INFO - id = 21
+2022-03-21 15:27:31,247- perform_request - 336 - elastic_transport.transport - INFO - PUT https://localhost:9200/dailykabu/_doc/21 [status:200 duration:0.321s]
+2022-03-21 15:27:31,247- SearchKabuKa - 66 - root - INFO - end kabusearch
+2022-03-21 15:27:35,387- <module> - 81 - root - INFO - end work

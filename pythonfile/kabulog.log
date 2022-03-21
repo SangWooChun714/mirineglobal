@@ -1596,3 +1596,69 @@ elastic_transport.TlsError: TLS error caused by: SSLError([SSL: WRONG_VERSION_NU
 2022-03-17 13:41:22,589- drawline - 12 - asyncio - INFO - start draw
 2022-03-17 13:41:25,400- drawline - 32 - asyncio - INFO - end draw
 2022-03-17 13:41:25,401- <module> - 193 - root - INFO - program end
+2022-03-18 08:23:56,949- <module> - 175 - root - INFO - program start
+2022-03-18 08:23:56,968- <module> - 177 - root - INFO - kabuname : 삼성전자 day : 2022.02.18
+2022-03-18 08:23:56,969- checking - 126 - root - INFO - start checking
+2022-03-18 08:23:56,969- checking - 142 - root - INFO - end checking
+2022-03-18 08:23:56,969- FindDays - 151 - root - INFO - start finddays
+2022-03-18 08:23:56,969- FindDays - 167 - root - INFO - end finddays : 2022.02.18, 
+2022-03-18 08:23:57,640- SearchKabuKa - 51 - root - INFO - start kabusearch
+2022-03-18 08:23:57,640- table_number - 17 - root - INFO - start tablenumber check
+2022-03-18 08:23:57,740- table_number - 27 - root - INFO - url : https://finance.naver.com/item/sise_day.naver?code=005930, tablenum : 646
+2022-03-18 08:23:57,740- table_number - 31 - root - INFO - end tablenumber check
+2022-03-18 08:23:57,773- SearchKabuKa - 55 - root - INFO - create csv file
+2022-03-18 08:24:00,310- perform_request - 336 - elastic_transport.transport - INFO - PUT http://localhost:9200/kabusearch/_doc/1 [status:201 duration:2.486s]
+2022-03-18 08:24:00,443- perform_request - 336 - elastic_transport.transport - INFO - PUT http://localhost:9200/kabusearch/_doc/2 [status:201 duration:0.133s]
+2022-03-18 08:24:00,537- perform_request - 336 - elastic_transport.transport - INFO - PUT http://localhost:9200/kabusearch/_doc/3 [status:201 duration:0.094s]
+2022-03-18 08:24:00,627- perform_request - 336 - elastic_transport.transport - INFO - PUT http://localhost:9200/kabusearch/_doc/4 [status:201 duration:0.090s]
+2022-03-18 08:24:00,717- perform_request - 336 - elastic_transport.transport - INFO - PUT http://localhost:9200/kabusearch/_doc/5 [status:201 duration:0.088s]
+2022-03-18 08:24:00,812- perform_request - 336 - elastic_transport.transport - INFO - PUT http://localhost:9200/kabusearch/_doc/6 [status:201 duration:0.094s]
+2022-03-18 08:24:00,903- perform_request - 336 - elastic_transport.transport - INFO - PUT http://localhost:9200/kabusearch/_doc/7 [status:201 duration:0.091s]
+2022-03-18 08:24:00,995- perform_request - 336 - elastic_transport.transport - INFO - PUT http://localhost:9200/kabusearch/_doc/8 [status:201 duration:0.092s]
+2022-03-18 08:24:01,079- perform_request - 336 - elastic_transport.transport - INFO - PUT http://localhost:9200/kabusearch/_doc/9 [status:201 duration:0.083s]
+2022-03-18 08:24:01,277- perform_request - 336 - elastic_transport.transport - INFO - PUT http://localhost:9200/kabusearch/_doc/10 [status:201 duration:0.151s]
+2022-03-18 08:24:01,412- perform_request - 336 - elastic_transport.transport - INFO - PUT http://localhost:9200/kabusearch/_doc/11 [status:201 duration:0.135s]
+2022-03-18 08:24:01,535- perform_request - 336 - elastic_transport.transport - INFO - PUT http://localhost:9200/kabusearch/_doc/12 [status:201 duration:0.123s]
+2022-03-18 08:24:01,621- perform_request - 336 - elastic_transport.transport - INFO - PUT http://localhost:9200/kabusearch/_doc/13 [status:201 duration:0.086s]
+2022-03-18 08:24:01,718- perform_request - 336 - elastic_transport.transport - INFO - PUT http://localhost:9200/kabusearch/_doc/14 [status:201 duration:0.097s]
+2022-03-18 08:24:01,794- perform_request - 336 - elastic_transport.transport - INFO - PUT http://localhost:9200/kabusearch/_doc/15 [status:201 duration:0.075s]
+2022-03-18 08:24:01,888- perform_request - 336 - elastic_transport.transport - INFO - PUT http://localhost:9200/kabusearch/_doc/16 [status:201 duration:0.093s]
+2022-03-18 08:24:01,969- perform_request - 336 - elastic_transport.transport - INFO - PUT http://localhost:9200/kabusearch/_doc/17 [status:201 duration:0.081s]
+2022-03-18 08:24:02,068- perform_request - 336 - elastic_transport.transport - INFO - PUT http://localhost:9200/kabusearch/_doc/18 [status:201 duration:0.099s]
+2022-03-18 08:24:02,068- SearchKabuKa - 112 - root - INFO - end csv saved
+2022-03-18 08:24:02,069- drawline - 12 - asyncio - INFO - start draw
+2022-03-18 08:24:08,357- drawline - 32 - asyncio - INFO - end draw
+2022-03-18 08:24:08,358- <module> - 198 - root - INFO - program end
+2022-03-18 10:59:52,202- <module> - 175 - root - INFO - program start
+2022-03-18 10:59:52,230- <module> - 177 - root - INFO - kabuname : 카카오게임즈 day : 2022.02.18
+2022-03-18 10:59:52,230- checking - 126 - root - INFO - start checking
+2022-03-18 10:59:52,231- checking - 142 - root - INFO - end checking
+2022-03-18 10:59:52,231- FindDays - 151 - root - INFO - start finddays
+2022-03-18 10:59:52,231- FindDays - 167 - root - INFO - end finddays : 2022.02.18, 
+2022-03-18 10:59:52,841- SearchKabuKa - 51 - root - INFO - start kabusearch
+2022-03-18 10:59:52,841- table_number - 17 - root - INFO - start tablenumber check
+2022-03-18 10:59:52,957- table_number - 27 - root - INFO - url : https://finance.naver.com/item/sise_day.naver?code=293490, tablenum : 38
+2022-03-18 10:59:52,957- table_number - 31 - root - INFO - end tablenumber check
+2022-03-18 10:59:52,969- SearchKabuKa - 55 - root - INFO - create csv file
+2022-03-18 10:59:53,143- perform_request - 336 - elastic_transport.transport - INFO - PUT https://localhost:9200/kabusearch/_doc/1 [status:200 duration:0.120s]
+2022-03-18 10:59:53,234- perform_request - 336 - elastic_transport.transport - INFO - PUT https://localhost:9200/kabusearch/_doc/2 [status:200 duration:0.089s]
+2022-03-18 10:59:53,327- perform_request - 336 - elastic_transport.transport - INFO - PUT https://localhost:9200/kabusearch/_doc/3 [status:200 duration:0.092s]
+2022-03-18 10:59:53,419- perform_request - 336 - elastic_transport.transport - INFO - PUT https://localhost:9200/kabusearch/_doc/4 [status:200 duration:0.092s]
+2022-03-18 10:59:53,510- perform_request - 336 - elastic_transport.transport - INFO - PUT https://localhost:9200/kabusearch/_doc/5 [status:200 duration:0.091s]
+2022-03-18 10:59:53,606- perform_request - 336 - elastic_transport.transport - INFO - PUT https://localhost:9200/kabusearch/_doc/6 [status:200 duration:0.096s]
+2022-03-18 10:59:53,693- perform_request - 336 - elastic_transport.transport - INFO - PUT https://localhost:9200/kabusearch/_doc/7 [status:200 duration:0.087s]
+2022-03-18 10:59:53,775- perform_request - 336 - elastic_transport.transport - INFO - PUT https://localhost:9200/kabusearch/_doc/8 [status:200 duration:0.082s]
+2022-03-18 10:59:53,860- perform_request - 336 - elastic_transport.transport - INFO - PUT https://localhost:9200/kabusearch/_doc/9 [status:200 duration:0.084s]
+2022-03-18 10:59:53,984- perform_request - 336 - elastic_transport.transport - INFO - PUT https://localhost:9200/kabusearch/_doc/10 [status:200 duration:0.065s]
+2022-03-18 10:59:54,076- perform_request - 336 - elastic_transport.transport - INFO - PUT https://localhost:9200/kabusearch/_doc/11 [status:200 duration:0.091s]
+2022-03-18 10:59:54,235- perform_request - 336 - elastic_transport.transport - INFO - PUT https://localhost:9200/kabusearch/_doc/12 [status:200 duration:0.158s]
+2022-03-18 10:59:54,377- perform_request - 336 - elastic_transport.transport - INFO - PUT https://localhost:9200/kabusearch/_doc/13 [status:200 duration:0.142s]
+2022-03-18 10:59:54,499- perform_request - 336 - elastic_transport.transport - INFO - PUT https://localhost:9200/kabusearch/_doc/14 [status:200 duration:0.122s]
+2022-03-18 10:59:54,635- perform_request - 336 - elastic_transport.transport - INFO - PUT https://localhost:9200/kabusearch/_doc/15 [status:200 duration:0.136s]
+2022-03-18 10:59:54,799- perform_request - 336 - elastic_transport.transport - INFO - PUT https://localhost:9200/kabusearch/_doc/16 [status:200 duration:0.164s]
+2022-03-18 10:59:54,965- perform_request - 336 - elastic_transport.transport - INFO - PUT https://localhost:9200/kabusearch/_doc/17 [status:200 duration:0.166s]
+2022-03-18 10:59:55,054- perform_request - 336 - elastic_transport.transport - INFO - PUT https://localhost:9200/kabusearch/_doc/18 [status:201 duration:0.088s]
+2022-03-18 10:59:55,054- SearchKabuKa - 112 - root - INFO - end csv saved
+2022-03-18 10:59:55,055- drawline - 12 - asyncio - INFO - start draw
+2022-03-18 10:59:59,186- drawline - 32 - asyncio - INFO - end draw
+2022-03-18 10:59:59,186- <module> - 198 - root - INFO - program end

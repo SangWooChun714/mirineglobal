@@ -1,0 +1,3 @@
+2022-03-21 15:11:56,521- SearchKabuKa - 14 - root - INFO - start kabusearch
+2022-03-21 15:11:57,395- perform_request - 336 - elastic_transport.transport - INFO - PUT https://localhost:9200/dailykabu/_doc/1 [status:201 duration:0.618s]
+2022-03-21 15:11:57,395- SearchKabuKa - 57 - root - INFO - end work
