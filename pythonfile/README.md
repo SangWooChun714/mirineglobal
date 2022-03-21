@@ -22,25 +22,67 @@
 
 * logはkabulog.logで貯蔵します。
 
-screenshot
+screen shot
 
-![csv](https://github.com/SangWooChun714/mirineglobal/blob/master/pythonfile/csvfile.JPG)　![graph](https://github.com/SangWooChun714/mirineglobal/blob/master/graph.JPG)
+![csv](https://github.com/SangWooChun714/mirineglobal/blob/master/pythonfile/csvfile.JPG)
 
 
 ## dockerの実行
 * cmdでdocker-composeファイルがあるフォルダに入って　'docker-compose up --build' を入力してcontainerを作って起動させる。
 
-screenshot
+screen shot
+
 ![docker-compose up](https://github.com/SangWooChun714/mirineglobal/blob/master/docker.JPG)
 
 * dockerのcontainerが起動したらcmdで　'docker exec -it python3 /bin/bash'　を入力してcontainerの中に入る。
+
+screen shot
 
 ![docker bash](https://github.com/SangWooChun714/mirineglobal/blob/master/dockerbash.JPG)
 
 * container入ったら　'python kabusavecsv.py 会社の名前　日付' で株価を見たい会社と日を入力する。
 
-![start program in container](https://github.com/SangWooChun714/mirineglobal/blob/master/pythonfile/container.JPG)
+screen shot
+
+![start program in container](https://github.com/SangWooChun714/mirineglobal/blob/master/container.JPG)
 
 * programの起動に成功したらlog,jpg,csvファイルが生成される。
 
-![file created1](https://github.com/SangWooChun714/mirineglobal/blob/master/create_file.JPG)　![file created2](https://github.com/SangWooChun714/mirineglobal/blob/master/log.JPG)
+screen shot
+
+![file created1](https://github.com/SangWooChun714/mirineglobal/blob/master/create_file.JPG)　
+![file created2](https://github.com/SangWooChun714/mirineglobal/blob/master/log.JPG)
+
+## elasticsearchの使い方
+cmdで
+
+docker pull docker.elastic.co/elasticsearch/elasticsearch:8.1.0
+
+docker pull docker.elastic.co/kibana/kibana:8.1.0を
+
+入力してimageを持ってくる。
+
+また
+
+docker network create elastic　でcontainerで使うnetworkを作る。
+
+docker run --name es01 --net elastic -p 9200:9200 -p 9300:9300 -it docker.elastic.co/elasticsearch/elasticsearch:8.1.0
+
+docker run --name ki01 --net elastic -p 5601:5601 -it docker.elastic.co/kibana/kibana:8.1.0　
+
+でcontainerを作って起動する。
+
+docker cp es01:/usr/share/elasticsearch/config/certs/http_ca.crt . 
+
+で認証書を持ってくる。
+
+web browserでlocalhost:5601に接続したらkibanaのlogin　pageが出ます。
+
+idは 'elastic' pwはcontainerのlogに記録されているのでそれをコピーしてloginする。
+
+loginしたら左上のmenuボタンでdev toolsに入って作業できる。
+
+![file created2](https://github.com/SangWooChun714/mirineglobal/blob/master/kibana.JPG)
+
+
+
