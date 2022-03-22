@@ -35,6 +35,7 @@ def table_number(url) :
 #totalで架空した資料を保存
 #tablenumで持ってくるpageを決定
 #dayは今処理しているひ、daysは入力された日
+#bodyはelasticsearchのindexに入れる
 def SearchKabuKa(kabunames, code, days, filename):
     total = [] # 会社の名前, 日付, 株価, 取引量を保存するlist
     breaker = True # 無限文を止める変数

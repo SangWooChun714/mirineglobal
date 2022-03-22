@@ -94,7 +94,11 @@ idは 'elastic' pwはcontainerのlogに記録されているのでそれをコ�
 
 loginしたら左上のmenuボタンでdev toolsに入って作業できる。
 
-![file created2](https://github.com/SangWooChun714/mirineglobal/blob/master/kibana.JPG)
+imber accountは kabusearch indexの　read only accountです。
+
+crontabkabusearch.pyはdaily作業用に作りました。kabusavecsv.pyファイルを基にcrawlingコードのみ持ってきて作りました。
+
+containerが起動してない時を備えてcontainerを起動するコードも入れました。
 
 
 
