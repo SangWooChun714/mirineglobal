@@ -17,7 +17,7 @@ def table_number(url) :
     logger.info("start tablenumber check")
     try:
         res1 = requests.get(url, headers=__headers) #資料を持ってくる注所を設定
-        searchday = BeautifulSoup(res1.text, "lxml") 
+        searchday = BeautifulSoup(res1.text, "lxml")
         searchtablenum = searchday.find("td", attrs={"class":"pgRR"}) # 探すpageの終わりを確認
         if not searchtablenum:
             searchtablenum = searchday.find("table", attrs={"class":"Nnavi"}).find("td",{"class":"on"})
@@ -44,7 +44,7 @@ def SearchKabuKa(kabunames, code, days, filename):
     ctx = ssl.create_default_context()
     #ctx.load_verify_locations("C:/Users/cjstk/Desktop/python/elasticsearch-8.1.0/config/certs/http_ca.crt")
     ctx.load_verify_locations("C:/Users/cjstk/Desktop/elasticsearch-8.1.0/cert1/http_ca.crt")
-    es = Elasticsearch("https://localhost:9200", basic_auth=("elastic","sw1594311") ,ssl_context=ctx)
+    es = Elasticsearch("https://localhost:9200", basic_auth=("elastic","sw1594311"), ssl_context=ctx)
     #es = Elasticsearch("http://localhost:9200/")
     index = "kabusearch"
     n = 1

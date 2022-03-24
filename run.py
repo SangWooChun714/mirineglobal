@@ -18,4 +18,4 @@ def searchkabuweb():
     return render_template("search.html", kabuname = kabuname, Code = code, Nowval = nowval, Qunt = qunt, Upper = upper, Differ = differ) 
     # templates 폴더 내부의 search.html 로 이동하며 request에 변수를 넣어줌
 
-app.run(debug=True) # 서버 시작코드
+app.run(host="localhost", port=2500) # 서버 시작코드

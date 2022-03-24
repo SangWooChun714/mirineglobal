@@ -100,5 +100,12 @@ crontabkabusearch.pyはdaily作業用に作りました。kabusavecsv.pyファ�
 
 containerが起動してない時を備えてcontainerを起動するコードも入れました。
 
+window scheduler
 
+![crontab total code](https://github.com/SangWooChun714/mirineglobal/blob/master/crontabtotal.jpg)
 
+windowのschedulerで使うコードです。
+
+dockerのcontainerが停止しているためosを呼んで起動させます。
+
+起動に時間が少しかかりますので40秒sleepしてcrawlingするようにしました。

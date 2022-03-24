@@ -1,3 +1,11 @@
 2022-03-21 15:11:56,521- SearchKabuKa - 14 - root - INFO - start kabusearch
 2022-03-21 15:11:57,395- perform_request - 336 - elastic_transport.transport - INFO - PUT https://localhost:9200/dailykabu/_doc/1 [status:201 duration:0.618s]
 2022-03-21 15:11:57,395- SearchKabuKa - 57 - root - INFO - end work
+2022-03-24 10:37:54,836- _log - 225 - werkzeug - INFO -  * Restarting with stat
+2022-03-24 10:37:56,917- _log - 225 - werkzeug - WARNING -  * Debugger is active!
+2022-03-24 10:37:56,930- _log - 225 - werkzeug - INFO -  * Debugger PIN: 115-113-292
+2022-03-24 10:37:57,027- _log - 225 - werkzeug - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2022-03-24 10:40:40,986- _log - 225 - werkzeug - INFO -  * Running on http://localhost:2500/ (Press CTRL+C to quit)
+2022-03-24 10:40:52,214- _log - 225 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2022 10:40:52] "GET / HTTP/1.1" 200 -
+2022-03-24 10:40:52,312- _log - 225 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2022 10:40:52] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2022-03-24 10:41:12,661- _log - 225 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2022 10:41:12] "POST /search HTTP/1.1" 200 -

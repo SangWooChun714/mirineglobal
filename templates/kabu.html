@@ -2,11 +2,17 @@
 <html>
 <head>
     <meta charset='utf-8'>
-    <title>Page Title</title>
+    <title></title>
+    <script>
+        date = new Date().toDateString().slice(0,7);
+        document.getElementById("date").value = date
+    </script>
+    
 </head>
 <body>
     <form method="post" action="/search">
         <input type="text" name="kabuname" placeholder="검색하려는 종목을 입력해주세요."> <!-- 검색하려는 회사의 이름을 입력하도록 함-->
+        <input type="date" name="date" id = "date">
         <input type="submit" value="검색">
     </form>
 </body>
