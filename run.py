@@ -1,3 +1,4 @@
+from dataclasses import replace
 from flask import Flask, render_template, request
 from pythonfile import searchkabu
 app = Flask(__name__)
@@ -9,6 +10,9 @@ def hello_World():
 @app.route("/search", methods=["POST"]) # /search 가 입력되면 이 함수를 실행하고 내용을 post방식으로 받아온다
 def searchkabuweb():
     kabuname = request.form['kabuname'] # 서버의 request에서 kabuname이라는 변수를 받아온다 이것은 html의 name태그를 지정하여 받아온다.
+    date = request.form["date"]
+    date = date.replace("-",".")
+    print(date)
     result = searchkabu.searchkabu(kabuname) #pythonfile 폴더의 searchkabu.py를 import하여 파일 내부의 searchkabu라는 함수에 kabuname을 넣어 결과를 result에 저장
     code = result[0] # 상장된 회사의 코드
     nowval = result[1] # 현재 주식 가격

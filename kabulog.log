@@ -9,3 +9,123 @@
 2022-03-24 10:40:52,214- _log - 225 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2022 10:40:52] "GET / HTTP/1.1" 200 -
 2022-03-24 10:40:52,312- _log - 225 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2022 10:40:52] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
 2022-03-24 10:41:12,661- _log - 225 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2022 10:41:12] "POST /search HTTP/1.1" 200 -
+2022-03-24 17:41:22,063- _log - 225 - werkzeug - INFO -  * Running on http://localhost:2500/ (Press CTRL+C to quit)
+2022-03-24 17:41:34,629- _log - 225 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2022 17:41:34] "GET / HTTP/1.1" 200 -
+2022-03-24 17:41:34,714- _log - 225 - werkzeug - INFO - 127.0.0.1 - - [24/Mar/2022 17:41:34] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2022-03-25 09:41:52,831- _log - 225 - werkzeug - INFO -  * Running on http://localhost:2500/ (Press CTRL+C to quit)
+2022-03-25 09:41:54,449- _log - 225 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2022 09:41:54] "GET / HTTP/1.1" 200 -
+2022-03-25 09:41:54,634- _log - 225 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2022 09:41:54] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2022-03-25 09:42:12,872- _log - 225 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2022 09:42:12] "GET / HTTP/1.1" 200 -
+2022-03-25 09:42:13,655- _log - 225 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2022 09:42:13] "GET / HTTP/1.1" 200 -
+2022-03-25 09:42:13,951- _log - 225 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2022 09:42:13] "GET / HTTP/1.1" 200 -
+2022-03-25 09:42:14,183- _log - 225 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2022 09:42:14] "GET / HTTP/1.1" 200 -
+2022-03-25 09:43:35,309- _log - 225 - werkzeug - INFO -  * Running on http://localhost:2500/ (Press CTRL+C to quit)
+2022-03-25 09:43:38,251- _log - 225 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2022 09:43:38] "GET / HTTP/1.1" 200 -
+2022-03-25 09:43:39,460- _log - 225 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2022 09:43:39] "GET / HTTP/1.1" 200 -
+2022-03-25 09:43:39,748- _log - 225 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2022 09:43:39] "GET / HTTP/1.1" 200 -
+2022-03-25 09:44:39,593- _log - 225 - werkzeug - INFO -  * Running on http://localhost:2500/ (Press CTRL+C to quit)
+2022-03-25 09:44:45,286- _log - 225 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2022 09:44:45] "GET / HTTP/1.1" 200 -
+2022-03-25 09:45:56,774- _log - 225 - werkzeug - INFO -  * Running on http://localhost:2500/ (Press CTRL+C to quit)
+2022-03-25 09:46:03,700- log_exception - 1457 - run - ERROR - Exception on /search [POST]
+Traceback (most recent call last):
+  File "C:\Users\cjstk\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\cjstk\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\cjstk\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\cjstk\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "c:\Users\cjstk\Desktop\mirineglobal\run.py", line 14, in searchkabuweb
+    result = searchkabu.searchkabu(kabuname) #pythonfile 폴더의 searchkabu.py를 import하여 파일 내부의 searchkabu라는 함수에 kabuname을 넣어 결과를 result에 저장
+  File "c:\Users\cjstk\Desktop\mirineglobal\pythonfile\searchkabu.py", line 26, in searchkabu
+    url = "https://finance.naver.com/item/sise.naver?code="+code # 주식의 가격을 확인하기 위해 사이트에 접속, 접속 시 회사코드를 활용하여 특정회사를 검색
+TypeError: can only concatenate str (not "int") to str
+2022-03-25 09:46:03,702- _log - 225 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2022 09:46:03] "[35m[1mPOST /search HTTP/1.1[0m" 500 -
+2022-03-25 09:46:34,740- _log - 225 - werkzeug - INFO -  * Running on http://localhost:2500/ (Press CTRL+C to quit)
+2022-03-25 09:46:38,889- log_exception - 1457 - run - ERROR - Exception on /search [POST]
+Traceback (most recent call last):
+  File "C:\Users\cjstk\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\cjstk\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\cjstk\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\cjstk\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "c:\Users\cjstk\Desktop\mirineglobal\run.py", line 14, in searchkabuweb
+    result = searchkabu.searchkabu(kabuname) #pythonfile 폴더의 searchkabu.py를 import하여 파일 내부의 searchkabu라는 함수에 kabuname을 넣어 결과를 result에 저장
+  File "c:\Users\cjstk\Desktop\mirineglobal\pythonfile\searchkabu.py", line 26, in searchkabu
+    url = "https://finance.naver.com/item/sise.naver?code="+code # 주식의 가격을 확인하기 위해 사이트에 접속, 접속 시 회사코드를 활용하여 특정회사를 검색
+TypeError: can only concatenate str (not "int") to str
+2022-03-25 09:46:38,892- _log - 225 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2022 09:46:38] "[35m[1mPOST /search HTTP/1.1[0m" 500 -
+2022-03-25 09:48:28,632- _log - 225 - werkzeug - INFO -  * Running on http://localhost:2500/ (Press CTRL+C to quit)
+2022-03-25 09:48:39,223- _log - 225 - werkzeug - INFO -  * Running on http://localhost:2500/ (Press CTRL+C to quit)
+2022-03-25 09:48:40,915- log_exception - 1457 - run - ERROR - Exception on /search [POST]
+Traceback (most recent call last):
+  File "C:\Users\cjstk\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\cjstk\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\cjstk\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\cjstk\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "c:\Users\cjstk\Desktop\mirineglobal\run.py", line 14, in searchkabuweb
+    date = replace("-",".")
+TypeError: replace() takes 1 positional argument but 2 were given
+2022-03-25 09:48:40,917- _log - 225 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2022 09:48:40] "[35m[1mPOST /search HTTP/1.1[0m" 500 -
+2022-03-25 09:48:44,586- _log - 225 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2022 09:48:44] "GET / HTTP/1.1" 200 -
+2022-03-25 09:48:45,422- _log - 225 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2022 09:48:45] "GET / HTTP/1.1" 200 -
+2022-03-25 09:48:46,149- log_exception - 1457 - run - ERROR - Exception on /search [POST]
+Traceback (most recent call last):
+  File "C:\Users\cjstk\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\cjstk\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\cjstk\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\cjstk\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "c:\Users\cjstk\Desktop\mirineglobal\run.py", line 14, in searchkabuweb
+    date = replace("-",".")
+TypeError: replace() takes 1 positional argument but 2 were given
+2022-03-25 09:48:46,150- _log - 225 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2022 09:48:46] "[35m[1mPOST /search HTTP/1.1[0m" 500 -
+2022-03-25 09:49:00,925- _log - 225 - werkzeug - INFO -  * Running on http://localhost:2500/ (Press CTRL+C to quit)
+2022-03-25 09:49:01,134- _log - 225 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2022 09:49:01] "GET / HTTP/1.1" 200 -
+2022-03-25 09:49:02,695- _log - 225 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2022 09:49:02] "GET / HTTP/1.1" 200 -
+2022-03-25 09:49:03,804- log_exception - 1457 - run - ERROR - Exception on /search [POST]
+Traceback (most recent call last):
+  File "C:\Users\cjstk\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\cjstk\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\cjstk\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\cjstk\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "c:\Users\cjstk\Desktop\mirineglobal\run.py", line 14, in searchkabuweb
+    date = replace("-",".")
+TypeError: replace() takes 1 positional argument but 2 were given
+2022-03-25 09:49:03,806- _log - 225 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2022 09:49:03] "[35m[1mPOST /search HTTP/1.1[0m" 500 -
+2022-03-25 09:49:39,744- _log - 225 - werkzeug - INFO -  * Running on http://localhost:2500/ (Press CTRL+C to quit)
+2022-03-25 09:49:41,753- _log - 225 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2022 09:49:41] "GET / HTTP/1.1" 200 -
+2022-03-25 09:49:42,842- log_exception - 1457 - run - ERROR - Exception on /search [POST]
+Traceback (most recent call last):
+  File "C:\Users\cjstk\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\cjstk\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\cjstk\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\cjstk\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "c:\Users\cjstk\Desktop\mirineglobal\run.py", line 16, in searchkabuweb
+    result = searchkabu.searchkabu(kabuname) #pythonfile 폴더의 searchkabu.py를 import하여 파일 내부의 searchkabu라는 함수에 kabuname을 넣어 결과를 result에 저장
+  File "c:\Users\cjstk\Desktop\mirineglobal\pythonfile\searchkabu.py", line 26, in searchkabu
+    url = "https://finance.naver.com/item/sise.naver?code="+code # 주식의 가격을 확인하기 위해 사이트에 접속, 접속 시 회사코드를 활용하여 특정회사를 검색
+TypeError: can only concatenate str (not "int") to str
+2022-03-25 09:49:42,844- _log - 225 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2022 09:49:42] "[35m[1mPOST /search HTTP/1.1[0m" 500 -
+2022-03-25 10:20:29,088- _log - 225 - werkzeug - INFO -  * Running on http://localhost:2500/ (Press CTRL+C to quit)
+2022-03-25 10:20:32,874- _log - 225 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2022 10:20:32] "GET / HTTP/1.1" 200 -
+2022-03-25 10:20:36,170- _log - 225 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2022 10:20:36] "POST /search HTTP/1.1" 200 -
