@@ -15,3 +15,9 @@
 2022-03-28 16:12:13,219- perform_request - 336 - elastic_transport.transport - INFO - PUT https://localhost:9200/dailykabu/_doc/28 [status:201 duration:1.293s]
 2022-03-28 16:12:13,219- SearchKabuKa - 56 - root - INFO - end kabusearch
 2022-03-28 16:12:25,257- <module> - 71 - root - INFO - end work
+2022-03-29 16:03:41,470- <module> - 64 - root - INFO - start work
+2022-03-29 16:04:36,674- SearchKabuKa - 22 - root - INFO - start kabusearch
+2022-03-29 16:04:36,994- SearchKabuKa - 33 - root - INFO - id = 29
+2022-03-29 16:04:38,138- perform_request - 336 - elastic_transport.transport - INFO - PUT https://localhost:9200/dailykabu/_doc/29 [status:201 duration:0.709s]
+2022-03-29 16:04:38,139- SearchKabuKa - 56 - root - INFO - end kabusearch
+2022-03-29 16:04:46,797- <module> - 71 - root - INFO - end work
