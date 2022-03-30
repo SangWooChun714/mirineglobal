@@ -185,3 +185,59 @@
 2022-03-29 17:56:34,367- perform_request - 336 - elastic_transport.transport - INFO - PUT https://localhost:9200/dailynews/_doc/20220329%2843%29 [status:201 duration:0.075s]
 2022-03-29 17:56:34,478- perform_request - 336 - elastic_transport.transport - INFO - PUT https://localhost:9200/dailynews/_doc/20220329%2844%29 [status:201 duration:0.094s]
 2022-03-29 17:56:36,530- <module> - 41 - root - INFO - end news work
+2022-03-30 16:14:04,469- <module> - 49 - root - INFO - start news work
+2022-03-30 16:16:30,739- <module> - 49 - root - INFO - start news work
+2022-03-30 16:16:38,005- perform_request - 336 - elastic_transport.transport - INFO - PUT https://localhost:9200/dailynews/_doc/20220330%281%29 [status:201 duration:0.208s]
+2022-03-30 16:16:38,164- perform_request - 336 - elastic_transport.transport - INFO - PUT https://localhost:9200/dailynews/_doc/20220330%282%29 [status:201 duration:0.130s]
+2022-03-30 16:16:38,258- perform_request - 336 - elastic_transport.transport - INFO - PUT https://localhost:9200/dailynews/_doc/20220330%283%29 [status:201 duration:0.070s]
+2022-03-30 16:16:38,391- perform_request - 336 - elastic_transport.transport - INFO - PUT https://localhost:9200/dailynews/_doc/20220330%284%29 [status:201 duration:0.111s]
+2022-03-30 16:16:38,505- perform_request - 336 - elastic_transport.transport - INFO - PUT https://localhost:9200/dailynews/_doc/20220330%285%29 [status:201 duration:0.091s]
+2022-03-30 16:16:38,625- perform_request - 336 - elastic_transport.transport - INFO - PUT https://localhost:9200/dailynews/_doc/20220330%286%29 [status:201 duration:0.104s]
+2022-03-30 16:16:38,797- perform_request - 336 - elastic_transport.transport - INFO - PUT https://localhost:9200/dailynews/_doc/20220330%287%29 [status:201 duration:0.145s]
+2022-03-30 16:16:38,917- perform_request - 336 - elastic_transport.transport - INFO - PUT https://localhost:9200/dailynews/_doc/20220330%288%29 [status:201 duration:0.099s]
+2022-03-30 16:16:39,017- perform_request - 336 - elastic_transport.transport - INFO - PUT https://localhost:9200/dailynews/_doc/20220330%289%29 [status:201 duration:0.078s]
+2022-03-30 16:16:39,126- perform_request - 336 - elastic_transport.transport - INFO - PUT https://localhost:9200/dailynews/_doc/20220330%2810%29 [status:201 duration:0.084s]
+2022-03-30 16:16:39,225- perform_request - 336 - elastic_transport.transport - INFO - PUT https://localhost:9200/dailynews/_doc/20220330%2811%29 [status:201 duration:0.077s]
+2022-03-30 16:16:39,339- perform_request - 336 - elastic_transport.transport - INFO - PUT https://localhost:9200/dailynews/_doc/20220330%2812%29 [status:201 duration:0.091s]
+2022-03-30 16:16:39,439- perform_request - 336 - elastic_transport.transport - INFO - PUT https://localhost:9200/dailynews/_doc/20220330%2813%29 [status:201 duration:0.075s]
+2022-03-30 16:16:39,539- perform_request - 336 - elastic_transport.transport - INFO - PUT https://localhost:9200/dailynews/_doc/20220330%2814%29 [status:201 duration:0.077s]
+2022-03-30 16:16:39,756- perform_request - 336 - elastic_transport.transport - INFO - PUT https://localhost:9200/dailynews/_doc/20220330%2815%29 [status:201 duration:0.193s]
+2022-03-30 16:16:39,905- perform_request - 336 - elastic_transport.transport - INFO - PUT https://localhost:9200/dailynews/_doc/20220330%2816%29 [status:201 duration:0.128s]
+2022-03-30 16:16:40,006- perform_request - 336 - elastic_transport.transport - INFO - PUT https://localhost:9200/dailynews/_doc/20220330%2817%29 [status:201 duration:0.081s]
+2022-03-30 16:16:40,097- perform_request - 336 - elastic_transport.transport - INFO - PUT https://localhost:9200/dailynews/_doc/20220330%2818%29 [status:201 duration:0.076s]
+2022-03-30 16:16:40,197- perform_request - 336 - elastic_transport.transport - INFO - PUT https://localhost:9200/dailynews/_doc/20220330%2819%29 [status:201 duration:0.081s]
+2022-03-30 16:16:40,298- perform_request - 336 - elastic_transport.transport - INFO - PUT https://localhost:9200/dailynews/_doc/20220330%2820%29 [status:201 duration:0.075s]
+2022-03-30 16:16:40,397- perform_request - 336 - elastic_transport.transport - INFO - PUT https://localhost:9200/dailynews/_doc/20220330%2821%29 [status:201 duration:0.079s]
+2022-03-30 16:16:40,497- perform_request - 336 - elastic_transport.transport - INFO - PUT https://localhost:9200/dailynews/_doc/20220330%2822%29 [status:201 duration:0.077s]
+2022-03-30 16:16:40,614- perform_request - 336 - elastic_transport.transport - INFO - PUT https://localhost:9200/dailynews/_doc/20220330%2823%29 [status:201 duration:0.092s]
+2022-03-30 16:16:40,714- perform_request - 336 - elastic_transport.transport - INFO - PUT https://localhost:9200/dailynews/_doc/20220330%2824%29 [status:201 duration:0.074s]
+2022-03-30 16:16:40,814- perform_request - 336 - elastic_transport.transport - INFO - PUT https://localhost:9200/dailynews/_doc/20220330%2825%29 [status:201 duration:0.079s]
+2022-03-30 16:16:40,914- perform_request - 336 - elastic_transport.transport - INFO - PUT https://localhost:9200/dailynews/_doc/20220330%2826%29 [status:201 duration:0.076s]
+2022-03-30 16:16:41,014- perform_request - 336 - elastic_transport.transport - INFO - PUT https://localhost:9200/dailynews/_doc/20220330%2827%29 [status:201 duration:0.076s]
+2022-03-30 16:16:41,122- perform_request - 336 - elastic_transport.transport - INFO - PUT https://localhost:9200/dailynews/_doc/20220330%2828%29 [status:201 duration:0.087s]
+2022-03-30 16:16:41,223- perform_request - 336 - elastic_transport.transport - INFO - PUT https://localhost:9200/dailynews/_doc/20220330%2829%29 [status:201 duration:0.077s]
+2022-03-30 16:16:41,322- perform_request - 336 - elastic_transport.transport - INFO - PUT https://localhost:9200/dailynews/_doc/20220330%2830%29 [status:201 duration:0.077s]
+2022-03-30 16:16:41,422- perform_request - 336 - elastic_transport.transport - INFO - PUT https://localhost:9200/dailynews/_doc/20220330%2831%29 [status:201 duration:0.076s]
+2022-03-30 16:16:41,522- perform_request - 336 - elastic_transport.transport - INFO - PUT https://localhost:9200/dailynews/_doc/20220330%2832%29 [status:201 duration:0.079s]
+2022-03-30 16:16:41,631- perform_request - 336 - elastic_transport.transport - INFO - PUT https://localhost:9200/dailynews/_doc/20220330%2833%29 [status:201 duration:0.085s]
+2022-03-30 16:16:41,748- perform_request - 336 - elastic_transport.transport - INFO - PUT https://localhost:9200/dailynews/_doc/20220330%2834%29 [status:201 duration:0.097s]
+2022-03-30 16:16:41,898- perform_request - 336 - elastic_transport.transport - INFO - PUT https://localhost:9200/dailynews/_doc/20220330%2835%29 [status:201 duration:0.129s]
+2022-03-30 16:16:42,009- perform_request - 336 - elastic_transport.transport - INFO - PUT https://localhost:9200/dailynews/_doc/20220330%2836%29 [status:201 duration:0.089s]
+2022-03-30 16:16:42,114- perform_request - 336 - elastic_transport.transport - INFO - PUT https://localhost:9200/dailynews/_doc/20220330%2837%29 [status:201 duration:0.081s]
+2022-03-30 16:16:42,209- perform_request - 336 - elastic_transport.transport - INFO - PUT https://localhost:9200/dailynews/_doc/20220330%2838%29 [status:201 duration:0.069s]
+2022-03-30 16:16:42,314- perform_request - 336 - elastic_transport.transport - INFO - PUT https://localhost:9200/dailynews/_doc/20220330%2839%29 [status:201 duration:0.083s]
+2022-03-30 16:16:42,401- perform_request - 336 - elastic_transport.transport - INFO - PUT https://localhost:9200/dailynews/_doc/20220330%2840%29 [status:201 duration:0.070s]
+2022-03-30 16:16:42,546- perform_request - 336 - elastic_transport.transport - INFO - PUT https://localhost:9200/dailynews/_doc/20220330%2841%29 [status:201 duration:0.120s]
+2022-03-30 16:16:42,717- perform_request - 336 - elastic_transport.transport - INFO - PUT https://localhost:9200/dailynews/_doc/20220330%2842%29 [status:201 duration:0.148s]
+2022-03-30 16:16:42,822- perform_request - 336 - elastic_transport.transport - INFO - PUT https://localhost:9200/dailynews/_doc/20220330%2843%29 [status:201 duration:0.081s]
+2022-03-30 16:16:42,916- perform_request - 336 - elastic_transport.transport - INFO - PUT https://localhost:9200/dailynews/_doc/20220330%2844%29 [status:201 duration:0.069s]
+2022-03-30 16:16:45,023- <module> - 51 - root - INFO - end news work
+2022-03-30 16:26:42,472- <module> - 53 - root - INFO - start news work
+2022-03-30 16:28:33,798- <module> - 54 - root - INFO - start news work
+2022-03-30 16:28:43,286- <module> - 56 - root - INFO - end news work
+2022-03-30 16:29:41,940- <module> - 54 - root - INFO - start news work
+2022-03-30 16:31:20,639- <module> - 54 - root - INFO - start news work
+2022-03-30 16:31:38,906- <module> - 54 - root - INFO - start news work
+2022-03-30 16:31:49,270- <module> - 56 - root - INFO - end news work
+2022-03-30 16:34:16,166- <module> - 54 - root - INFO - start news work
+2022-03-30 16:34:25,398- <module> - 56 - root - INFO - end news work
