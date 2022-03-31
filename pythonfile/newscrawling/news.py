@@ -6,6 +6,7 @@ from elasticsearch import Elasticsearch
 from newscofig import logger
 
 
+
 def elastic(newspage, n):  
     todays = str(date.today().strftime("%Y.%m.%d")) # 今日の日付を保存
     ctx = ssl.create_default_context()
@@ -46,6 +47,8 @@ def newscraling():
     driver1.get(driver1.find_element_by_xpath("/html/body/div[1]/div[3]/div[3]/div/div/div[1]/div/ul/li[3]/a").get_attribute("href"))
     econews = driver1.find_elements_by_class_name("cluster_text_headline")
     n = elastic(econews, n)
+
+    
 
 
 if __name__ == "__main__" :
