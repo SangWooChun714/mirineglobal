@@ -17,6 +17,11 @@ body = {
     }
 }
 
-result = es.search(index=index, body = body)
+result = es.get(index=index, id="20220404(1)")
+#result = es.search(index=index, body = body)
 #print(result['hits']['hits'])
 tag = Mecab()
+tag.pos(result["_source"]["script"])
+#print(result["_source"]["script"])
+# for i in result['hits']['hits'] :
+#    print(i["_source"]["script"])
