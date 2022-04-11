@@ -12,11 +12,17 @@ index = "dailynews"
 body = {
     "query" : {
         "match" : {
-            "date" : "2022.04.04"
+            "date" : "2022.04.08"
         }
     }
 }
 
-result = es.search(index=index, body = body)
+result = es.get(index=index, id="20220408(1)")
+#result = es.search(index=index, body = body)
 #print(result['hits']['hits'])
 tag = Mecab()
+tag.pos(result["_source"]["script"])
+print(tag)
+#print(result["_source"]["script"])
+# for i in result['hits']['hits'] :
+#    print(i["_source"]["script"])
