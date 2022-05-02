@@ -1,4 +1,4 @@
-
+from encodings import utf_8
 from openpyxl.utils.cell import coordinate_from_string
 from openpyxl import Workbook
 from random import *
