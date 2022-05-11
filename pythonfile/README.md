@@ -109,3 +109,9 @@ windowのschedulerで使うコードです。
 dockerのcontainerが停止しているためosを呼んで起動させます。
 
 起動に時間が少しかかりますので40秒sleepしてcrawlingするようにしました。
+
+
+## WordCloud
+yahoo.co.jpのニュース記事をMecabを利用して名詞だけを抽出してwordcloudで加工してjpgファイルに保存する。
+
+![wordcloud](https://github.com/SangWooChun714/mirineglobal/blob/master/word.jpg)
