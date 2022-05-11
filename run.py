@@ -14,8 +14,7 @@ def searchkabuweb():
     date = date.replace("-",".")
     print(search)
     print(date)
-    searchnetwork.wordcloudmethod(search)
- 
+    #searchnetwork.wordcloudmethod(search)
     #result = searchkabu.searchkabu(kabuname) #pythonfile 폴더의 searchkabu.py를 import하여 파일 내부의 searchkabu라는 함수에 kabuname을 넣어 결과를 result에 저장
     # code = result[0] # 상장된 회사의 코드
     # nowval = result[1] # 현재 주식 가격

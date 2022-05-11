@@ -1074,3 +1074,52 @@
 2022-05-11 15:08:30,416- mecabs - 53 - root - INFO - end mecab
 2022-05-11 15:08:30,422- wordcloud - 63 - root - INFO - draw wordcloud
 2022-05-11 15:08:32,586- wordcloud - 67 - root - INFO - end wordcloud
+2022-05-11 17:31:56,203- wordcloud - 57 - root - INFO - start wordcloud
+2022-05-11 17:31:56,203- setdriver - 13 - root - INFO - set driver
+2022-05-11 17:32:06,265- setdriver - 19 - root - INFO - return driver
+2022-05-11 17:32:06,278- mecabs - 25 - root - INFO - start mecab
+2022-05-11 17:32:06,625- mecabs - 30 - root - INFO - now link : https://news.yahoo.co.jp/articles/3c1445ce9497b57bd2a4c6f73e1586e7a6888107
+2022-05-11 17:32:24,009- mecabs - 30 - root - INFO - now link : https://news.yahoo.co.jp/articles/87efe109b00fcc8930a65d68a618f36dbc3df062
+2022-05-11 17:32:34,109- mecabs - 30 - root - INFO - now link : https://news.yahoo.co.jp/articles/63eef4deafaa37650116db8330a663b54283529e
+2022-05-11 17:32:44,274- mecabs - 30 - root - INFO - now link : https://news.yahoo.co.jp/articles/04b5c567c095e5ace278c8876015d89921c7a183
+2022-05-11 17:32:54,424- mecabs - 30 - root - INFO - now link : https://news.yahoo.co.jp/articles/310bced9396aaccc7bab87207947650b1b5d70c7
+2022-05-11 17:33:04,606- mecabs - 30 - root - INFO - now link : https://news.yahoo.co.jp/articles/4eb34897b3b0758bf362ae9d17b3891a9c746c36
+2022-05-11 17:33:14,811- mecabs - 30 - root - INFO - now link : https://news.yahoo.co.jp/articles/2afcb3b8dd9a7662f1288714910ffcb6eb13bb94
+2022-05-11 17:33:25,062- mecabs - 30 - root - INFO - now link : https://news.yahoo.co.jp/articles/f31c1f30c49c21d469b231a2e5289e2733451a41
+2022-05-11 17:33:35,369- mecabs - 30 - root - INFO - now link : https://news.yahoo.co.jp/articles/40b284519af07fed744538964dc26a92a9a87eac
+2022-05-11 17:33:45,729- mecabs - 30 - root - INFO - now link : https://news.yahoo.co.jp/articles/ef6d5636c9407b523ac59a826d5f1b2a5fcabc41
+2022-05-11 17:33:56,160- mecabs - 30 - root - INFO - now link : https://news.yahoo.co.jp/articles/9a2a0b879aa7a3b4527d795971f34e467479bf06
+2022-05-11 17:34:06,665- mecabs - 30 - root - INFO - now link : https://news.yahoo.co.jp/articles/7e7682cb136ed9ac57e4bba53d13fd36d06bced2
+2022-05-11 17:34:17,235- mecabs - 30 - root - INFO - now link : https://news.yahoo.co.jp/articles/8de64e6671e7bc8da1fc996d86240f09d525d215
+2022-05-11 17:34:27,846- mecabs - 30 - root - INFO - now link : https://news.yahoo.co.jp/articles/0e744a30bbc39ec15d7d11d07220262e4e30b9d2
+2022-05-11 17:34:38,531- mecabs - 30 - root - INFO - now link : https://news.yahoo.co.jp/articles/9debe219790b4cd0731b3296774efaec19c27048
+2022-05-11 17:34:49,405- mecabs - 30 - root - INFO - now link : https://news.yahoo.co.jp/articles/474cff951ce478bf0d3c5be21fa4c1dd15d25464
+2022-05-11 17:35:00,166- mecabs - 30 - root - INFO - now link : https://news.yahoo.co.jp/articles/c687d3a215816ceb12df19583998b85cfb0bfe4a
+2022-05-11 17:35:11,111- mecabs - 30 - root - INFO - now link : https://news.yahoo.co.jp/articles/7e9905ddb93e813539cfabbf63a92905161c4bac
+2022-05-11 17:35:21,989- mecabs - 30 - root - INFO - now link : https://news.yahoo.co.jp/articles/ee4f2cd037c08d4dd68c69cfe931eef9cbdc897f
+2022-05-11 17:35:33,686- mecabs - 30 - root - INFO - now link : https://news.yahoo.co.jp/articles/7646d64424bd2fa07ee6f7e76d1f4323883d31cb
+2022-05-11 17:35:49,090- mecabs - 30 - root - INFO - now link : https://news.yahoo.co.jp/articles/0494214f22e8f33d81ed1a7589dd6f6701f914b9
+2022-05-11 17:36:00,761- mecabs - 30 - root - INFO - now link : https://news.yahoo.co.jp/articles/2c2d3aa4509ec741f39c0814bd7464aa09ae3a2a
+2022-05-11 17:36:12,367- mecabs - 30 - root - INFO - now link : https://news.yahoo.co.jp/articles/90aecbc1f2fa5c607471f82f6102b6e0be795760
+2022-05-11 17:36:24,001- mecabs - 30 - root - INFO - now link : https://news.yahoo.co.jp/articles/cf0c933dfd3f6fef80186711cab688718720aedf
+2022-05-11 17:36:36,744- mecabs - 30 - root - INFO - now link : https://news.yahoo.co.jp/articles/8293e1d85764b4eefbb8f9651f5fb8fe9ef481eb
+2022-05-11 17:36:49,870- mecabs - 30 - root - INFO - now link : https://news.yahoo.co.jp/articles/fd03dd9d8c58999424a7eb2f5cc2da60ff6ec700
+2022-05-11 17:37:01,606- mecabs - 30 - root - INFO - now link : https://news.yahoo.co.jp/articles/da9d1d7db65e4fec10e8cb53ed91dd7cbb2b37b0
+2022-05-11 17:37:13,406- mecabs - 30 - root - INFO - now link : https://news.yahoo.co.jp/articles/e8ac1de26ae05c2fc605aa51fc28050556385d00
+2022-05-11 17:37:25,267- mecabs - 30 - root - INFO - now link : https://news.yahoo.co.jp/articles/b7d7a365bdb215684b4b5c968249a891f9a8c33f
+2022-05-11 17:37:37,547- mecabs - 30 - root - INFO - now link : https://news.yahoo.co.jp/articles/e3411231be76400abeeb791e2a70437868997041
+2022-05-11 17:38:00,096- mecabs - 30 - root - INFO - now link : https://news.yahoo.co.jp/articles/45a87e1e605f88400a84fe4490a45d1a7dd31e8e
+2022-05-11 17:38:12,547- mecabs - 30 - root - INFO - now link : https://news.yahoo.co.jp/articles/81f34877e588381d019a70a026222162b767e2b2
+2022-05-11 17:38:25,102- mecabs - 30 - root - INFO - now link : https://news.yahoo.co.jp/articles/3b40a5e443b699dfd191b8b7df49bfae8efe5d4b
+2022-05-11 17:38:37,424- mecabs - 30 - root - INFO - now link : https://news.yahoo.co.jp/articles/0feb9e902083ef51f31b56af9c11f42ad24baf50
+2022-05-11 17:38:50,088- mecabs - 30 - root - INFO - now link : https://news.yahoo.co.jp/articles/62df0e56c47aa955ef2694f58167bb5ef3ed3a80
+2022-05-11 17:39:03,002- mecabs - 30 - root - INFO - now link : https://news.yahoo.co.jp/articles/1ad71b044b8795c32a12f6e00036e33048d838f1
+2022-05-11 17:39:15,659- mecabs - 30 - root - INFO - now link : https://news.yahoo.co.jp/articles/52a84d44f2ecef2ac2e74527a06dbdb11143247d
+2022-05-11 17:39:28,701- mecabs - 30 - root - INFO - now link : https://news.yahoo.co.jp/articles/b3c3bb7530114584aaee55b34ab36c125f002f3d
+2022-05-11 17:39:45,426- mecabs - 30 - root - INFO - now link : https://news.yahoo.co.jp/articles/2c108ee1b7b51ca52a62d1f96ceeda81c2ffb9b4
+2022-05-11 17:40:01,106- mecabs - 30 - root - INFO - now link : https://news.yahoo.co.jp/articles/98ec37c354ec9568b26ac825fb4f4478efa26a28
+2022-05-11 17:40:14,947- mecabs - 30 - root - INFO - now link : https://news.yahoo.co.jp/articles/6887ae9538e000bb8e2d2beda7c74f4aad9a5b52
+2022-05-11 17:40:28,610- mecabs - 30 - root - INFO - now link : https://news.yahoo.co.jp/articles/30ad70947dc91816ae4396e48eba488f67e0ddc2
+2022-05-11 17:40:53,531- mecabs - 51 - root - INFO - end mecab
+2022-05-11 17:40:53,531- wordcloud - 61 - root - INFO - draw wordcloud
+2022-05-11 17:40:56,969- wordcloud - 65 - root - INFO - end wordcloud
