@@ -1,10 +1,12 @@
+from click import option
 from selenium.webdriver.chrome.service import Service
 from selenium import webdriver
-import MeCab
+import MeCab, datetime
 from time import sleep
 from wordcloud import WordCloud
 from newscofig import logger
 
+date = str(datetime.date.today())
 
 #ネットに接続するdriverを作ってreturnするメソッド
 #optionsでchromeのwindowを開かずにする
@@ -12,8 +14,8 @@ def setdriver():
     logger.info("set driver")
     options = webdriver.ChromeOptions()
     options.add_argument("headless")
-    chrome_service = Service(executable_path="C:/Users/mg-e1/Desktop/mg/chromedriver.exe", options=options)
-    driver = webdriver.Chrome(service=chrome_service)
+    chrome_service = Service(executable_path="C:/Users/mg-e1/Desktop/mg/chromedriver.exe")
+    driver = webdriver.Chrome(service=chrome_service, options = options)
     driver.get("https://news.yahoo.co.jp/categories/domestic") #住所で接続してページの情報を表示する
     logger.info("return driver")
     return driver
@@ -46,7 +48,6 @@ def mecabs(politic, driver):
                 temp = line.split()[0]
                 temp = temp.replace("'","")
                 formecab = formecab +" "+ temp
-        logger.info("now formecab : "+formecab)
         sleep(10)
     logger.info("end mecab")
     return formecab
@@ -61,7 +62,7 @@ def wordcloud():
     logger.info("draw wordcloud")
     wc = WordCloud(width=400, height=400, scale=2.0, max_font_size=250, font_path="C:/Windows/Fonts/HGRGE.TTC")
     wc.generate(words)
-    wc.to_file('word.jpg')
+    wc.to_file('word('+date+').jpg')
     logger.info("end wordcloud")
 
 if(__name__ == "__main__"):
