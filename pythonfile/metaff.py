@@ -6,4 +6,4 @@ plt.figure()
 
 plt.title("日本語")
 plt.show ()
-
+plt.savefig('./static/image/word(1).jpg')

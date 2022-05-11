@@ -6,6 +6,7 @@
 </head>
 <body>
     <!-- run.py에서 넣어준 변수를 서버에서 받아와 표시-->
+    <img src="{{url_for('static', filename=filenames)}}">
     <h1>검색 종목은 {{kabuname}} 입니다.</h1>
     <h2>검색 종목 코드는 {{Code}} 입니다.</h2>
     <h2>검색 종목의 현재가격은 {{Nowval}} 입니다.</h2>
