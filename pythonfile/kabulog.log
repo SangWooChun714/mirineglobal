@@ -1662,3 +1662,63 @@ elastic_transport.TlsError: TLS error caused by: SSLError([SSL: WRONG_VERSION_NU
 2022-03-18 10:59:55,055- drawline - 12 - asyncio - INFO - start draw
 2022-03-18 10:59:59,186- drawline - 32 - asyncio - INFO - end draw
 2022-03-18 10:59:59,186- <module> - 198 - root - INFO - program end
+2022-05-06 09:45:31,396- <module> - 176 - root - INFO - program start
+2022-05-06 09:45:31,396- <module> - 178 - root - INFO - kabuname : TYM day : 2022.04.30
+2022-05-06 09:45:31,397- checking - 127 - root - INFO - start checking
+2022-05-06 09:45:31,398- checking - 143 - root - INFO - end checking
+2022-05-06 09:45:31,398- FindDays - 152 - root - INFO - start finddays
+2022-05-06 09:45:31,398- FindDays - 168 - root - INFO - end finddays : 2022.04.29, 2022.04.28
+2022-05-06 09:46:29,438- <module> - 176 - root - INFO - program start
+2022-05-06 09:46:29,438- <module> - 178 - root - INFO - kabuname : TYM day : 2022.04.30
+2022-05-06 09:46:29,438- checking - 127 - root - INFO - start checking
+2022-05-06 09:46:29,453- checking - 143 - root - INFO - end checking
+2022-05-06 09:46:29,453- FindDays - 152 - root - INFO - start finddays
+2022-05-06 09:46:29,454- FindDays - 168 - root - INFO - end finddays : 2022.04.29, 2022.04.28
+2022-05-06 09:47:49,129- <module> - 177 - root - INFO - program start
+2022-05-06 09:47:59,025- <module> - 177 - root - INFO - program start
+2022-05-06 09:47:59,025- <module> - 179 - root - INFO - kabuname : TYM day : 2022.04.30
+2022-05-06 09:47:59,025- checking - 128 - root - INFO - start checking
+2022-05-06 09:47:59,025- checking - 144 - root - INFO - end checking
+2022-05-06 09:47:59,025- FindDays - 153 - root - INFO - start finddays
+2022-05-06 09:47:59,025- FindDays - 169 - root - INFO - end finddays : 2022.04.29, 2022.04.28
+2022-05-06 09:47:59,415- SearchKabuKa - 53 - root - INFO - start kabusearch
+2022-05-06 09:47:59,415- table_number - 17 - root - INFO - start tablenumber check
+2022-05-06 09:47:59,623- table_number - 27 - root - INFO - url : https://finance.naver.com/item/sise_day.naver?code=002900, tablenum : 650
+2022-05-06 09:47:59,623- table_number - 31 - root - INFO - end tablenumber check
+2022-05-06 09:47:59,646- SearchKabuKa - 57 - root - INFO - create csv file
+2022-05-06 09:48:00,246- perform_request - 336 - elastic_transport.transport - INFO - PUT https://localhost:9200/kabusearch/_doc/1 [status:201 duration:0.428s]
+2022-05-06 09:48:00,262- perform_request - 336 - elastic_transport.transport - INFO - PUT https://localhost:9200/kabusearch/_doc/2 [status:201 duration:0.015s]
+2022-05-06 09:48:00,323- perform_request - 336 - elastic_transport.transport - INFO - PUT https://localhost:9200/kabusearch/_doc/3 [status:201 duration:0.060s]
+2022-05-06 09:48:00,338- perform_request - 336 - elastic_transport.transport - INFO - PUT https://localhost:9200/kabusearch/_doc/4 [status:201 duration:0.014s]
+2022-05-06 09:48:00,339- SearchKabuKa - 114 - root - INFO - end csv saved
+2022-05-06 09:48:00,339- drawline - 12 - asyncio - INFO - start draw
+2022-05-06 09:48:07,309- drawline - 32 - asyncio - INFO - end draw
+2022-05-06 09:48:07,326- <module> - 200 - root - INFO - program end
+2022-05-06 09:49:13,424- <module> - 177 - root - INFO - program start
+2022-05-06 09:49:13,424- <module> - 179 - root - INFO - kabuname : F&F day : 2022.04.30
+2022-05-06 09:49:13,424- checking - 128 - root - INFO - start checking
+2022-05-06 09:49:13,424- checking - 133 - root - WARNING - companyname error. input kabu : F&F
+2022-05-06 09:49:50,328- <module> - 177 - root - INFO - program start
+2022-05-06 09:49:50,328- <module> - 179 - root - INFO - kabuname : F&F day : 2022.04.30
+2022-05-06 09:49:50,328- checking - 128 - root - INFO - start checking
+2022-05-06 09:49:50,328- checking - 144 - root - INFO - end checking
+2022-05-06 09:49:50,338- FindDays - 153 - root - INFO - start finddays
+2022-05-06 09:49:50,338- FindDays - 169 - root - INFO - end finddays : 2022.04.29, 2022.04.28
+2022-05-06 09:49:50,695- SearchKabuKa - 53 - root - INFO - start kabusearch
+2022-05-06 09:49:50,695- table_number - 17 - root - INFO - start tablenumber check
+2022-05-06 09:49:50,897- table_number - 27 - root - INFO - url : https://finance.naver.com/item/sise_day.naver?code=383220, tablenum : 24
+2022-05-06 09:49:50,897- table_number - 31 - root - INFO - end tablenumber check
+2022-05-06 09:49:50,904- SearchKabuKa - 57 - root - INFO - create csv file
+2022-05-06 09:49:51,116- perform_request - 336 - elastic_transport.transport - INFO - PUT https://localhost:9200/kabusearch/_doc/1 [status:200 duration:0.046s]
+2022-05-06 09:49:51,129- perform_request - 336 - elastic_transport.transport - INFO - PUT https://localhost:9200/kabusearch/_doc/2 [status:200 duration:0.014s]
+2022-05-06 09:49:51,145- perform_request - 336 - elastic_transport.transport - INFO - PUT https://localhost:9200/kabusearch/_doc/3 [status:200 duration:0.016s]
+2022-05-06 09:49:51,161- perform_request - 336 - elastic_transport.transport - INFO - PUT https://localhost:9200/kabusearch/_doc/4 [status:200 duration:0.016s]
+2022-05-06 09:49:51,161- SearchKabuKa - 114 - root - INFO - end csv saved
+2022-05-06 09:49:51,166- drawline - 12 - asyncio - INFO - start draw
+2022-05-06 09:50:00,639- drawline - 32 - asyncio - INFO - end draw
+2022-05-06 09:50:00,641- <module> - 200 - root - INFO - program end
+2022-05-06 10:00:48,685- _log - 224 - werkzeug - INFO -  * Running on http://localhost:2500 (Press CTRL+C to quit)
+2022-05-06 10:01:10,378- _log - 224 - werkzeug - INFO - 127.0.0.1 - - [06/May/2022 10:01:10] "GET / HTTP/1.1" 200 -
+2022-05-06 10:01:10,453- _log - 224 - werkzeug - INFO - 127.0.0.1 - - [06/May/2022 10:01:10] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2022-05-06 10:01:17,804- _log - 224 - werkzeug - INFO - 127.0.0.1 - - [06/May/2022 10:01:17] "POST /search HTTP/1.1" 200 -
+2022-05-06 10:01:26,932- _log - 224 - werkzeug - INFO - 127.0.0.1 - - [06/May/2022 10:01:26] "POST /search HTTP/1.1" 200 -

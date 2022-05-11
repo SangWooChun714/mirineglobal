@@ -43,7 +43,8 @@ def SearchKabuKa(kabunames, code, days, filename):
 
     ctx = ssl.create_default_context()
     #ctx.load_verify_locations("C:/Users/cjstk/Desktop/python/elasticsearch-8.1.0/config/certs/http_ca.crt")
-    ctx.load_verify_locations("C:/Users/cjstk/Desktop/elasticsearch-8.1.0/cert1/http_ca.crt")
+    #ctx.load_verify_locations("C:/Users/cjstk/Desktop/elasticsearch-8.1.0/cert1/http_ca.crt")
+    ctx.load_verify_locations("C:/Users/mg-e1/Desktop/elasticsearch-8.1.0/cert1/http_ca.crt")
     es = Elasticsearch("https://localhost:9200", basic_auth=("elastic","sw1594311"), ssl_context=ctx)
     #es = Elasticsearch("http://localhost:9200/")
     index = "kabusearch"
@@ -125,7 +126,7 @@ def SearchKabuKa(kabunames, code, days, filename):
 #date_compilerで日の確認する
 def checking(kabunames, days):
     logger.info("start checking")
-    name_compiler = any(specialtext in kabunames for specialtext in "!@#$%^&*()[]-=+_~`;'/?.<>, \t \n")
+    name_compiler = any(specialtext in kabunames for specialtext in "!@#$%^*()[]-=+_~`;'/?.<>, \t \n")
     print(name_compiler)
 
     if name_compiler == True :

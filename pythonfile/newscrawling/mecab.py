@@ -1,6 +1,6 @@
 from elasticsearch import Elasticsearch
 import ssl
-from eunjeon import Mecab
+#from eunjeon import Mecab
 
 
 ctx = ssl.create_default_context()
@@ -20,10 +20,10 @@ body = {
 result = es.get(index=index, id="20220408(1)")
 #result = es.search(index=index, body = body)
 #print(result['hits']['hits'])
-tag = Mecab()
-tag.pos(result["_source"]["script"])
+# tag = Mecab()
+# tag.pos(result["_source"]["script"])
 
-print(tag)
+# print(tag)
 #print(result["_source"]["script"])
 # for i in result['hits']['hits'] :
 #    print(i["_source"]["script"])

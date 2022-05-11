@@ -3,6 +3,8 @@ from datetime import date
 import ssl
 from elasticsearch import Elasticsearch
 from newscofig import logger
+from selenium.webdriver.chrome.service import Service
+
 
 
 
@@ -10,12 +12,12 @@ from newscofig import logger
 #ctxほelasticsearchの認証書
 #indexはelasticsearchに保存するindex名
 #todaysは今日を保存する
-def elastic(newspage, n, driver):  
+def elastic(newspage, n, driver):
     logger.info("start elastic")
 
     todays = str(date.today().strftime("%Y.%m.%d")) # 今日の日付を保存
     ctx = ssl.create_default_context()
-    ctx.load_verify_locations("C:/Users/cjstk/Desktop/elasticsearch-8.1.0/cert1/http_ca.crt")
+    ctx.load_verify_locations("C:/Users/mg-e1/Desktop/elasticsearch-8.1.0/cert1/http_ca.crt")
     es = Elasticsearch("https://localhost:9200", basic_auth=("elastic","sw1594311") ,ssl_context=ctx)
     index = "dailynews"
 
@@ -30,7 +32,7 @@ def elastic(newspage, n, driver):
         driver.execute_script('window.open("'+link+'");')
         driver.switch_to.window(driver.window_handles[1])
 
-        script1 = driver.find_element_by_xpath("/html/body/div[2]/table/tbody/tr/td[1]/div/div[2]/div[1]").text
+        script1 = driver.find_element_by_xpath("/html/body/div/div[2]/div/div[1]/div[1]/div[2]/div[1]").text
         script1 = script1.replace(" ", "")
         script1 = script1.replace("\n", "")
 
@@ -56,7 +58,8 @@ def newscraling():
     options = webdriver.ChromeOptions()
     options.add_argument('headless')
     n = 1
-    driver1 = webdriver.Chrome("C:/Users/cjstk/Desktop/mirineglobal/chromedriver.exe", options=options)
+    chrome_service = Service(executable_path="C:/Users/mg-e1/Desktop/mg/chromedriver.exe")
+    driver1 = webdriver.Chrome(service=chrome_service, options=options)
     #driver2 = webdriver.Chrome("C:/Users/cjstk/Desktop/mirineglobal/chromedriver.exe", options=options)
 
     logger.info("pol news start")
