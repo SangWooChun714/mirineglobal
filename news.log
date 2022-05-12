@@ -1123,3 +1123,4 @@
 2022-05-11 17:40:53,531- mecabs - 51 - root - INFO - end mecab
 2022-05-11 17:40:53,531- wordcloud - 61 - root - INFO - draw wordcloud
 2022-05-11 17:40:56,969- wordcloud - 65 - root - INFO - end wordcloud
+2022-05-12 16:08:44,922- _log - 224 - werkzeug - INFO -  * Running on http://localhost:2500 (Press CTRL+C to quit)

@@ -1,0 +1,410 @@
+2022-05-12 16:19:58,336- _log - 224 - werkzeug - INFO -  * Running on http://localhost:2500 (Press CTRL+C to quit)
+2022-05-12 16:20:03,772- _log - 224 - werkzeug - INFO - 127.0.0.1 - - [12/May/2022 16:20:03] "GET / HTTP/1.1" 200 -
+2022-05-12 16:20:04,129- _log - 224 - werkzeug - INFO - 127.0.0.1 - - [12/May/2022 16:20:04] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2022-05-12 16:20:20,730- wordcloudmethod - 36 - root - INFO - start wordcloud
+2022-05-12 16:20:20,731- searchnetwork - 18 - root - INFO - start searchnetwork
+2022-05-12 16:20:21,750- searchnetwork - 31 - root - INFO - end searchnetwork
+2022-05-12 16:20:23,121- wordcloudmethod - 50 - root - INFO - end wordcloud
+2022-05-12 16:20:23,128- _log - 224 - werkzeug - INFO - 127.0.0.1 - - [12/May/2022 16:20:23] "POST /search HTTP/1.1" 200 -
+2022-05-12 16:20:23,245- _log - 224 - werkzeug - INFO - 127.0.0.1 - - [12/May/2022 16:20:23] "GET /static/image/word(2022-05-12).jpg HTTP/1.1" 200 -
+2022-05-12 16:22:03,895- _log - 224 - werkzeug - INFO -  * Running on http://localhost:2500 (Press CTRL+C to quit)
+2022-05-12 16:22:06,788- wordcloudmethod - 36 - root - INFO - start wordcloud
+2022-05-12 16:22:06,788- searchnetwork - 18 - root - INFO - start searchnetwork
+2022-05-12 16:22:09,496- searchnetwork - 31 - root - INFO - end searchnetwork
+2022-05-12 16:22:10,581- wordcloudmethod - 50 - root - INFO - end wordcloud
+2022-05-12 16:22:10,587- _log - 224 - werkzeug - INFO - 127.0.0.1 - - [12/May/2022 16:22:10] "POST /search HTTP/1.1" 200 -
+2022-05-12 16:22:10,676- _log - 224 - werkzeug - INFO - 127.0.0.1 - - [12/May/2022 16:22:10] "GET /static/image/word(2022-05-12).jpg HTTP/1.1" 200 -
+2022-05-12 16:23:00,263- _log - 224 - werkzeug - INFO -  * Running on http://localhost:2500 (Press CTRL+C to quit)
+2022-05-12 16:23:05,344- _log - 224 - werkzeug - INFO - 127.0.0.1 - - [12/May/2022 16:23:05] "GET / HTTP/1.1" 200 -
+2022-05-12 16:23:14,447- wordcloudmethod - 36 - root - INFO - start wordcloud
+2022-05-12 16:23:14,447- searchnetwork - 18 - root - INFO - start searchnetwork
+2022-05-12 16:23:15,122- searchnetwork - 31 - root - INFO - end searchnetwork
+2022-05-12 16:23:16,205- wordcloudmethod - 50 - root - INFO - end wordcloud
+2022-05-12 16:23:16,209- _log - 224 - werkzeug - INFO - 127.0.0.1 - - [12/May/2022 16:23:16] "POST /search HTTP/1.1" 200 -
+2022-05-12 16:23:16,302- _log - 224 - werkzeug - INFO - 127.0.0.1 - - [12/May/2022 16:23:16] "GET /static/image/word(2022-05-12).jpg HTTP/1.1" 200 -
+2022-05-12 16:28:45,644- _log - 224 - werkzeug - INFO -  * Running on http://localhost:2500 (Press CTRL+C to quit)
+2022-05-12 16:28:53,033- _log - 224 - werkzeug - INFO - 127.0.0.1 - - [12/May/2022 16:28:53] "GET / HTTP/1.1" 200 -
+2022-05-12 16:29:07,477- wordcloudmethod - 36 - root - INFO - start wordcloud
+2022-05-12 16:29:07,477- searchnetwork - 18 - root - INFO - start searchnetwork
+2022-05-12 16:29:08,101- searchnetwork - 31 - root - INFO - end searchnetwork
+2022-05-12 16:29:09,417- wordcloudmethod - 50 - root - INFO - end wordcloud
+2022-05-12 16:29:09,421- _log - 224 - werkzeug - INFO - 127.0.0.1 - - [12/May/2022 16:29:09] "POST /search HTTP/1.1" 200 -
+2022-05-12 16:29:09,538- _log - 224 - werkzeug - INFO - 127.0.0.1 - - [12/May/2022 16:29:09] "GET /static/image/word(2022-05-12).jpg HTTP/1.1" 200 -
+2022-05-12 16:30:51,072- _log - 224 - werkzeug - INFO -  * Running on http://localhost:2500 (Press CTRL+C to quit)
+2022-05-12 16:30:54,368- wordcloudmethod - 36 - root - INFO - start wordcloud
+2022-05-12 16:30:54,369- searchnetwork - 18 - root - INFO - start searchnetwork
+2022-05-12 16:30:55,266- searchnetwork - 31 - root - INFO - end searchnetwork
+2022-05-12 16:30:56,377- wordcloudmethod - 50 - root - INFO - end wordcloud
+2022-05-12 16:30:56,382- _log - 224 - werkzeug - INFO - 127.0.0.1 - - [12/May/2022 16:30:56] "POST /search HTTP/1.1" 200 -
+2022-05-12 16:30:56,480- _log - 224 - werkzeug - INFO - 127.0.0.1 - - [12/May/2022 16:30:56] "GET /static/image/word(2022-05-12).jpg HTTP/1.1" 200 -
+2022-05-12 16:30:57,738- _log - 224 - werkzeug - INFO - 127.0.0.1 - - [12/May/2022 16:30:57] "GET / HTTP/1.1" 200 -
+2022-05-12 16:31:11,077- wordcloudmethod - 36 - root - INFO - start wordcloud
+2022-05-12 16:31:11,077- searchnetwork - 18 - root - INFO - start searchnetwork
+2022-05-12 16:31:11,797- searchnetwork - 31 - root - INFO - end searchnetwork
+2022-05-12 16:31:12,248- wordcloudmethod - 50 - root - INFO - end wordcloud
+2022-05-12 16:31:12,249- _log - 224 - werkzeug - INFO - 127.0.0.1 - - [12/May/2022 16:31:12] "POST /search HTTP/1.1" 200 -
+2022-05-12 16:31:12,288- _log - 224 - werkzeug - INFO - 127.0.0.1 - - [12/May/2022 16:31:12] "GET /static/image/word(2022-05-12).jpg HTTP/1.1" 200 -
+2022-05-12 16:31:20,623- _log - 224 - werkzeug - INFO - 127.0.0.1 - - [12/May/2022 16:31:20] "GET / HTTP/1.1" 200 -
+2022-05-12 16:31:40,883- wordcloudmethod - 36 - root - INFO - start wordcloud
+2022-05-12 16:31:40,883- searchnetwork - 18 - root - INFO - start searchnetwork
+2022-05-12 16:31:41,642- searchnetwork - 31 - root - INFO - end searchnetwork
+2022-05-12 16:31:42,254- wordcloudmethod - 50 - root - INFO - end wordcloud
+2022-05-12 16:31:42,255- _log - 224 - werkzeug - INFO - 127.0.0.1 - - [12/May/2022 16:31:42] "POST /search HTTP/1.1" 200 -
+2022-05-12 16:31:42,290- _log - 224 - werkzeug - INFO - 127.0.0.1 - - [12/May/2022 16:31:42] "GET /static/image/word(2022-05-12).jpg HTTP/1.1" 200 -
+2022-05-12 16:33:36,001- _log - 224 - werkzeug - INFO -  * Running on http://localhost:2500 (Press CTRL+C to quit)
+2022-05-12 16:33:40,272- _log - 224 - werkzeug - INFO - 127.0.0.1 - - [12/May/2022 16:33:40] "GET / HTTP/1.1" 200 -
+2022-05-12 16:33:49,326- wordcloudmethod - 36 - root - INFO - start wordcloud
+2022-05-12 16:33:49,326- searchnetwork - 18 - root - INFO - start searchnetwork
+2022-05-12 16:33:49,931- searchnetwork - 31 - root - INFO - end searchnetwork
+2022-05-12 16:33:51,110- wordcloudmethod - 50 - root - INFO - end wordcloud
+2022-05-12 16:33:51,116- _log - 224 - werkzeug - INFO - 127.0.0.1 - - [12/May/2022 16:33:51] "POST /search HTTP/1.1" 200 -
+2022-05-12 16:33:51,142- _log - 224 - werkzeug - INFO - 127.0.0.1 - - [12/May/2022 16:33:51] "[33mGET /static/image/米国word(2022-05-12).jpg HTTP/1.1[0m" 404 -
+2022-05-12 16:35:12,362- _log - 224 - werkzeug - INFO -  * Running on http://localhost:2500 (Press CTRL+C to quit)
+2022-05-12 16:35:14,755- _log - 224 - werkzeug - INFO - 127.0.0.1 - - [12/May/2022 16:35:14] "GET / HTTP/1.1" 200 -
+2022-05-12 16:35:22,567- wordcloudmethod - 36 - root - INFO - start wordcloud
+2022-05-12 16:35:22,567- searchnetwork - 18 - root - INFO - start searchnetwork
+2022-05-12 16:35:23,307- searchnetwork - 31 - root - INFO - end searchnetwork
+2022-05-12 16:35:24,434- wordcloudmethod - 50 - root - INFO - end wordcloud
+2022-05-12 16:35:24,438- _log - 224 - werkzeug - INFO - 127.0.0.1 - - [12/May/2022 16:35:24] "POST /search HTTP/1.1" 200 -
+2022-05-12 16:35:24,530- _log - 224 - werkzeug - INFO - 127.0.0.1 - - [12/May/2022 16:35:24] "GET /static/image/梅雨word(2022-05-12).jpg HTTP/1.1" 200 -
+2022-05-12 16:35:41,173- wordcloudmethod - 36 - root - INFO - start wordcloud
+2022-05-12 16:35:41,174- searchnetwork - 18 - root - INFO - start searchnetwork
+2022-05-12 16:35:41,845- searchnetwork - 31 - root - INFO - end searchnetwork
+2022-05-12 16:35:42,178- wordcloudmethod - 50 - root - INFO - end wordcloud
+2022-05-12 16:35:42,179- _log - 224 - werkzeug - INFO - 127.0.0.1 - - [12/May/2022 16:35:42] "POST /search HTTP/1.1" 200 -
+2022-05-12 16:35:42,218- _log - 224 - werkzeug - INFO - 127.0.0.1 - - [12/May/2022 16:35:42] "GET /static/image/吉野家word(2022-05-12).jpg HTTP/1.1" 200 -
+2022-05-12 16:36:10,941- wordcloudmethod - 36 - root - INFO - start wordcloud
+2022-05-12 16:36:10,941- searchnetwork - 18 - root - INFO - start searchnetwork
+2022-05-12 16:36:11,371- searchnetwork - 31 - root - INFO - end searchnetwork
+2022-05-12 16:36:11,861- wordcloudmethod - 50 - root - INFO - end wordcloud
+2022-05-12 16:36:11,862- _log - 224 - werkzeug - INFO - 127.0.0.1 - - [12/May/2022 16:36:11] "POST /search HTTP/1.1" 200 -
+2022-05-12 16:36:11,893- _log - 224 - werkzeug - INFO - 127.0.0.1 - - [12/May/2022 16:36:11] "GET /static/image/aeonword(2022-05-12).jpg HTTP/1.1" 200 -
+2022-05-12 16:36:30,196- _log - 224 - werkzeug - INFO - 127.0.0.1 - - [12/May/2022 16:36:30] "GET / HTTP/1.1" 200 -
+2022-05-12 16:41:56,347- _log - 224 - werkzeug - INFO -  * Running on http://localhost:2500 (Press CTRL+C to quit)
+2022-05-12 16:42:01,652- wordcloudmethod - 36 - root - INFO - start wordcloud
+2022-05-12 16:42:01,652- searchnetwork - 18 - root - INFO - start searchnetwork
+2022-05-12 16:42:01,926- searchnetwork - 31 - root - INFO - end searchnetwork
+2022-05-12 16:42:02,547- log_exception - 1455 - run - ERROR - Exception on /search [POST]
+Traceback (most recent call last):
+  File "C:\Users\mg-e1\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\mg-e1\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\mg-e1\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\mg-e1\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "c:\Users\mg-e1\Desktop\mg\run.py", line 15, in searchkabuweb
+    files = searchnetwork.wordcloudmethod(search)
+  File "c:\Users\mg-e1\Desktop\mg\pythonfile\newscrawling\searchnetwork.py", line 47, in wordcloudmethod
+    ad =wc.generate(mecabs)
+  File "C:\Users\mg-e1\AppData\Local\Programs\Python\Python310\lib\site-packages\wordcloud\wordcloud.py", line 632, in generate
+    return self.generate_from_text(text)
+  File "C:\Users\mg-e1\AppData\Local\Programs\Python\Python310\lib\site-packages\wordcloud\wordcloud.py", line 614, in generate_from_text
+    self.generate_from_frequencies(words)
+  File "C:\Users\mg-e1\AppData\Local\Programs\Python\Python310\lib\site-packages\wordcloud\wordcloud.py", line 403, in generate_from_frequencies
+    raise ValueError("We need at least 1 word to plot a word cloud, "
+ValueError: We need at least 1 word to plot a word cloud, got 0.
+2022-05-12 16:42:02,549- _log - 224 - werkzeug - INFO - 127.0.0.1 - - [12/May/2022 16:42:02] "[35m[1mPOST /search HTTP/1.1[0m" 500 -
+2022-05-12 16:42:17,935- wordcloudmethod - 36 - root - INFO - start wordcloud
+2022-05-12 16:42:17,935- searchnetwork - 18 - root - INFO - start searchnetwork
+2022-05-12 16:42:18,747- searchnetwork - 31 - root - INFO - end searchnetwork
+2022-05-12 16:42:18,929- wordcloudmethod - 50 - root - INFO - end wordcloud
+2022-05-12 16:42:18,935- _log - 224 - werkzeug - INFO - 127.0.0.1 - - [12/May/2022 16:42:18] "POST /search HTTP/1.1" 200 -
+2022-05-12 16:42:19,012- _log - 224 - werkzeug - INFO - 127.0.0.1 - - [12/May/2022 16:42:19] "GET /static/image/hashiword(2022-05-12).jpg HTTP/1.1" 200 -
+2022-05-12 16:42:32,717- _log - 224 - werkzeug - INFO - 127.0.0.1 - - [12/May/2022 16:42:32] "GET / HTTP/1.1" 200 -
+2022-05-12 16:44:46,327- _log - 224 - werkzeug - INFO -  * Running on http://localhost:2500 (Press CTRL+C to quit)
+2022-05-12 16:44:50,908- _log - 224 - werkzeug - INFO - 127.0.0.1 - - [12/May/2022 16:44:50] "GET / HTTP/1.1" 200 -
+2022-05-12 16:44:51,944- wordcloudmethod - 39 - root - INFO - start wordcloud
+2022-05-12 16:44:51,944- searchnetwork - 18 - root - INFO - start searchnetwork
+2022-05-12 16:44:52,673- searchnetwork - 34 - root - INFO - end searchnetwork
+2022-05-12 16:44:53,300- log_exception - 1455 - run - ERROR - Exception on /search [POST]
+Traceback (most recent call last):
+  File "C:\Users\mg-e1\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\mg-e1\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\mg-e1\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\mg-e1\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "c:\Users\mg-e1\Desktop\mg\run.py", line 15, in searchkabuweb
+    files = searchnetwork.wordcloudmethod(search)
+  File "c:\Users\mg-e1\Desktop\mg\pythonfile\newscrawling\searchnetwork.py", line 50, in wordcloudmethod
+    ad =wc.generate(mecabs)
+  File "C:\Users\mg-e1\AppData\Local\Programs\Python\Python310\lib\site-packages\wordcloud\wordcloud.py", line 632, in generate
+    return self.generate_from_text(text)
+  File "C:\Users\mg-e1\AppData\Local\Programs\Python\Python310\lib\site-packages\wordcloud\wordcloud.py", line 614, in generate_from_text
+    self.generate_from_frequencies(words)
+  File "C:\Users\mg-e1\AppData\Local\Programs\Python\Python310\lib\site-packages\wordcloud\wordcloud.py", line 403, in generate_from_frequencies
+    raise ValueError("We need at least 1 word to plot a word cloud, "
+ValueError: We need at least 1 word to plot a word cloud, got 0.
+2022-05-12 16:44:53,301- _log - 224 - werkzeug - INFO - 127.0.0.1 - - [12/May/2022 16:44:53] "[35m[1mPOST /search HTTP/1.1[0m" 500 -
+2022-05-12 16:45:44,281- _log - 224 - werkzeug - INFO -  * Running on http://localhost:2500 (Press CTRL+C to quit)
+2022-05-12 16:45:46,710- _log - 224 - werkzeug - INFO - 127.0.0.1 - - [12/May/2022 16:45:46] "GET / HTTP/1.1" 200 -
+2022-05-12 16:45:48,186- wordcloudmethod - 39 - root - INFO - start wordcloud
+2022-05-12 16:45:48,186- searchnetwork - 18 - root - INFO - start searchnetwork
+2022-05-12 16:45:49,348- searchnetwork - 34 - root - INFO - end searchnetwork
+2022-05-12 16:45:50,001- log_exception - 1455 - run - ERROR - Exception on /search [POST]
+Traceback (most recent call last):
+  File "C:\Users\mg-e1\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\mg-e1\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\mg-e1\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\mg-e1\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "c:\Users\mg-e1\Desktop\mg\run.py", line 16, in searchkabuweb
+    files = searchnetwork.wordcloudmethod(search)
+  File "c:\Users\mg-e1\Desktop\mg\pythonfile\newscrawling\searchnetwork.py", line 50, in wordcloudmethod
+    ad =wc.generate(mecabs)
+  File "C:\Users\mg-e1\AppData\Local\Programs\Python\Python310\lib\site-packages\wordcloud\wordcloud.py", line 632, in generate
+    return self.generate_from_text(text)
+  File "C:\Users\mg-e1\AppData\Local\Programs\Python\Python310\lib\site-packages\wordcloud\wordcloud.py", line 614, in generate_from_text
+    self.generate_from_frequencies(words)
+  File "C:\Users\mg-e1\AppData\Local\Programs\Python\Python310\lib\site-packages\wordcloud\wordcloud.py", line 403, in generate_from_frequencies
+    raise ValueError("We need at least 1 word to plot a word cloud, "
+ValueError: We need at least 1 word to plot a word cloud, got 0.
+2022-05-12 16:45:50,002- _log - 224 - werkzeug - INFO - 127.0.0.1 - - [12/May/2022 16:45:50] "[35m[1mPOST /search HTTP/1.1[0m" 500 -
+2022-05-12 16:46:43,712- wordcloudmethod - 39 - root - INFO - start wordcloud
+2022-05-12 16:46:43,713- searchnetwork - 18 - root - INFO - start searchnetwork
+2022-05-12 16:46:44,458- searchnetwork - 34 - root - INFO - end searchnetwork
+2022-05-12 16:46:44,460- log_exception - 1455 - run - ERROR - Exception on /search [POST]
+Traceback (most recent call last):
+  File "C:\Users\mg-e1\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\mg-e1\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\mg-e1\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\mg-e1\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "c:\Users\mg-e1\Desktop\mg\run.py", line 16, in searchkabuweb
+    files = searchnetwork.wordcloudmethod(search)
+  File "c:\Users\mg-e1\Desktop\mg\pythonfile\newscrawling\searchnetwork.py", line 50, in wordcloudmethod
+    ad =wc.generate(mecabs)
+  File "C:\Users\mg-e1\AppData\Local\Programs\Python\Python310\lib\site-packages\wordcloud\wordcloud.py", line 632, in generate
+    return self.generate_from_text(text)
+  File "C:\Users\mg-e1\AppData\Local\Programs\Python\Python310\lib\site-packages\wordcloud\wordcloud.py", line 614, in generate_from_text
+    self.generate_from_frequencies(words)
+  File "C:\Users\mg-e1\AppData\Local\Programs\Python\Python310\lib\site-packages\wordcloud\wordcloud.py", line 403, in generate_from_frequencies
+    raise ValueError("We need at least 1 word to plot a word cloud, "
+ValueError: We need at least 1 word to plot a word cloud, got 0.
+2022-05-12 16:46:44,462- _log - 224 - werkzeug - INFO - 127.0.0.1 - - [12/May/2022 16:46:44] "[35m[1mPOST /search HTTP/1.1[0m" 500 -
+2022-05-12 16:47:06,388- _log - 224 - werkzeug - INFO -  * Running on http://localhost:2500 (Press CTRL+C to quit)
+2022-05-12 16:47:11,480- _log - 224 - werkzeug - INFO - 127.0.0.1 - - [12/May/2022 16:47:11] "GET / HTTP/1.1" 200 -
+2022-05-12 16:47:13,281- wordcloudmethod - 39 - root - INFO - start wordcloud
+2022-05-12 16:47:13,282- searchnetwork - 18 - root - INFO - start searchnetwork
+2022-05-12 16:47:13,944- searchnetwork - 34 - root - INFO - end searchnetwork
+2022-05-12 16:47:14,602- log_exception - 1455 - run - ERROR - Exception on /search [POST]
+Traceback (most recent call last):
+  File "C:\Users\mg-e1\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\mg-e1\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\mg-e1\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\mg-e1\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "c:\Users\mg-e1\Desktop\mg\run.py", line 16, in searchkabuweb
+    files = searchnetwork.wordcloudmethod(search)
+  File "c:\Users\mg-e1\Desktop\mg\pythonfile\newscrawling\searchnetwork.py", line 50, in wordcloudmethod
+    ad =wc.generate(mecabs)
+  File "C:\Users\mg-e1\AppData\Local\Programs\Python\Python310\lib\site-packages\wordcloud\wordcloud.py", line 632, in generate
+    return self.generate_from_text(text)
+  File "C:\Users\mg-e1\AppData\Local\Programs\Python\Python310\lib\site-packages\wordcloud\wordcloud.py", line 614, in generate_from_text
+    self.generate_from_frequencies(words)
+  File "C:\Users\mg-e1\AppData\Local\Programs\Python\Python310\lib\site-packages\wordcloud\wordcloud.py", line 403, in generate_from_frequencies
+    raise ValueError("We need at least 1 word to plot a word cloud, "
+ValueError: We need at least 1 word to plot a word cloud, got 0.
+2022-05-12 16:47:14,604- _log - 224 - werkzeug - INFO - 127.0.0.1 - - [12/May/2022 16:47:14] "[35m[1mPOST /search HTTP/1.1[0m" 500 -
+2022-05-12 16:48:49,734- _log - 224 - werkzeug - INFO -  * Running on http://localhost:2500 (Press CTRL+C to quit)
+2022-05-12 16:48:52,233- _log - 224 - werkzeug - INFO - 127.0.0.1 - - [12/May/2022 16:48:52] "GET / HTTP/1.1" 200 -
+2022-05-12 16:48:54,024- wordcloudmethod - 39 - root - INFO - start wordcloud
+2022-05-12 16:48:54,024- searchnetwork - 18 - root - INFO - start searchnetwork
+2022-05-12 16:48:54,213- searchnetwork - 34 - root - INFO - end searchnetwork
+2022-05-12 16:48:54,850- log_exception - 1455 - run - ERROR - Exception on /search [POST]
+Traceback (most recent call last):
+  File "C:\Users\mg-e1\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\mg-e1\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\mg-e1\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\mg-e1\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "c:\Users\mg-e1\Desktop\mg\run.py", line 18, in searchkabuweb
+    files = searchnetwork.wordcloudmethod(search)
+  File "c:\Users\mg-e1\Desktop\mg\pythonfile\newscrawling\searchnetwork.py", line 50, in wordcloudmethod
+    ad =wc.generate(mecabs)
+  File "C:\Users\mg-e1\AppData\Local\Programs\Python\Python310\lib\site-packages\wordcloud\wordcloud.py", line 632, in generate
+    return self.generate_from_text(text)
+  File "C:\Users\mg-e1\AppData\Local\Programs\Python\Python310\lib\site-packages\wordcloud\wordcloud.py", line 614, in generate_from_text
+    self.generate_from_frequencies(words)
+  File "C:\Users\mg-e1\AppData\Local\Programs\Python\Python310\lib\site-packages\wordcloud\wordcloud.py", line 403, in generate_from_frequencies
+    raise ValueError("We need at least 1 word to plot a word cloud, "
+ValueError: We need at least 1 word to plot a word cloud, got 0.
+2022-05-12 16:48:54,851- _log - 224 - werkzeug - INFO - 127.0.0.1 - - [12/May/2022 16:48:54] "[35m[1mPOST /search HTTP/1.1[0m" 500 -
+2022-05-12 16:50:13,428- _log - 224 - werkzeug - INFO -  * Running on http://localhost:2500 (Press CTRL+C to quit)
+2022-05-12 16:50:19,176- wordcloudmethod - 39 - root - INFO - start wordcloud
+2022-05-12 16:50:19,177- searchnetwork - 18 - root - INFO - start searchnetwork
+2022-05-12 16:50:19,560- searchnetwork - 34 - root - INFO - end searchnetwork
+2022-05-12 16:50:20,221- log_exception - 1455 - run - ERROR - Exception on /search [POST]
+Traceback (most recent call last):
+  File "C:\Users\mg-e1\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\mg-e1\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\mg-e1\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\mg-e1\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "c:\Users\mg-e1\Desktop\mg\run.py", line 19, in searchkabuweb
+    files = searchnetwork.wordcloudmethod(search)
+  File "c:\Users\mg-e1\Desktop\mg\pythonfile\newscrawling\searchnetwork.py", line 50, in wordcloudmethod
+    ad =wc.generate(mecabs)
+  File "C:\Users\mg-e1\AppData\Local\Programs\Python\Python310\lib\site-packages\wordcloud\wordcloud.py", line 632, in generate
+    return self.generate_from_text(text)
+  File "C:\Users\mg-e1\AppData\Local\Programs\Python\Python310\lib\site-packages\wordcloud\wordcloud.py", line 614, in generate_from_text
+    self.generate_from_frequencies(words)
+  File "C:\Users\mg-e1\AppData\Local\Programs\Python\Python310\lib\site-packages\wordcloud\wordcloud.py", line 403, in generate_from_frequencies
+    raise ValueError("We need at least 1 word to plot a word cloud, "
+ValueError: We need at least 1 word to plot a word cloud, got 0.
+2022-05-12 16:50:20,223- _log - 224 - werkzeug - INFO - 127.0.0.1 - - [12/May/2022 16:50:20] "[35m[1mPOST /search HTTP/1.1[0m" 500 -
+2022-05-12 16:50:33,103- _log - 224 - werkzeug - INFO -  * Running on http://localhost:2500 (Press CTRL+C to quit)
+2022-05-12 16:50:36,684- _log - 224 - werkzeug - INFO - 127.0.0.1 - - [12/May/2022 16:50:36] "GET / HTTP/1.1" 200 -
+2022-05-12 16:50:37,518- wordcloudmethod - 39 - root - INFO - start wordcloud
+2022-05-12 16:50:37,518- searchnetwork - 18 - root - INFO - start searchnetwork
+2022-05-12 16:50:38,126- searchnetwork - 34 - root - INFO - end searchnetwork
+2022-05-12 16:50:38,760- log_exception - 1455 - run - ERROR - Exception on /search [POST]
+Traceback (most recent call last):
+  File "C:\Users\mg-e1\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\mg-e1\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\mg-e1\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\mg-e1\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "c:\Users\mg-e1\Desktop\mg\run.py", line 19, in searchkabuweb
+    files = searchnetwork.wordcloudmethod(search)
+  File "c:\Users\mg-e1\Desktop\mg\pythonfile\newscrawling\searchnetwork.py", line 50, in wordcloudmethod
+    ad =wc.generate(mecabs)
+  File "C:\Users\mg-e1\AppData\Local\Programs\Python\Python310\lib\site-packages\wordcloud\wordcloud.py", line 632, in generate
+    return self.generate_from_text(text)
+  File "C:\Users\mg-e1\AppData\Local\Programs\Python\Python310\lib\site-packages\wordcloud\wordcloud.py", line 614, in generate_from_text
+    self.generate_from_frequencies(words)
+  File "C:\Users\mg-e1\AppData\Local\Programs\Python\Python310\lib\site-packages\wordcloud\wordcloud.py", line 403, in generate_from_frequencies
+    raise ValueError("We need at least 1 word to plot a word cloud, "
+ValueError: We need at least 1 word to plot a word cloud, got 0.
+2022-05-12 16:50:38,762- _log - 224 - werkzeug - INFO - 127.0.0.1 - - [12/May/2022 16:50:38] "[35m[1mPOST /search HTTP/1.1[0m" 500 -
+2022-05-12 16:52:27,001- _log - 224 - werkzeug - INFO -  * Running on http://localhost:2500 (Press CTRL+C to quit)
+2022-05-12 16:52:30,559- _log - 224 - werkzeug - INFO - 127.0.0.1 - - [12/May/2022 16:52:30] "GET / HTTP/1.1" 200 -
+2022-05-12 16:52:31,327- wordcloudmethod - 39 - root - INFO - start wordcloud
+2022-05-12 16:52:31,327- searchnetwork - 18 - root - INFO - start searchnetwork
+2022-05-12 16:52:32,255- searchnetwork - 34 - root - INFO - end searchnetwork
+2022-05-12 16:52:32,930- log_exception - 1455 - run - ERROR - Exception on /search [POST]
+Traceback (most recent call last):
+  File "C:\Users\mg-e1\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\mg-e1\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\mg-e1\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\mg-e1\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "c:\Users\mg-e1\Desktop\mg\run.py", line 20, in searchkabuweb
+    files = searchnetwork.wordcloudmethod(search)
+  File "c:\Users\mg-e1\Desktop\mg\pythonfile\newscrawling\searchnetwork.py", line 50, in wordcloudmethod
+    ad =wc.generate(mecabs)
+  File "C:\Users\mg-e1\AppData\Local\Programs\Python\Python310\lib\site-packages\wordcloud\wordcloud.py", line 632, in generate
+    return self.generate_from_text(text)
+  File "C:\Users\mg-e1\AppData\Local\Programs\Python\Python310\lib\site-packages\wordcloud\wordcloud.py", line 614, in generate_from_text
+    self.generate_from_frequencies(words)
+  File "C:\Users\mg-e1\AppData\Local\Programs\Python\Python310\lib\site-packages\wordcloud\wordcloud.py", line 403, in generate_from_frequencies
+    raise ValueError("We need at least 1 word to plot a word cloud, "
+ValueError: We need at least 1 word to plot a word cloud, got 0.
+2022-05-12 16:52:32,932- _log - 224 - werkzeug - INFO - 127.0.0.1 - - [12/May/2022 16:52:32] "[35m[1mPOST /search HTTP/1.1[0m" 500 -
+2022-05-12 16:53:08,409- _log - 224 - werkzeug - INFO -  * Running on http://localhost:2500 (Press CTRL+C to quit)
+2022-05-12 16:53:15,496- _log - 224 - werkzeug - INFO - 127.0.0.1 - - [12/May/2022 16:53:15] "GET / HTTP/1.1" 200 -
+2022-05-12 16:53:17,473- wordcloudmethod - 39 - root - INFO - start wordcloud
+2022-05-12 16:53:17,473- searchnetwork - 18 - root - INFO - start searchnetwork
+2022-05-12 16:53:18,225- searchnetwork - 34 - root - INFO - end searchnetwork
+2022-05-12 16:53:18,859- log_exception - 1455 - run - ERROR - Exception on /search [POST]
+Traceback (most recent call last):
+  File "C:\Users\mg-e1\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\mg-e1\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\mg-e1\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\mg-e1\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "c:\Users\mg-e1\Desktop\mg\run.py", line 21, in searchkabuweb
+    files = searchnetwork.wordcloudmethod(search)
+  File "c:\Users\mg-e1\Desktop\mg\pythonfile\newscrawling\searchnetwork.py", line 50, in wordcloudmethod
+    ad =wc.generate(mecabs)
+  File "C:\Users\mg-e1\AppData\Local\Programs\Python\Python310\lib\site-packages\wordcloud\wordcloud.py", line 632, in generate
+    return self.generate_from_text(text)
+  File "C:\Users\mg-e1\AppData\Local\Programs\Python\Python310\lib\site-packages\wordcloud\wordcloud.py", line 614, in generate_from_text
+    self.generate_from_frequencies(words)
+  File "C:\Users\mg-e1\AppData\Local\Programs\Python\Python310\lib\site-packages\wordcloud\wordcloud.py", line 403, in generate_from_frequencies
+    raise ValueError("We need at least 1 word to plot a word cloud, "
+ValueError: We need at least 1 word to plot a word cloud, got 0.
+2022-05-12 16:53:18,861- _log - 224 - werkzeug - INFO - 127.0.0.1 - - [12/May/2022 16:53:18] "[35m[1mPOST /search HTTP/1.1[0m" 500 -
+2022-05-12 16:53:44,272- _log - 224 - werkzeug - INFO -  * Running on http://localhost:2500 (Press CTRL+C to quit)
+2022-05-12 16:53:48,014- _log - 224 - werkzeug - INFO - 127.0.0.1 - - [12/May/2022 16:53:48] "GET / HTTP/1.1" 200 -
+2022-05-12 16:53:48,950- _log - 224 - werkzeug - INFO - 127.0.0.1 - - [12/May/2022 16:53:48] "GET / HTTP/1.1" 200 -
+2022-05-12 16:53:53,098- wordcloudmethod - 39 - root - INFO - start wordcloud
+2022-05-12 16:53:53,098- searchnetwork - 18 - root - INFO - start searchnetwork
+2022-05-12 16:53:53,773- searchnetwork - 34 - root - INFO - end searchnetwork
+2022-05-12 16:53:54,394- log_exception - 1455 - run - ERROR - Exception on /search [POST]
+Traceback (most recent call last):
+  File "C:\Users\mg-e1\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\mg-e1\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\mg-e1\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\mg-e1\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "c:\Users\mg-e1\Desktop\mg\run.py", line 21, in searchkabuweb
+    files = searchnetwork.wordcloudmethod(search)
+  File "c:\Users\mg-e1\Desktop\mg\pythonfile\newscrawling\searchnetwork.py", line 50, in wordcloudmethod
+    ad =wc.generate(mecabs)
+  File "C:\Users\mg-e1\AppData\Local\Programs\Python\Python310\lib\site-packages\wordcloud\wordcloud.py", line 632, in generate
+    return self.generate_from_text(text)
+  File "C:\Users\mg-e1\AppData\Local\Programs\Python\Python310\lib\site-packages\wordcloud\wordcloud.py", line 614, in generate_from_text
+    self.generate_from_frequencies(words)
+  File "C:\Users\mg-e1\AppData\Local\Programs\Python\Python310\lib\site-packages\wordcloud\wordcloud.py", line 403, in generate_from_frequencies
+    raise ValueError("We need at least 1 word to plot a word cloud, "
+ValueError: We need at least 1 word to plot a word cloud, got 0.
+2022-05-12 16:53:54,396- _log - 224 - werkzeug - INFO - 127.0.0.1 - - [12/May/2022 16:53:54] "[35m[1mPOST /search HTTP/1.1[0m" 500 -
+2022-05-12 16:54:41,975- _log - 224 - werkzeug - INFO -  * Running on http://localhost:2500 (Press CTRL+C to quit)
+2022-05-12 16:54:44,920- _log - 224 - werkzeug - INFO - 127.0.0.1 - - [12/May/2022 16:54:44] "GET / HTTP/1.1" 200 -
+2022-05-12 16:54:45,862- wordcloudmethod - 39 - root - INFO - start wordcloud
+2022-05-12 16:54:45,862- searchnetwork - 18 - root - INFO - start searchnetwork
+2022-05-12 16:54:46,852- searchnetwork - 34 - root - INFO - end searchnetwork
+2022-05-12 16:54:47,483- log_exception - 1455 - run - ERROR - Exception on /search [POST]
+Traceback (most recent call last):
+  File "C:\Users\mg-e1\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\mg-e1\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\mg-e1\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\mg-e1\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "c:\Users\mg-e1\Desktop\mg\run.py", line 21, in searchkabuweb
+    files = searchnetwork.wordcloudmethod(search)
+  File "c:\Users\mg-e1\Desktop\mg\pythonfile\newscrawling\searchnetwork.py", line 50, in wordcloudmethod
+    ad =wc.generate(mecabs)
+  File "C:\Users\mg-e1\AppData\Local\Programs\Python\Python310\lib\site-packages\wordcloud\wordcloud.py", line 632, in generate
+    return self.generate_from_text(text)
+  File "C:\Users\mg-e1\AppData\Local\Programs\Python\Python310\lib\site-packages\wordcloud\wordcloud.py", line 614, in generate_from_text
+    self.generate_from_frequencies(words)
+  File "C:\Users\mg-e1\AppData\Local\Programs\Python\Python310\lib\site-packages\wordcloud\wordcloud.py", line 403, in generate_from_frequencies
+    raise ValueError("We need at least 1 word to plot a word cloud, "
+ValueError: We need at least 1 word to plot a word cloud, got 0.
+2022-05-12 16:54:47,487- _log - 224 - werkzeug - INFO - 127.0.0.1 - - [12/May/2022 16:54:47] "[35m[1mPOST /search HTTP/1.1[0m" 500 -
