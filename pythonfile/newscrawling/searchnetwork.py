@@ -21,7 +21,7 @@ def searchnetwork(search):
     else : 
         url = "https://news.yahoo.co.jp/search?p="+search+"&ei=utf-8" 
     words = ""
-    __headers = {"user-Agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36"}#heaaderを指定
+    __headers = {"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.54 Safari/537.36"}#heaaderを指定
     res1 = requests.get(url=url, headers=__headers)
     searchday = BeautifulSoup(res1.text, "lxml")
     divnews = searchday.find_all("div", attrs={"class":"newsFeed_item_text"})# tableから資料を持ってくる
