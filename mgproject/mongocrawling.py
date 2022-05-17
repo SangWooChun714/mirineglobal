@@ -12,49 +12,69 @@ from urllib.request import urlopen
 from pymongo import MongoClient
 
 
+
+#TDnetのサイトで指定した日付のtableの数を得る。
+#午前に作動したらtableが一つだけなので強制的に2にして1回でcrawlingが終了するようにします。
 def gettablenum(today):
-    
-    #tempurl = "https://www.release.tdnet.info/inbs/I_list_001_20220516.html"
+    logger.info("start gettablenum")
+
     url = "https://www.release.tdnet.info/inbs/I_list_001_"+today+".html"
     headers = {"user-Agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.54 Safari/537.36"}#heaaderを指定
-#headers = {"user-Agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36"}#heaaderを指定
     requst = requests.get(url=url, headers=headers)
     searchurl = BeautifulSoup(requst.text, "lxml")
     tablenum = searchurl.find_all("div", attrs={"class" : "pager-M"})
-#print(tablenum[-1].get_text())
-    tablenum = int(tablenum[-1].get_text())
+
+    if not tablenum : 
+        tablenum = 2
+    else : 
+        tablenum = int(tablenum[-1].get_text())
+
+    logger.info("end gettablenum")
     return tablenum
 
+#TDnetから情報を持ってくる関数。
+#tableのtdのclass名が二つなのでifで分けます。
+#urlのiのところがtable番号なのでforで変えながらcrawlingします。
+#結果は辞書の形で配列に入れて返す。
 def geturls():
+    logger.info("start geturl")
 
     today = str(datetime.date.today().strftime("%Y%m%d"))
-
+    result = []
     tablenum = gettablenum(today)
 
-    for i in range(0, tablenum):
-    #url = "https://www.release.tdnet.info/inbs/I_list_001_20220516.html"
+    for i in range(1, tablenum):
+
         url = "https://www.release.tdnet.info/inbs/I_list_00"+str(i)+"_"+today+".html"
         headers = {"user-Agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.54 Safari/537.36"}#heaaderを指定
-#headers = {"user-Agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36"}#heaaderを指定
         requst = requests.get(url=url, headers=headers)
+        requst.encoding = "utf-8"
         searchurl = BeautifulSoup(requst.text, "lxml")
-        tempurl = searchurl.find_all("td", attrs={"class" : "oddnew-M kjTitle"})
+        tempurl1 = searchurl.find("table", attrs={"id" : "main-list-table"})
+        tempurl = tempurl1.find_all("tr")
 
-        urls = []
-        for j in tempurl:
-            urls.append("https://www.release.tdnet.info/inbs/"+j.find("a").get("href"))
-    
-    return urls
+        for j in tempurl :
 
-def readpdfs(links):
+            if not j.find(attrs = "oddnew-M kjCode") :
+                result.append({"codes" : j.find(attrs = "evennew-M kjCode").get_text(), "names" : j.find(attrs = "evennew-M kjName").get_text().replace(" ", ""), 
+                "date" : today, "titles" : j.find(attrs = "evennew-M kjTitle").get_text().replace(" ", ""), "urls" : "https://www.release.tdnet.info/inbs/"+j.find("a").get("href"), 
+                "script" : " "})
+            else : 
+                result.append({"codes" : j.find(attrs = "oddnew-M kjCode").get_text(), "names" : j.find(attrs = "oddnew-M kjName").get_text().replace(" ", ""), 
+                "date" : today, "titles" : j.find(attrs = "oddnew-M kjTitle").get_text().replace(" ", ""), "urls" : "https://www.release.tdnet.info/inbs/"+j.find("a").get("href"), 
+                "script" : " "})
 
-    content = []
+    logger.info("end geturl")
 
-    for link in links:
+    return result
 
-        tempfiles = urlopen(link).read()
+#pdfファイルを読んでStringに変換して返す関数。
+def readpdfs(result):
+    logger.info("start readpdf")
+    for link in result:
+
+        tempfiles = urlopen(link['urls']).read()
         files = BytesIO(tempfiles)
-
         retstr = StringIO()
         parser = PDFParser(files)
         doc = PDFDocument(parser)
@@ -66,24 +86,47 @@ def readpdfs(links):
 
         temp = retstr.getvalue()
 
-        temp = temp.replace(" ", "")
-        temp = temp.replace("\n", "")
-        content.append(temp)
+        temp = temp.replace("  ", "")
+        temp = temp.replace("\n\n", "\n")
+
+        link["script"] = temp
+
         retstr.close()
+    logger.info("end readpdf")
+    return result
 
-    return content
-
-def savedb(content):
-    logger.info()
-    clients = MongoClient("mongodb://root:example@localhost:27017/")
-    db = clients.mongo_crontab
+#DBにDataを保存する関数。
+def savedb(result):
+    logger.info("start savedb")
+    today = str(datetime.date.today().strftime("%Y%m%d"))
+    clients = MongoClient("mongodb://root:example@localhost:27017/") #db connect
+    db = clients.mongo_crontab #db指定
     
+    for result in result : 
+        datas = {
+            "compy" : { 
+                "code" : result["codes"], 
+                "name" : result["names"] 
+            },
 
-if __name__ == "__main__":
+            "date" : result["date"],
+
+            "document" : { 
+                "link" : result["urls"], 
+                "title" : result["titles"],
+                "script" : result["script"]
+            }
+        }
+        db.tdnet.insert_one(datas)
+        lastnum += 1
+
+    logger.info("end savedb")
+
+if __name__ == "__main__" :
     logger.info("start mongo crawling")
-    links = geturls()
-    content = readpdfs(links)
-    savedb(content)
+    result = geturls()
+    readpdfs(result)
+    savedb(result)
     logger.info("end mongo crawling")
 
 

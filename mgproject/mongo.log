@@ -1,0 +1,95 @@
+2022-05-17 09:16:50,742- <module> - 6 - root - INFO - test
+2022-05-17 09:42:55,411- <module> - 6 - root - INFO - test
+2022-05-17 09:45:09,731- <module> - 6 - root - INFO - test
+2022-05-17 09:45:35,313- <module> - 6 - root - INFO - test
+2022-05-17 09:45:45,612- <module> - 6 - root - INFO - test
+2022-05-17 11:53:57,629- <module> - 89 - root - INFO - start mongo crawling
+2022-05-17 11:54:40,034- <module> - 93 - root - INFO - end mongo crawling
+2022-05-17 12:00:10,343- <module> - 6 - root - INFO - test
+2022-05-17 12:00:43,163- <module> - 6 - root - INFO - test
+2022-05-17 12:23:17,403- <module> - 98 - root - INFO - start mongo crawling
+2022-05-17 12:24:17,849- <module> - 102 - root - INFO - end mongo crawling
+2022-05-17 12:27:22,701- <module> - 6 - root - INFO - test
+2022-05-17 12:28:21,360- <module> - 6 - root - INFO - test
+2022-05-17 12:38:23,204- <module> - 6 - root - INFO - test
+2022-05-17 12:39:46,303- <module> - 6 - root - INFO - test
+2022-05-17 12:42:32,674- <module> - 6 - root - INFO - test
+2022-05-17 12:42:51,767- <module> - 6 - root - INFO - test
+2022-05-17 12:43:04,192- <module> - 6 - root - INFO - test
+2022-05-17 12:43:34,221- <module> - 6 - root - INFO - test
+2022-05-17 12:43:57,915- <module> - 6 - root - INFO - test
+2022-05-17 14:17:14,171- <module> - 6 - root - INFO - test
+2022-05-17 14:20:04,271- <module> - 6 - root - INFO - test
+2022-05-17 14:20:35,323- <module> - 6 - root - INFO - test
+2022-05-17 14:21:08,678- <module> - 6 - root - INFO - test
+2022-05-17 14:21:25,741- <module> - 6 - root - INFO - test
+2022-05-17 14:23:00,931- <module> - 6 - root - INFO - test
+2022-05-17 14:28:59,460- <module> - 6 - root - INFO - test
+2022-05-17 15:13:11,709- <module> - 6 - root - INFO - test
+2022-05-17 15:13:22,989- <module> - 6 - root - INFO - test
+2022-05-17 15:13:38,792- <module> - 6 - root - INFO - test
+2022-05-17 15:14:26,127- <module> - 6 - root - INFO - test
+2022-05-17 15:15:32,265- <module> - 6 - root - INFO - test
+2022-05-17 15:15:47,572- <module> - 6 - root - INFO - test
+2022-05-17 15:16:36,188- <module> - 6 - root - INFO - test
+2022-05-17 15:16:43,162- <module> - 6 - root - INFO - test
+2022-05-17 15:19:01,820- <module> - 6 - root - INFO - test
+2022-05-17 15:19:40,661- <module> - 6 - root - INFO - test
+2022-05-17 15:52:43,041- <module> - 6 - root - INFO - test
+2022-05-17 15:53:12,664- <module> - 6 - root - INFO - test
+2022-05-17 15:54:31,554- <module> - 6 - root - INFO - test
+2022-05-17 15:56:16,657- <module> - 6 - root - INFO - test
+2022-05-17 15:57:07,749- <module> - 6 - root - INFO - test
+2022-05-17 16:18:02,677- <module> - 128 - root - INFO - start mongo crawling
+2022-05-17 16:18:02,677- geturls - 40 - root - INFO - start geturl
+2022-05-17 16:18:02,677- gettablenum - 19 - root - INFO - start gettablenum
+2022-05-17 16:18:02,902- gettablenum - 32 - root - INFO - end gettablenum
+2022-05-17 16:18:03,088- geturls - 67 - root - INFO - end geturl
+2022-05-17 16:18:03,089- readpdfs - 73 - root - INFO - start readpdf
+2022-05-17 16:21:13,041- readpdfs - 95 - root - INFO - end readpdf
+2022-05-17 16:21:13,041- savedb - 100 - root - INFO - start savedb
+2022-05-17 16:21:13,460- savedb - 125 - root - INFO - end savedb
+2022-05-17 16:21:13,461- <module> - 132 - root - INFO - end mongo crawling
+2022-05-17 16:21:34,267- <module> - 6 - root - INFO - test
+2022-05-17 16:21:41,986- <module> - 6 - root - INFO - test
+2022-05-17 16:22:38,122- <module> - 6 - root - INFO - test
+2022-05-17 16:25:30,071- <module> - 6 - root - INFO - test
+2022-05-17 16:26:50,007- <module> - 6 - root - INFO - test
+2022-05-17 16:31:31,276- <module> - 7 - root - INFO - test
+2022-05-17 16:31:49,581- <module> - 7 - root - INFO - test
+2022-05-17 16:32:50,373- <module> - 7 - root - INFO - test
+2022-05-17 16:34:28,334- <module> - 7 - root - INFO - test
+2022-05-17 16:36:02,798- <module> - 7 - root - INFO - test
+2022-05-17 16:41:20,988- <module> - 7 - root - INFO - test
+2022-05-17 16:41:28,687- <module> - 7 - root - INFO - test
+2022-05-17 16:43:47,776- <module> - 7 - root - INFO - test
+2022-05-17 16:43:57,161- <module> - 7 - root - INFO - test
+2022-05-17 16:44:24,422- <module> - 7 - root - INFO - test
+2022-05-17 16:44:52,866- <module> - 7 - root - INFO - test
+2022-05-17 16:50:41,999- <module> - 132 - root - INFO - start mongo crawling
+2022-05-17 16:50:41,999- geturls - 40 - root - INFO - start geturl
+2022-05-17 16:50:41,999- gettablenum - 19 - root - INFO - start gettablenum
+2022-05-17 16:50:42,248- gettablenum - 32 - root - INFO - end gettablenum
+2022-05-17 16:50:42,513- geturls - 67 - root - INFO - end geturl
+2022-05-17 16:50:42,513- readpdfs - 73 - root - INFO - start readpdf
+2022-05-17 16:53:28,933- readpdfs - 95 - root - INFO - end readpdf
+2022-05-17 16:53:28,933- savedb - 100 - root - INFO - start savedb
+2022-05-17 16:53:29,355- savedb - 129 - root - INFO - end savedb
+2022-05-17 16:53:29,355- <module> - 136 - root - INFO - end mongo crawling
+2022-05-17 16:53:49,852- <module> - 7 - root - INFO - test
+2022-05-17 16:55:53,168- <module> - 7 - root - INFO - test
+2022-05-17 16:56:51,414- <module> - 7 - root - INFO - test
+2022-05-17 16:57:50,253- <module> - 7 - root - INFO - test
+2022-05-17 16:57:57,953- <module> - 7 - root - INFO - test
+2022-05-17 16:58:05,671- <module> - 7 - root - INFO - test
+2022-05-17 16:58:59,834- <module> - 7 - root - INFO - test
+2022-05-17 17:01:04,327- <module> - 7 - root - INFO - test
+2022-05-17 17:01:15,474- <module> - 7 - root - INFO - test
+2022-05-17 17:01:26,212- <module> - 7 - root - INFO - test
+2022-05-17 17:02:26,172- <module> - 7 - root - INFO - test
+2022-05-17 17:03:18,186- <module> - 7 - root - INFO - test
+2022-05-17 17:03:35,410- <module> - 7 - root - INFO - test
+2022-05-17 17:03:51,990- <module> - 7 - root - INFO - test
+2022-05-17 17:04:32,863- <module> - 7 - root - INFO - test
+2022-05-17 17:15:21,342- <module> - 7 - root - INFO - test
+2022-05-17 17:15:40,888- <module> - 7 - root - INFO - test
