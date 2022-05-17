@@ -10,3 +10,4 @@ TDnetのPDFファイルをcrawlingするprogram
 
 
 ## 出力結果
+![DB](https://github.com/SangWooChun714/mirineglobal/blob/master/mgproject/DBkey.JPG)
