@@ -125,3 +125,33 @@
 2022-05-18 14:52:28,169- <module> - 7 - root - INFO - test
 2022-05-18 15:08:55,951- <module> - 7 - root - INFO - test
 2022-05-18 15:09:09,538- <module> - 7 - root - INFO - test
+2022-05-18 16:15:28,025- <module> - 129 - root - INFO - start mongo crawling
+2022-05-18 16:15:28,025- geturls - 40 - root - INFO - start geturl
+2022-05-18 16:15:28,025- gettablenum - 19 - root - INFO - start gettablenum
+2022-05-18 16:15:29,378- gettablenum - 32 - root - INFO - end gettablenum : 3
+2022-05-18 16:15:29,988- geturls - 67 - root - INFO - end geturl
+2022-05-18 16:15:29,988- readpdfs - 73 - root - INFO - start readpdf
+2022-05-18 16:16:20,549- <module> - 129 - root - INFO - start mongo crawling
+2022-05-18 16:16:20,550- geturls - 40 - root - INFO - start geturl
+2022-05-18 16:16:20,550- gettablenum - 19 - root - INFO - start gettablenum
+2022-05-18 16:16:20,641- gettablenum - 32 - root - INFO - end gettablenum : 3
+2022-05-18 16:16:20,940- geturls - 67 - root - INFO - end geturl
+2022-05-18 16:16:20,940- readpdfs - 73 - root - INFO - start readpdf
+2022-05-18 16:17:09,781- <module> - 129 - root - INFO - start mongo crawling
+2022-05-18 16:17:09,781- geturls - 40 - root - INFO - start geturl
+2022-05-18 16:17:09,781- gettablenum - 19 - root - INFO - start gettablenum
+2022-05-18 16:17:10,011- gettablenum - 32 - root - INFO - end gettablenum : 4
+2022-05-18 16:17:10,521- geturls - 67 - root - INFO - end geturl
+2022-05-18 16:17:10,521- readpdfs - 73 - root - INFO - start readpdf
+2022-05-18 16:22:45,955- readpdfs - 95 - root - INFO - end readpdf
+2022-05-18 16:22:45,955- savedb - 100 - root - INFO - start savedb
+2022-05-18 16:24:11,979- <module> - 129 - root - INFO - start mongo crawling
+2022-05-18 16:24:11,979- geturls - 40 - root - INFO - start geturl
+2022-05-18 16:24:11,979- gettablenum - 19 - root - INFO - start gettablenum
+2022-05-18 16:24:12,101- gettablenum - 32 - root - INFO - end gettablenum : 4
+2022-05-18 16:24:12,375- geturls - 67 - root - INFO - end geturl
+2022-05-18 16:24:12,376- readpdfs - 73 - root - INFO - start readpdf
+2022-05-18 16:28:59,144- readpdfs - 95 - root - INFO - end readpdf
+2022-05-18 16:28:59,144- savedb - 100 - root - INFO - start savedb
+2022-05-18 16:28:59,612- savedb - 126 - root - INFO - end savedb
+2022-05-18 16:28:59,612- <module> - 133 - root - INFO - end mongo crawling
