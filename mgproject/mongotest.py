@@ -4,7 +4,6 @@ import datetime
 
 #clients = MongoClient("mongodb+srv://csw1594311:csw1594311@cluster0.wp4cz.mongodb.net/myFirstDatabase?retryWrites=true&w=majority")
 clients = MongoClient("mongodb://root:example@localhost:27017/")
-logger.info("test")
 print(clients.list_database_names())
 today = str(datetime.date.today().strftime("%Y%m%d"))
 db = clients.mongo_crontab
@@ -23,6 +22,7 @@ fromdata = db.tdnet.find()
 #fromdata = db.tdnet.find()
         
 for i in fromdata :
+    print(i)
     print("_id : " + i["_id"])
     print("code : " + i["compy"]["code"])
     print("name : " + i["compy"]["name"])

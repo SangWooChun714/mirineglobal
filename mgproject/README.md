@@ -28,3 +28,4 @@ TDnetのPDFファイルをcrawlingするprogram
 
 
 ## crontabの設定
+* 月曜から金曜日まで毎日午後17:00に一度作動。

@@ -87,7 +87,7 @@ def readpdfs(result):
         temp = retstr.getvalue()
 
         temp = temp.replace("  ", "")
-        temp = temp.replace("\n\n", "\n")
+        temp = temp.replace("\n \n", "\n")
 
         link["script"] = temp
 
