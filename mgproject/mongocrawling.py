@@ -35,7 +35,7 @@ def gettablenum(today):
 #TDnetから情報を持ってくる関数。
 #tableのtdのclass名が二つなのでifで分けます。
 #urlのiのところがtable番号なのでforで変えながらcrawlingします。
-#結果は辞書の形で配列に入れて返す。
+#結果は辞書の形({会社のcode, 会社の名前, date, 文書のtitle, 注所,　内容})で配列に入れて返す。
 def geturls():
     logger.info("start geturl")
 
@@ -54,7 +54,7 @@ def geturls():
         tempurl = tempurl1.find_all("tr")
 
         for j in tempurl :
-
+            #tdのclass名がoddnew, evennewで分けて入れられているのでif文で選別する。
             if not j.find(attrs = "oddnew-M kjCode") :
                 result.append({"codes" : j.find(attrs = "evennew-M kjCode").get_text(), "names" : j.find(attrs = "evennew-M kjName").get_text().replace(" ", ""), 
                 "date" : today, "titles" : j.find(attrs = "evennew-M kjTitle").get_text().replace(" ", ""), "urls" : "https://www.release.tdnet.info/inbs/"+j.find("a").get("href"), 
@@ -101,9 +101,11 @@ def savedb(result):
     today = str(datetime.date.today().strftime("%Y%m%d"))
     clients = MongoClient("mongodb://root:example@localhost:27017/") #db connect
     db = clients.mongo_crontab #db指定
-    
+    n = 1
     for result in result : 
         datas = {
+            "_id" : today+"-"+str(n),
+
             "compy" : { 
                 "code" : result["codes"], 
                 "name" : result["names"] 
@@ -118,7 +120,8 @@ def savedb(result):
             }
         }
         db.tdnet.insert_one(datas)
-        lastnum += 1
+        n += 1
+
 
     logger.info("end savedb")
 

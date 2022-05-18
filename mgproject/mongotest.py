@@ -18,22 +18,19 @@ datas = {
 #db.tdnet.insert_one(datas)
 #fromdata = db.tdnet.find({},{"compy":False, "date":False, "document":False})
 #fromdata = db.tdnet.find({},{"_id":False,"compy":False, "date":False, "document":False}).sort("id",-1)
-fromdata = db.tdnet.find({"date":"20220517", "compy.code":"30540"})
+fromdata = db.tdnet.find()
 #fromdata = db.tdnet.find().sort({"id",-1})
 #fromdata = db.tdnet.find()
         
 for i in fromdata :
-    # if i["_id"].split("-")[0] == today : 
-    #         lastnum = int(i["_id"].split("-")[1])+1
-    #         print(lastnum)
-    #         break
-    print(i)
-    # print("code : "+i["compy"]["code"])
-    # print("name : "+i["compy"]["name"])
-    # print("date : "+i["date"])
-    # print("link : "+i["document"]["link"])
-    # print("title : "+i["document"]["title"])
-    # print("script : "+i["document"]["script"])
+    print("_id : " + i["_id"])
+    print("code : " + i["compy"]["code"])
+    print("name : " + i["compy"]["name"])
+    print("date : " + i["date"])
+    print("link : " + i["document"]["link"])
+    print("title : " + i["document"]["title"])
+    print("script : " + i["document"]["script"])
+    break
     
 #print(db.tdnet.find())
 #print(db.tdnet.find_one({"author": "developer"}))

@@ -93,3 +93,35 @@
 2022-05-17 17:04:32,863- <module> - 7 - root - INFO - test
 2022-05-17 17:15:21,342- <module> - 7 - root - INFO - test
 2022-05-17 17:15:40,888- <module> - 7 - root - INFO - test
+2022-05-18 13:53:57,543- <module> - 134 - root - INFO - start mongo crawling
+2022-05-18 13:53:57,559- geturls - 48 - root - INFO - start geturl
+2022-05-18 13:53:57,559- gettablenum - 27 - root - INFO - start gettablenum
+2022-05-18 13:53:57,923- gettablenum - 40 - root - INFO - end gettablenum
+2022-05-18 13:53:58,058- geturls - 75 - root - INFO - end geturl
+2022-05-18 13:53:58,059- readpdfs - 81 - root - INFO - start readpdf
+2022-05-18 13:54:55,696- readpdfs - 103 - root - INFO - end readpdf
+2022-05-18 13:54:55,696- savedb - 108 - root - INFO - start savedb
+2022-05-18 13:54:55,834- savedb - 131 - root - INFO - end savedb
+2022-05-18 13:54:55,834- <module> - 138 - root - INFO - end mongo crawling
+2022-05-18 13:55:46,750- <module> - 7 - root - INFO - test
+2022-05-18 14:46:08,036- <module> - 7 - root - INFO - test
+2022-05-18 14:46:59,061- <module> - 7 - root - INFO - test
+2022-05-18 14:50:13,388- <module> - 128 - root - INFO - start mongo crawling
+2022-05-18 14:50:13,388- geturls - 40 - root - INFO - start geturl
+2022-05-18 14:50:13,388- gettablenum - 19 - root - INFO - start gettablenum
+2022-05-18 14:50:13,466- gettablenum - 32 - root - INFO - end gettablenum
+2022-05-18 14:50:13,542- geturls - 67 - root - INFO - end geturl
+2022-05-18 14:50:13,543- readpdfs - 73 - root - INFO - start readpdf
+2022-05-18 14:50:46,697- <module> - 129 - root - INFO - start mongo crawling
+2022-05-18 14:50:46,697- geturls - 40 - root - INFO - start geturl
+2022-05-18 14:50:46,697- gettablenum - 19 - root - INFO - start gettablenum
+2022-05-18 14:50:46,785- gettablenum - 32 - root - INFO - end gettablenum
+2022-05-18 14:50:46,883- geturls - 67 - root - INFO - end geturl
+2022-05-18 14:50:46,883- readpdfs - 73 - root - INFO - start readpdf
+2022-05-18 14:51:58,046- readpdfs - 95 - root - INFO - end readpdf
+2022-05-18 14:51:58,046- savedb - 100 - root - INFO - start savedb
+2022-05-18 14:51:58,209- savedb - 126 - root - INFO - end savedb
+2022-05-18 14:51:58,209- <module> - 133 - root - INFO - end mongo crawling
+2022-05-18 14:52:28,169- <module> - 7 - root - INFO - test
+2022-05-18 15:08:55,951- <module> - 7 - root - INFO - test
+2022-05-18 15:09:09,538- <module> - 7 - root - INFO - test
